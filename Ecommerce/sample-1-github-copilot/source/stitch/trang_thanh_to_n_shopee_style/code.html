@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout | Shopee</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#9f1b00",
+              "on-primary-fixed-variant": "#5c0b00",
+              "surface-dim": "#d3d5d5",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#000000",
+              "on-error-container": "#510017",
+              "on-error": "#ffefef",
+              "surface": "#f6f6f6",
+              "surface-container-highest": "#dbdddd",
+              "surface-bright": "#f6f6f6",
+              "surface-container-low": "#f0f1f1",
+              "secondary-dim": "#9d1b00",
+              "on-tertiary-container": "#510c72",
+              "on-secondary": "#ffefec",
+              "primary-fixed": "#ff775b",
+              "outline-variant": "#acadad",
+              "error-dim": "#a70138",
+              "primary-container": "#ff775b",
+              "secondary-container": "#ffc4b7",
+              "tertiary": "#7f3f9f",
+              "outline": "#767777",
+              "primary-dim": "#9d1a00",
+              "secondary-fixed": "#ffc4b7",
+              "tertiary-container": "#de98ff",
+              "tertiary-fixed-dim": "#d08bf0",
+              "on-tertiary-fixed-variant": "#5b1a7b",
+              "on-tertiary": "#feeeff",
+              "error-container": "#f74b6d",
+              "inverse-primary": "#fd5837",
+              "on-surface": "#2d2f2f",
+              "primary": "#b22203",
+              "on-secondary-fixed": "#6b0f00",
+              "on-secondary-container": "#8e1700",
+              "secondary": "#b22101",
+              "tertiary-fixed": "#de98ff",
+              "surface-container-high": "#e1e3e3",
+              "on-primary-container": "#4b0700",
+              "on-surface-variant": "#5a5c5c",
+              "surface-container": "#e7e8e8",
+              "on-background": "#2d2f2f",
+              "on-tertiary-fixed": "#300047",
+              "surface-tint": "#b22203",
+              "error": "#b41340",
+              "background": "#f6f6f6",
+              "primary-fixed-dim": "#ff5c3b",
+              "inverse-surface": "#0c0f0f",
+              "inverse-on-surface": "#9c9d9d",
+              "on-primary": "#ffefec",
+              "tertiary-dim": "#723292",
+              "secondary-fixed-dim": "#ffb09f",
+              "surface-variant": "#dbdddd"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .step-active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #b22203;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="bg-[#EE4D2D] dark:bg-[#b22203] text-white font-['Inter'] antialiased tracking-tight shadow-sm backdrop-blur-md bg-opacity-95 docked full-width top-0 z-50">
+<div class="flex flex-col w-full px-4 py-2 max-w-7xl mx-auto">
+<div class="flex justify-between items-center py-2">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-bold text-white tracking-tighter">Shopee</span>
+<div class="hidden md:flex gap-4">
+<span class="text-white/90 text-sm font-medium hover:text-white/70 transition-opacity cursor-pointer">Download</span>
+<span class="text-white/90 text-sm font-medium hover:text-white/70 transition-opacity cursor-pointer border-l border-white/20 pl-4">Support</span>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative cursor-pointer hover:text-white/70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="absolute -top-1 -right-1 bg-white text-[#EE4D2D] text-[10px] font-bold px-1 rounded-full">2</span>
+</div>
+<div class="relative cursor-pointer hover:text-white/70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-white text-[#EE4D2D] text-[10px] font-bold px-1 rounded-full">3</span>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<!-- Checkout Progress Bar -->
+<div class="bg-surface-container-lowest shadow-sm mb-4">
+<div class="max-w-7xl mx-auto px-4 py-6">
+<div class="flex items-center justify-center space-x-4 md:space-x-12">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold">1</div>
+<span class="text-sm font-medium text-primary">Shipping</span>
+</div>
+<div class="h-[1px] w-8 md:w-24 bg-primary"></div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold">2</div>
+<span class="text-sm font-bold text-primary">Payment</span>
+</div>
+<div class="h-[1px] w-8 md:w-24 bg-surface-container-highest"></div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-xs font-bold">3</div>
+<span class="text-sm font-medium text-on-surface-variant">Review</span>
+</div>
+</div>
+</div>
+</div>
+<main class="max-w-7xl mx-auto px-4 pb-24 lg:flex lg:gap-6">
+<!-- Main Content Area -->
+<div class="flex-1 space-y-4">
+<!-- Shipping Address Section -->
+<section class="bg-surface-container-lowest p-6 shadow-sm border-t-4 border-primary">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<h2 class="text-lg font-bold tracking-tight">Delivery Address</h2>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<div class="font-bold text-on-surface">John Doe (+63) 912 345 6789</div>
+<div class="text-sm text-on-surface-variant mt-1">
+                            123 Maginhawa Street, Brgy. Central, Quezon City, Metro Manila, 1101
+                        </div>
+</div>
+<button class="text-primary text-sm font-bold hover:underline">Change</button>
+</div>
+</section>
+<!-- Order List Section -->
+<section class="bg-surface-container-lowest p-6 shadow-sm">
+<div class="grid grid-cols-12 text-sm text-on-surface-variant pb-4 border-b border-surface-container">
+<div class="col-span-6 md:col-span-7 font-bold text-on-surface">Products Ordered</div>
+<div class="hidden md:block col-span-2 text-center">Unit Price</div>
+<div class="hidden md:block col-span-1 text-center">Amount</div>
+<div class="col-span-6 md:col-span-2 text-right">Item Subtotal</div>
+</div>
+<!-- Product Item 1 -->
+<div class="grid grid-cols-12 py-6 items-center border-b border-surface-container-low">
+<div class="col-span-12 md:col-span-7 flex gap-4">
+<img class="w-20 h-20 object-cover rounded-sm" data-alt="close-up of a vibrant red performance running shoe with white sole against a clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMQX39T6XZSfUszq1jdfinKyxEuTvreuE38IZdXwoggPhnQctDOl9i-dxbVunCVI-JfPYy28IjdFvkUHVizWcngggN-J2V6BMiHHGXR13vHdeecCC4ZLGYI77kp5XwKLHrD8n2HXVmlcYlLP_wzRkFmEmAydcmtcgIP72AWfk243SLoeCLrEccrPUBQOpfwD5i7TvB8VSWZFrgY7QjYr-UZC9nIxNkSAsay5eBzgzJt-7yAwoKCngN6IIudtJY6X0FLk9-o2i_4yQ"/>
+<div class="flex flex-col justify-center">
+<h3 class="text-sm font-medium line-clamp-2">Premium Urban Runner - Limited Edition Performance Sneakers</h3>
+<span class="text-xs text-on-surface-variant mt-1">Variation: Red, 42</span>
+</div>
+</div>
+<div class="hidden md:flex col-span-2 justify-center items-center text-sm">$89.00</div>
+<div class="hidden md:flex col-span-1 justify-center items-center text-sm">1</div>
+<div class="col-span-12 md:col-span-2 text-right text-sm font-bold md:font-normal mt-2 md:mt-0">$89.00</div>
+</div>
+<!-- Product Item 2 -->
+<div class="grid grid-cols-12 py-6 items-center">
+<div class="col-span-12 md:col-span-7 flex gap-4">
+<img class="w-20 h-20 object-cover rounded-sm" data-alt="sleek modern minimalist white analog watch with leather strap on a soft grey surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Heb5Li8JhbFbdrpJynqRShdHgG9eTbjBcEL38kM1qgOo-HMtNnJ08zIUIBX2aRs1PkGDC3sL7KDFSMjiDWzt7InUnWFCwHZG43TQ7oO9CdTXTUpYhjhUeeuMRkeBGLZJbe3sKSo2-rQEli5zLZFkj_5qRYZC6h5_5JUcN4WdKdPUXipVGT2KMCU4DT_xJZrs2iUWxQa9OS2hFZ2sfD1Z5TBdssTb7dFwgbq5O3WkXqsZvH3K1UXxpgI2Y88904BgrARe9eaiJrA"/>
+<div class="flex flex-col justify-center">
+<h3 class="text-sm font-medium line-clamp-2">Minimalist Essential Timepiece - Arctic White</h3>
+<span class="text-xs text-on-surface-variant mt-1">Variation: Silver Mesh</span>
+</div>
+</div>
+<div class="hidden md:flex col-span-2 justify-center items-center text-sm">$145.00</div>
+<div class="hidden md:flex col-span-1 justify-center items-center text-sm">1</div>
+<div class="col-span-12 md:col-span-2 text-right text-sm font-bold md:font-normal mt-2 md:mt-0">$145.00</div>
+</div>
+</section>
+<!-- Payment Method Section -->
+<section class="bg-surface-container-lowest p-6 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-lg font-bold tracking-tight">Payment Method</h2>
+</div>
+<div class="flex flex-wrap gap-3 mb-8">
+<button class="px-4 py-2 border-2 border-primary text-primary text-sm font-bold relative">
+                        Credit / Debit Card
+                        <span class="absolute bottom-0 right-0 w-0 h-0 border-t-[12px] border-t-transparent border-r-[12px] border-r-primary"></span>
+<span class="absolute bottom-0 right-0 text-white text-[8px] material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 10px;">check</span>
+</button>
+<button class="px-4 py-2 border border-surface-container-high text-on-surface-variant text-sm hover:border-primary transition-colors">Cash on Delivery</button>
+<button class="px-4 py-2 border border-surface-container-high text-on-surface-variant text-sm hover:border-primary transition-colors">ShopeePay</button>
+<button class="px-4 py-2 border border-surface-container-high text-on-surface-variant text-sm hover:border-primary transition-colors">Online Banking</button>
+</div>
+<div class="bg-surface-container-low p-6 rounded-sm">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="credit_card">credit_card</span>
+<span class="text-sm font-bold">Add New Card</span>
+<div class="flex gap-2 ml-auto">
+<img alt="Visa" class="h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAecq8rWggxx529h3XMu0DCqIad5wA3mqvKOX1q9OjGtMNO3mgpX_1YbMq3vaSYH7k4L67PgFR8_7MTpb-NDWfyYvhOPhQ9_YL95YU6PmjBwH11Q5LUAaJLvxGfeaK6p72WJQLvOuH7joZEPl-lPfAKKCmD-HNer1CzozbIuKIlRHPYvo7nLD01liYY2g7j-v7ssH6cYyDW3kb-kjPMlMy4tm-O0sxw8JUqi5d9-CAATgfiO7XmpmT01MD6BYnUojn8zF6fVSugp4o"/>
+<img alt="Mastercard" class="h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByJ0Qyp1Q8NxCKM_75TgFuVqAuzP73qMSRmWZcbc_8AraIHAxmvJ8F0t1kCqW3Zc-m5i8gnkD5zrTmKzmXIlFZLMipFoU-ATCbFU-UMJPdbAv6JCj9BPISyKVNc49mkc7h9WSJZda18-m39x18H38JkWrNGWRXnRiVzaOg22-8vmKIYPF-jxwH6EWvn8PmXIYRLoLv0awD_SIWUjDakzVExDLF-OqiQItKkIqhDbTz8j2MXSn7CDVRRkPIY1I343ouKmuJgfcvJ0o"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="col-span-2">
+<label class="block text-xs font-bold text-on-surface-variant mb-1">CARD NUMBER</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant/20 rounded-sm py-2 px-3 text-sm focus:ring-primary focus:border-primary" placeholder="XXXX XXXX XXXX XXXX" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-1">EXPIRY DATE</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant/20 rounded-sm py-2 px-3 text-sm focus:ring-primary focus:border-primary" placeholder="MM/YY" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-1">CVV</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant/20 rounded-sm py-2 px-3 text-sm focus:ring-primary focus:border-primary" placeholder="***" type="password"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Sidebar / Total Summary -->
+<aside class="lg:w-96 mt-6 lg:mt-0 space-y-4">
+<!-- Voucher Section -->
+<section class="bg-surface-container-lowest p-6 shadow-sm border-l-4 border-tertiary">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="confirmation_number">confirmation_number</span>
+<h3 class="font-bold">Shopee Voucher</h3>
+</div>
+<div class="flex gap-2">
+<input class="flex-1 bg-surface border-none text-sm py-2 px-3 focus:ring-1 focus:ring-tertiary" placeholder="Enter Voucher Code" type="text"/>
+<button class="bg-tertiary text-white px-4 py-2 text-sm font-bold hover:bg-tertiary-dim transition-colors">Apply</button>
+</div>
+</section>
+<!-- Final Summary -->
+<section class="bg-surface-container-lowest p-6 shadow-sm sticky top-20">
+<h2 class="text-lg font-bold mb-6 tracking-tight">Order Summary</h2>
+<div class="space-y-3 text-sm border-b border-surface-container-low pb-6">
+<div class="flex justify-between text-on-surface-variant">
+<span>Merchandise Subtotal</span>
+<span>$234.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Shipping Total</span>
+<span>$5.50</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Voucher Discount</span>
+<span class="text-primary">-$10.00</span>
+</div>
+</div>
+<div class="py-6 space-y-4">
+<div class="flex justify-between items-end">
+<span class="text-sm font-medium">Total Payment</span>
+<span class="text-2xl font-bold text-primary tracking-tight">$229.50</span>
+</div>
+<button class="w-full bg-primary hover:bg-secondary-dim text-white py-4 font-bold text-lg shadow-lg active:scale-95 transition-all">
+                        Place Order
+                    </button>
+</div>
+<div class="flex flex-col items-center gap-4 pt-4 border-t border-surface-container-low">
+<div class="flex items-center gap-2 text-[10px] text-on-surface-variant uppercase font-bold tracking-widest">
+<span class="material-symbols-outlined text-green-600" data-icon="verified_user" style="font-size: 16px;">verified_user</span>
+                        Secure Checkout Guaranteed
+                    </div>
+<div class="flex gap-4 opacity-40 grayscale">
+<img alt="Paypal" class="h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD246PyKwwyUwPuVTH3OJb5_6N25-kEUtJutKay6FFrK5wHJSTOPQ42dvOrGHqm7ImPXuys7N6SivQ_RF8Haoc1pMR0i5hY3KfAPHgWG-zln6IIfV-xASadZO_GuP6p97yEBDFItyEtn3EAPP_M_P1gHSaRqHBKHaiMvn4b0mKgoSQsOjrmp0NCZYKT8SYWQSaqiMthjhtXmDPEsJfaaW8witGWZIBiNdiiCnmGK_I3Zb_STWUGnoFl41ajw_aa1wEJP4wyTjHu3Y0"/>
+<img alt="Visa" class="h-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuu-_74NP3A1TzjX7zKWl2S3nzFDjlwMqWuZR9vlgCuqd_mL_dZwLVG9rIsPxMMBUYlyeze98aJ-QXaXzRYwwd9lnwqXz6WIYGzpa1OVfjKLKm3zSuDw5dZeeav0ffOZADebXXicAjoHwS91hx2qzL56NpzXYJtJT3FtmOseNY7Q77XO4ekR5AgPDzfF7pp4Ua2GqVTeqf_QhMa8XEBASJSPHXh-aUayL__E9H1as2YkpOKqa-F28gjOXuj_nscR34-ZAyhPtb_Sw"/>
+<img alt="Mastercard" class="h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2ueVT0j8iGyfdqPsx2nhR66w52NcgswcBjlD8y-rEj2o4K7ENH7Z_k5Cc4ojryD7OfOWeniBzG6NcOocervhtvuVqRsFhpTDKuwXskO6BIx2854ZUa-vgjLpoGm89cKS_bItCvTjP2RFuB-u2JSto8peibxwg3e5JUAOj7KwTzGxQ3BLsVrLiRICBtAdfi3ataOgZFOBgj_40G0VCJ9wHHX2kfTTIWzDYXxdmf_IQPZ6dArZJF8Yq5bDBmYNj27ghVeObAaJ0Dxg"/>
+</div>
+</div>
+</section>
+</aside>
+</main>
+<!-- Footer Section -->
+<footer class="bg-[#f6f6f6] dark:bg-[#2d2f2f] border-t border-[#e1e3e3] dark:border-[#acadad]/15 w-full pt-12 pb-24">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-7xl mx-auto px-6">
+<div class="col-span-2 md:col-span-1">
+<span class="font-bold text-[#EE4D2D] text-lg">Shopee</span>
+<p class="text-xs font-['Inter'] leading-loose text-gray-500 mt-4">The leading e-commerce platform in Southeast Asia and Taiwan.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase mb-4">Customer Service</h4>
+<ul class="space-y-2">
+<li><a class="text-xs text-gray-500 hover:text-[#EE4D2D] transition-colors underline decoration-[#EE4D2D] underline-offset-4" href="#">Help Centre</a></li>
+<li><a class="text-xs text-gray-500 hover:text-[#EE4D2D] transition-colors" href="#">Payment Methods</a></li>
+<li><a class="text-xs text-gray-500 hover:text-[#EE4D2D] transition-colors" href="#">Shopee Coins</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase mb-4">About Shopee</h4>
+<ul class="space-y-2">
+<li><a class="text-xs text-gray-500 hover:text-[#EE4D2D] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-xs text-gray-500 hover:text-[#EE4D2D] transition-colors" href="#">Seller Centre</a></li>
+<li><a class="text-xs text-gray-500 hover:text-[#EE4D2D] transition-colors" href="#">Flash Deals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase mb-4">Follow Us</h4>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-gray-400 cursor-pointer hover:text-[#EE4D2D]" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-gray-400 cursor-pointer hover:text-[#EE4D2D]" data-icon="instagram">retweet</span>
+</div>
+</div>
+<div class="col-span-2 md:col-span-5 border-t border-surface-container-high pt-8 text-center">
+<p class="text-xs font-['Inter'] text-gray-400">© 2024 Shopee. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Mobile Navigation (Hidden on desktop) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-2 pb-safe bg-white/80 dark:bg-[#2d2f2f]/80 backdrop-blur-xl border-t border-gray-100 dark:border-gray-800 z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+<div class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-medium font-['Inter']">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="text-[10px] font-medium font-['Inter']">Mall</span>
+</div>
+<div class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="live_tv">live_tv</span>
+<span class="text-[10px] font-medium font-['Inter']">Live</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#EE4D2D] font-bold scale-110">
+<span class="material-symbols-outlined" data-icon="notifications" style="font-variation-settings: 'FILL' 1;">notifications</span>
+<span class="text-[10px] font-medium font-['Inter']">Notifications</span>
+</div>
+<div class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[10px] font-medium font-['Inter']">Me</span>
+</div>
+</nav>
+</body></html>

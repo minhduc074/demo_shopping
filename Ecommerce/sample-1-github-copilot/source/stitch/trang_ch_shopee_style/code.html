@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shopee | Shop Online for Electronics, Fashion &amp; More</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#9f1b00",
+              "on-primary-fixed-variant": "#5c0b00",
+              "surface-dim": "#d3d5d5",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#000000",
+              "on-error-container": "#510017",
+              "on-error": "#ffefef",
+              "surface": "#f6f6f6",
+              "surface-container-highest": "#dbdddd",
+              "surface-bright": "#f6f6f6",
+              "surface-container-low": "#f0f1f1",
+              "secondary-dim": "#9d1b00",
+              "on-tertiary-container": "#510c72",
+              "on-secondary": "#ffefec",
+              "primary-fixed": "#ff775b",
+              "outline-variant": "#acadad",
+              "error-dim": "#a70138",
+              "primary-container": "#ff775b",
+              "secondary-container": "#ffc4b7",
+              "tertiary": "#7f3f9f",
+              "outline": "#767777",
+              "primary-dim": "#9d1a00",
+              "secondary-fixed": "#ffc4b7",
+              "tertiary-container": "#de98ff",
+              "tertiary-fixed-dim": "#d08bf0",
+              "on-tertiary-fixed-variant": "#5b1a7b",
+              "on-tertiary": "#feeeff",
+              "error-container": "#f74b6d",
+              "inverse-primary": "#fd5837",
+              "on-surface": "#2d2f2f",
+              "primary": "#b22203",
+              "on-secondary-fixed": "#6b0f00",
+              "on-secondary-container": "#8e1700",
+              "secondary": "#b22101",
+              "tertiary-fixed": "#de98ff",
+              "surface-container-high": "#e1e3e3",
+              "on-primary-container": "#4b0700",
+              "on-surface-variant": "#5a5c5c",
+              "surface-container": "#e7e8e8",
+              "on-background": "#2d2f2f",
+              "on-tertiary-fixed": "#300047",
+              "surface-tint": "#b22203",
+              "error": "#b41340",
+              "background": "#f6f6f6",
+              "primary-fixed-dim": "#ff5c3b",
+              "inverse-surface": "#0c0f0f",
+              "inverse-on-surface": "#9c9d9d",
+              "on-primary": "#ffefec",
+              "tertiary-dim": "#723292",
+              "secondary-fixed-dim": "#ffb09f",
+              "surface-variant": "#dbdddd"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .product-card:hover .add-to-cart-btn { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<header class="bg-[#EE4D2D] dark:bg-[#b22203] text-white font-['Inter'] antialiased tracking-tight docked full-width top-0 z-50 shadow-sm backdrop-blur-md bg-opacity-95">
+<div class="flex flex-col w-full px-4 py-2 max-w-7xl mx-auto">
+<nav class="flex justify-between items-center text-xs py-1">
+<div class="flex gap-4">
+<a class="text-white/90 text-sm font-medium hover:text-white/70 transition-opacity" href="#">Download</a>
+<a class="text-white/90 text-sm font-medium hover:text-white/70 transition-opacity" href="#">Support</a>
+</div>
+<div class="flex gap-4">
+<a class="text-white/90 text-sm font-medium hover:text-white/70 transition-opacity" href="#">Register</a>
+<a class="text-white/90 text-sm font-medium hover:text-white/70 transition-opacity" href="#">Login</a>
+</div>
+</nav>
+<div class="flex items-center gap-8 py-3">
+<div class="text-2xl font-bold text-white tracking-tighter">Shopee</div>
+<div class="flex-1 relative group">
+<input class="w-full py-2.5 px-4 bg-white text-on-surface rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-fixed ring-inset" placeholder="Search for products, brands and shops" type="text"/>
+<button class="absolute right-1 top-1 bottom-1 px-5 bg-[#EE4D2D] hover:bg-primary-dim rounded transition-colors">
+<span class="material-symbols-outlined text-white" data-icon="search">search</span>
+</button>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative cursor-pointer group scale-95 active:duration-150">
+<span class="material-symbols-outlined text-3xl" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-white text-primary text-[10px] font-bold px-1.5 py-0.5 rounded-full border border-primary">3</span>
+</div>
+<div class="cursor-pointer group scale-95 active:duration-150">
+<span class="material-symbols-outlined text-3xl" data-icon="notifications">notifications</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 pt-4 pb-24">
+<section class="grid grid-cols-12 gap-2 mb-8 h-[320px]">
+<div class="col-span-8 relative overflow-hidden rounded bg-surface-container-low shadow-sm group">
+<img alt="hero promotion banner" class="w-full h-full object-cover" data-alt="vibrant lifestyle e-commerce banner with high energy models showcasing summer fashion in a bright sunlit studio with orange accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbkqRxeSexj_fvQdS6MzT317bLmZWrkTsyudkbzuqmXNTRElJFvvrhGBtjuEE-JtNzAM51albGrgbKGlbjyDBdjuuvWjkjP_pTFG2CKNs57pGMNuI0NBT2V25ajMP67Krz3FXW0bAYDJCCfyo22CVWF933CydL0mZWFil7bjDvCW7eaZH-wHpxRCAiTxQOexAptW6N9av_hw0OjhYPMdn2Xlk1cwVN-ZoRjGsBV4sq6o5YomwRyJoRUhl_Uvv6JijYqfFbX9Hl37s"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent flex items-center p-12">
+<div class="max-w-md">
+<h2 class="text-white text-5xl font-extrabold leading-tight mb-4 tracking-tight">SUMMER <br/>SUPER SALE</h2>
+<p class="text-white/90 text-lg mb-6">Up to 70% Off Everything</p>
+<button class="bg-white text-primary px-8 py-3 font-bold rounded shadow-lg hover:bg-primary-container transition-all">Shop Now</button>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 flex gap-2">
+<div class="w-2 h-2 rounded-full bg-white"></div>
+<div class="w-2 h-2 rounded-full bg-white/50"></div>
+<div class="w-2 h-2 rounded-full bg-white/50"></div>
+</div>
+</div>
+<div class="col-span-4 flex flex-col gap-2">
+<div class="flex-1 bg-tertiary-container rounded overflow-hidden relative group">
+<img alt="electronics promotion" class="w-full h-full object-cover" data-alt="close up shot of modern silver wireless headphones on a clean purple background with tech aesthetic neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJnMf4U3SQW1b1gqx2_mDDxzgROwL117qp0ZMCONaB-OXRLvgM47Tb5rpl1lDCPXR-u5-_fqQ93dyjVlKeCIuvdEpydLUlYJAzpM9gqDpDgKfPwbYl72XhNu8JAomUMouz2iW6v6I_tUCDEIll5bz4BVyeZDuXknfm8u6aTzHtU79EJ3rNiej8s3zxfUpHxvHtQeG9qt1LcNSrzuObJ3dknWBBobmZzkA9l8FkxBiOj9HK256SydD5M6xbS3th9DX25QkeJPm5WLk"/>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<span class="text-tertiary font-bold text-sm bg-white/80 w-fit px-2 py-0.5 rounded mb-2">TECH DEALS</span>
+<h3 class="text-on-tertiary-container text-xl font-bold">New Audio Arrivals</h3>
+</div>
+</div>
+<div class="flex-1 bg-secondary-container rounded overflow-hidden relative group">
+<img alt="beauty promotion" class="w-full h-full object-cover" data-alt="array of luxury skincare products on a reflective warm surface with soft bokeh lighting and orange floral accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfK0QkHRbjyKjzkQ2NFOxrmAsNlzcrhWmQ0N68BMtnaAp4HarVFpiTDQ0X3ST59fRvlrLnDHF8808YUGku2JQSqiGuDzZnRtua4wByz7ThV-SwCEdXdRxjWxn1iDKiBunfFhITpG2b9c6OJNOaQokwjJ9xiNQhOAhdqKbLmUOuPHVSwFbzBV6DkpY_-XKs4u461OM58S5jHu5hhJEAjklx8LszyoF-b4qDZtWlA2ejglizxYuWbU2OLwwtBAdT3eeJesyhTdBHhAM"/>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<span class="text-secondary font-bold text-sm bg-white/80 w-fit px-2 py-0.5 rounded mb-2">BEAUTY HUB</span>
+<h3 class="text-on-secondary-container text-xl font-bold">Skincare Essentials</h3>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white rounded mb-8 p-4 shadow-sm overflow-x-auto hide-scrollbar">
+<div class="flex justify-between items-center gap-4 min-w-[800px]">
+<div class="flex flex-col items-center group cursor-pointer w-24">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="apparel">apparel</span>
+</div>
+<span class="text-xs text-center font-medium">Fashion</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer w-24">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="devices">devices</span>
+</div>
+<span class="text-xs text-center font-medium">Electronics</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer w-24">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="face">face</span>
+</div>
+<span class="text-xs text-center font-medium">Beauty</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer w-24">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="chair">chair</span>
+</div>
+<span class="text-xs text-center font-medium">Home &amp; Living</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer w-24">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="sports_esports">sports_esports</span>
+</div>
+<span class="text-xs text-center font-medium">Gaming</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer w-24">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="local_mall">local_mall</span>
+</div>
+<span class="text-xs text-center font-medium">Supermarket</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer w-24">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="watch">watch</span>
+</div>
+<span class="text-xs text-center font-medium">Accessories</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer w-24">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="toys">toys</span>
+</div>
+<span class="text-xs text-center font-medium">Toys &amp; Kids</span>
+</div>
+</div>
+</section>
+<section class="bg-white rounded mb-8 shadow-sm overflow-hidden">
+<div class="flex items-center justify-between p-4 border-b border-surface">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary font-bold" data-icon="bolt">bolt</span>
+<h2 class="text-xl font-bold text-primary uppercase italic tracking-tighter">Flash Sale</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="bg-on-surface text-white font-bold px-1.5 py-0.5 rounded-sm text-sm">01</span>
+<span class="font-bold text-on-surface">:</span>
+<span class="bg-on-surface text-white font-bold px-1.5 py-0.5 rounded-sm text-sm">24</span>
+<span class="font-bold text-on-surface">:</span>
+<span class="bg-on-surface text-white font-bold px-1.5 py-0.5 rounded-sm text-sm">52</span>
+</div>
+</div>
+<a class="text-primary text-sm font-medium hover:underline flex items-center" href="#">See All <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span></a>
+</div>
+<div class="grid grid-cols-6 gap-2 p-4">
+<div class="flex flex-col group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface mb-2">
+<img alt="product" class="w-full h-full object-cover" data-alt="modern minimalist smart watch with black silicon strap on a clean white background with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHJQ8qfxI1dTXYkcr15rAYpIh2_9XMlUWksBui1QWhrOn8UGUAhzIrgvaviTBvJS72srhW-a4YhEsW4v8552EEJOXZgJQNz9WnRXyl1FiQPQaQWr975NF0Q8kq9-Ze3eEMp1APSclMkO1iT2s31dKg8uZizXmPxckJ7zexPGlGv7m6itp23v3MkiSUkPnAZqh4xpMZTKss_rfMkjLcSAyu6GxIfkwREseiBTSdVpmqfB8mBSGSprDxuSNd7akj5sh08UMixmnTVho"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">
+                            -45%
+                        </div>
+</div>
+<div class="px-1">
+<div class="text-primary font-bold text-lg leading-none mb-1">$29.90</div>
+<div class="w-full bg-gray-200 h-3 rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-primary w-3/4"></div>
+<span class="absolute inset-0 flex items-center justify-center text-[8px] font-bold text-white uppercase">24 Sold</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface mb-2">
+<img alt="product" class="w-full h-full object-cover" data-alt="compact portable bluetooth speaker in teal color with mesh texture and carry loop on a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7GYE6EIPPuH3UhP6sRXn5oKE3vzhfKObWLCK8Nj_U_QPd_PcGAgaerKhbb_iUf02K46c4UGyrTyAG81mIXLq7C4_WYKpi8rqK2Bu6dEXhzHBJ2fxKe__0wwa0byAtAUKDcn4uKLpymCFOkt5Rf11bnaJx1L6iqDnOL7b3IG2c481Aryb7e-L63S_w_FeqD5jw8NQCxsPrxXtYXxbfJkZ-vK_vCh6mf9pCuCMbc15XA5C1RyX_IO9HKnOoTk-beh-AytVTf4-rxls"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">
+                            -30%
+                        </div>
+</div>
+<div class="px-1">
+<div class="text-primary font-bold text-lg leading-none mb-1">$15.50</div>
+<div class="w-full bg-gray-200 h-3 rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-primary w-1/2"></div>
+<span class="absolute inset-0 flex items-center justify-center text-[8px] font-bold text-white uppercase">12 Sold</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface mb-2">
+<img alt="product" class="w-full h-full object-cover" data-alt="set of luxury makeup brushes with rose gold handles and soft brown bristles on a light pink surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAup-4DRY5GgJsugqh1Aa-MsF8K2OK5iIFZB98_Fiq-x_o9vvskSQiGvsuHykJL769ExBGPIr8c4qgfPW0CtepeffcAX6F6Nu_7zajLVxj1vuz5g75xEGrOMUKOW6dAJ6onbA9bMwVPGQ9wgXU4sUohtm5TFH21dOnux7Iguyff1A6hvv71XWUfSyP-IrnrXANQZ4mg4OFKHcdt_ThncLKGLuhOdAvMW2RwivnpObOxJhUMkb8U2O-OeeFDAb-inCr0Q9RRva0p4Oo"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">
+                            -60%
+                        </div>
+</div>
+<div class="px-1">
+<div class="text-primary font-bold text-lg leading-none mb-1">$12.00</div>
+<div class="w-full bg-gray-200 h-3 rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-primary w-[90%]"></div>
+<span class="absolute inset-0 flex items-center justify-center text-[8px] font-bold text-white uppercase">48 Sold</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface mb-2">
+<img alt="product" class="w-full h-full object-cover" data-alt="white wireless ergonomic mouse on a clean workspace with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI9Rn8rCDjjQf4SllsnaYWn-Mf-psGodfhXPLvljU_dssZZfWgUCn3yGSu8-dloFPR0cXSk0KhMvEqagIr7DAked4_gDYyKfbjQ1UVDcNJFNle1fRvjIYBTp7iTNCzCwKMLtjRw7JrC3ZcvjW_Qe8r0bSeMzLfcjr2mfON9mqGZh54cnGrxujC1LdX8Tq3wFmw8TAxR1sDSs8K8bT3MAIMAlr0zqgxzMiNaTb3wUg6yLpBd7bXawnbyVCOGbFHDo0nB1PZjHnVMAI"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">
+                            -25%
+                        </div>
+</div>
+<div class="px-1">
+<div class="text-primary font-bold text-lg leading-none mb-1">$45.00</div>
+<div class="w-full bg-gray-200 h-3 rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-primary w-1/4"></div>
+<span class="absolute inset-0 flex items-center justify-center text-[8px] font-bold text-white uppercase">5 Sold</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface mb-2">
+<img alt="product" class="w-full h-full object-cover" data-alt="pair of stylish retro sunglasses with tortoiseshell frames and green lenses on a sunny stone background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5guLpGhlt31ZTwvd7y-N9I3UEk7AK-ql3VGGxQJvh02aA3nsM1ET_F0SwoJ58PcHiy3tNhYNmeJA6CZ5qItLPtZ9txgNpOhdpn65ZTl7S0gnaD922fjvAevw6rGFMIr8m0o57IaSJaEiecroZR4aSicPanqA5P1qgd--Trv9VfRjJBcArTOLPXu4RqDGvxhBT4QhWPOhWtmYrFwQ1OMdviSfLUCFSbrOM5VGn1la1pu8aFcZz1ai2k5wdhDZ_9-qIsi1EXEpkfqE"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">
+                            -50%
+                        </div>
+</div>
+<div class="px-1">
+<div class="text-primary font-bold text-lg leading-none mb-1">$8.90</div>
+<div class="w-full bg-gray-200 h-3 rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-primary w-full"></div>
+<span class="absolute inset-0 flex items-center justify-center text-[8px] font-bold text-white uppercase">SOLD OUT</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface mb-2">
+<img alt="product" class="w-full h-full object-cover" data-alt="stainless steel insulated water bottle in matte navy blue standing on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-tCn85LMVYQWmKD23uU6iT0ePwUq6bQAGQXRXIAzJTFX08Llym72m1kD5d8cdTQU3DcmbkYsxeLADm6A6ze6Ik4agfamNOTvFJZ7wAlIDCzQxrpyHLpuE9w5HVUOEg_lvddjgEZAowh3y24C0YB1SUVZghU9WNRwug7TzLmSFEi5iKi5MqPXseL623zATG6QAuCGJsJ9mihlUdr-8q0EYIRm7eXBmg43CEz8fr7UDP3c0pNxV7CU02l5e_tgM0YxTekkfTrGnX_M"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">
+                            -15%
+                        </div>
+</div>
+<div class="px-1">
+<div class="text-primary font-bold text-lg leading-none mb-1">$18.20</div>
+<div class="w-full bg-gray-200 h-3 rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-primary w-2/3"></div>
+<span class="absolute inset-0 flex items-center justify-center text-[8px] font-bold text-white uppercase">31 Sold</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-4 flex items-center gap-2 border-b-4 border-primary pb-2 w-fit">
+<h2 class="text-lg font-bold text-primary uppercase">Daily Discover</h2>
+</section>
+<section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Summer T-shirt" class="w-full h-full object-cover" data-alt="high quality white cotton t-shirt flat lay on a textured gray background with minimal styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgHATCHG-fSOx9uXNdS47mncdyTcyO5DLIpZ28nSb8dIrR7HsK16zRwaYn7u2JQUifkvcVh3M-zIbNYmpVWrD19yDcfC3nR0QoKrhxqFBL-uc0I-wxGxUTXkr5Vfk95eyCMAtdxO4fuaC1Om9bJSZiTPD0yiKWVIRIgnomXBQ0n5B-2qU0lDI55th-9bnpdrxyqIYd_R5fBRXbEhdiDW7w8SAP38gP3XjXVB4lB1QzZz_6Q4CriaJYM04PFfErR2hU2LO-r2SS01s"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-20%</div>
+<div class="absolute top-0 left-0 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-1">Mall</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Premium Oversized Cotton T-Shirt - Breathable Summer Wear for Men &amp; Women</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$12.50</span>
+<span class="text-[10px] text-outline">Sold 1.2k</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Face Cream" class="w-full h-full object-cover" data-alt="aesthetic tube of face moisturizer in pastel colors against a clean bathroom backdrop with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7_jKXJCpOlv8trfBmVGI8PYnfDwqOaNeodrGdUspAPKGkmqfzdZBHlBOCYAMmTWNZTwcJ0J8D2WJdZDWVgA4XYr2V0Iwiu0EH3CrhX75eVTcm0JXTIEk87tnKkuhl-rZxM1fySCLKdYC4TSA0CmxVPQfgS0TLugIzNpK7uiCY8EvPVSzzkfq0hymACO0xtPgpxYdaAGaAv6oP1tEBAmk0yQOZhJCz_3BmvKveRicoBRsrE8QAcY1Adbr7oFenDqjHE0HQTGf3H1w"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-50%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">HydroBoost Facial Moisturizer 50ml - 24H Intense Hydration for Sensitive Skin</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$24.00</span>
+<span class="text-[10px] text-outline">Sold 856</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Gaming Mouse" class="w-full h-full object-cover" data-alt="sleek black RGB gaming mouse with glowing purple lights on a dark carbon fiber texture pad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF-7FLjtwD7-TFF1AiD3NZXnPmrWLaWNNRRRxvpRZWr_zZH5RwH1MYFjHlcAChhw0E-Al4FZXWnTHY21jkFuEolZ-rwY6U6D6LmT8waRlY9bna_IASRDAyHNJvu_PKMKYehZXN4ql6LkFCBAyMC_vvNlrYGBQn6fT1ImsxC4lW2MkZQPb4h-cA7ryKQNASoACg1tLYvU8CMRAC9sgTSd0a0VcZf2IzSZnipz33Pnk3PPgiSTUnRzuGNPtQ-jlUQuLnEH7pbaNq2F8"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-15%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Razer DeathVibe Gaming Mouse - 16000 DPI Optical Sensor with RGB Lighting</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$59.90</span>
+<span class="text-[10px] text-outline">Sold 3.4k</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Yoga Mat" class="w-full h-full object-cover" data-alt="rolled up eco-friendly cork yoga mat on a bright wooden floor in a minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEh7nbiFRuG3QEqBB0Ig7LvzMAkOv1_LlupVzKRoaNo_2_nsnMrFmMppGms1ZYIBnhs2KUGqEny7BBEytTRNpLyZtP8_IynSYSuPMYSeqI5ckP9pGrWLqo0F8A_LPs7C_bmaZ-Prh8laVeHSi-JhI_O3-qeDFduEXHPxqkbuPAjs_ZuO-B3hQRYXPQET4ul4Vgwy0lxDGW_JBVlW-S9Rd2vrTqyljm_w_ZL_NmoV4LsP__S4sgfEZPHI8MHGWsKAS7lFlmiI-vqwg"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-30%</div>
+<div class="absolute top-0 left-0 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-1">Mall</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Eco-Friendly Non-Slip Yoga Mat - 6mm Thick TPE Cushion for Exercise &amp; Pilates</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$19.99</span>
+<span class="text-[10px] text-outline">Sold 121</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Coffee Maker" class="w-full h-full object-cover" data-alt="modern matte black pour-over coffee maker set with glass carafe and metal filter on a kitchen counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8E9373tyqb7mSTNCWWne81S6xtFrn3_KHSlEpE-UH9LH5LLRJnhpnrEAlTiTTrwnvHVx1wUtiRUcCofemhXWRxLoOm69KyRawIuMkT1N1uPkJ0R4wdtyCJSQloBqE3qicgQzqqe-wM--5JRNvdAg0_mDY1faJSRp8OUePaIMdfe2J5tdx_xnsKFouhss8zOPA_twKdXGpTUeS0KgNv0xfwIZZOcqy03e1sEyhYhgtIdF2k2oMos8I2VtdFV995XXWoxYAqbVuS0w"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-10%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Barista Grade Pour-Over Coffee Dripper Set - Manual Brewer with Steel Mesh Filter</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$35.00</span>
+<span class="text-[10px] text-outline">Sold 2.1k</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Canvas Tote" class="w-full h-full object-cover" data-alt="durable cream canvas tote bag with brown leather handles hanging on a white wooden wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRTCnaNXYtWwsBpfps-kZzYYI8pIFIkJF9xqQsy3DrmbBZ0OLmZknBzVXgN3Z-SGOojy0IB_d2EM7rxPhUHM1eDdYwnDjd62ZDjblKTdpGCXemqFrwePy48ikCdAeoSbjHhbD-yPCnIPUtnNFJmyUUapN1VxF184qPYxmUL64l2js7iTHPCCKC2qcI9lLcacxcpC_qWgEETSG53b3IewBHbmyiTmQlJydb1gsBOnRgZeTVBVXSwvuS-YBADHBOkXcjkYpNCWvy0zY"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-40%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Heavy Duty Canvas Tote Bag - Eco-Friendly Shopping Bag with Reinforced Handles</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$5.50</span>
+<span class="text-[10px] text-outline">Sold 5.7k</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Desk Lamp" class="w-full h-full object-cover" data-alt="minimalist white LED desk lamp with adjustable neck lighting up a dark wooden desk with books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5rkcY1BPb3OpM49ryASJHSy6gcJ7RGkpNo39KlSJZlv0anJwCrZBDZPeOqWaiIII6IGdsMxGAtLwdcJS7axYMAOTog3JyX6AjQHIEr3eLbA_2ikC0cKYNttDwolrFx6P6USR6zKDBher4E6cuMSLI14UWy4atC9pXzhmqaY4n6gmNEwkMBxilchE_P6_weX3QV73PdvR0NjUOnOJE693_NfNQA_BbHeByu2DZFPFTc_6p_Su9bB1-ZJYXUR_F0TVsZGHE_I6AWQ4"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-65%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Smart LED Desk Lamp - Eye-Care Technology with 5 Color Modes &amp; USB Charging</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$18.90</span>
+<span class="text-[10px] text-outline">Sold 432</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Scented Candle" class="w-full h-full object-cover" data-alt="luxury scented candle in a frosted glass jar with golden lid on a marble tray next to dried flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOPAL4Dfy2FHc8zYxFVgnDDzs_xxtn-aZYU2G3OQUvUcTRJwLCEOIW7l6lbBfC_cyNN4A1FfPFdwLE1uxwYioxWACY8i1Nw58dRaogFPyRmTUClD3omHXXM-Fqc70YFxVa_PnMnv-FapWNFQhv655mO5bixJ_pWHM_8ylFK_OFLRe2MBspMOoT9-M_QpqxKWc9J0sWv-YDu7tZ0MbPnWNP7AcMjYn1MJN1qw-sPij3uqFWtAz1jPkv5ekbh8LDg2lE_kihsnO90iA"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-25%</div>
+<div class="absolute top-0 left-0 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-1">Mall</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Organic Soy Wax Scented Candle - Lavender &amp; Bergamot Essential Oils for Relaxation</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$14.50</span>
+<span class="text-[10px] text-outline">Sold 1.9k</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Phone Case" class="w-full h-full object-cover" data-alt="transparent shockproof phone case with reinforced corners on a modern flagship smartphone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlL4IhJnEO4iIUCHEARlmkHdCPj-lwb4NUSQX3VnWXeMY_KjvRca5LBFzuNRgV3UAFjSjIIeaLC2ShDjC-aVTMp1DP9mo4Jf7ip0f3upLHHJMLVl4B5vMKassV0KdpLeVNuhm739y4vVssajd6UYqfiwgA1MirNwpVlIpsg1su57Vhx4UhAr8kD2eE3XYAxgNPKdiePWgYMknxCw_Qg_ipfk9Nf8o_zNzyTGFI7qAQuhvaMfLFr_OJsMGGrey2P4vEYsAim3islL4"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-80%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Ultra-Thin Liquid Silicone Case for iPhone 15/14/13 Series - Soft Touch &amp; Drop Protection</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$2.99</span>
+<span class="text-[10px] text-outline">Sold 15k+</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Notebook" class="w-full h-full object-cover" data-alt="classic hardbound notebook with leather cover and elastic closure on a workspace with a fountain pen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3VsJb980o877lMMtNoy3KWeWsJF5q5zud77xH87pFRbWPrvYPy-a3zA0Q-o9dc5Pv7k8OMi-HJtz5rE2DmDGMm2x1T2kvzs4tnvsC9lqX8Osi5oz23Yjo5QRtS8PrtrbmioLz3WA3HY9uipc8BzuAZmKz5NjoqhGaa7_beSq9OsPzMq6IbVEWykpsL5woNx0RV3qY4eIhm3qyX0ElGOmu_GIF9kTZoefrNBw8FRo71drNycudfOgyOIfLT6877sWj2fZXpD3EHZs"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-15%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Premium Dotted Journal - 160 GSM Ink-Proof Paper for Bullet Journaling &amp; Sketching</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$16.00</span>
+<span class="text-[10px] text-outline">Sold 642</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Water Bottle" class="w-full h-full object-cover" data-alt="aesthetic matte finish pastel water bottle with time markers on the side standing in a sunny kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6KI9GilgmZ9HqCHN4a_6wsB50i8mcEOkLxo02jbk3-_NhGSg99TN5X2yfH-weQ1Oh3d3Yx1wvTe6z7GbpuPyACmeda7Pcx1xeNVUTtEOe3KqYikzOfRZR4yI-PDjie3EiVhmfRE5LF5IWK0bziiKAlYEB-IdgCg-u9NSwhrxAL4PcbLVIDXKlHLuBxsjChSBDNB92hOEIPJiAYl16USL-w1r1isT53i5N4Dd65_lQHGyIkddpNTNvrBualGjMZ7LycKlIHDe2HvA"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-45%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Motivational Water Bottle 1L - BPA-Free Tritan Plastic with Straw &amp; Time Marker</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$9.50</span>
+<span class="text-[10px] text-outline">Sold 2.8k</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden flex flex-col relative group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-surface-container-low">
+<img alt="Sunglasses" class="w-full h-full object-cover" data-alt="modern cat-eye sunglasses with thick black frames and dark lenses on a bright summer beach background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN87nxS2MQTKAMf7H3o-bbHCSv32UorJZ_LV8kSCCwevzX51NAEo9piXm7VACj73jRvQIuD5CdM0qwAhUE1cvElgVorCiblmXrcfliqX5iQgq_ohwxZS9mCyV48445mz-xzLvIBumVzWNFelPivLcTGS7hsjaYfBYjGHhcRGr212Kd8iJu0HofbxKb4i6C0pTJxxlOxQpZr657NF2XJYBwMbI3vrUbzrnT-Iv-t-Ww2O4E9b199TZGB2bBIg_GBfiq2cB8tGzPjrA"/>
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1">-30%</div>
+</div>
+<div class="p-2 flex flex-col flex-1">
+<h3 class="text-xs line-clamp-2 mb-2 text-on-surface leading-snug">Cat-Eye Polarized Sunglasses for Women - UV400 Protection Stylish Summer Eyewear</h3>
+<div class="mt-auto">
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-base">$11.20</span>
+<span class="text-[10px] text-outline">Sold 3.1k</span>
+</div>
+</div>
+</div>
+<button class="add-to-cart-btn absolute inset-x-0 bottom-0 bg-primary text-white py-2 font-bold text-xs opacity-0 translate-y-full transition-all duration-200">ADD TO CART</button>
+</div>
+</section>
+<div class="flex justify-center mt-8">
+<button class="bg-white border border-outline-variant text-on-surface-variant px-12 py-3 rounded-sm hover:bg-surface-container-low transition-colors font-medium">See More</button>
+</div>
+</main>
+<footer class="bg-[#f6f6f6] dark:bg-[#2d2f2f] w-full pt-12 pb-24 border-t border-[#e1e3e3] dark:border-[#acadad]/15">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-7xl mx-auto px-6 text-xs font-['Inter'] leading-loose">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#2d2f2f] dark:text-[#f6f6f6] uppercase tracking-widest text-[10px]">Customer Service</h4>
+<ul class="flex flex-col gap-1 text-gray-500 hover:text-[#EE4D2D]">
+<li><a class="hover:text-primary underline decoration-[#EE4D2D] underline-offset-4" href="#">Help Centre</a></li>
+<li><a class="hover:text-primary underline decoration-[#EE4D2D] underline-offset-4" href="#">Shopee Blog</a></li>
+<li><a class="hover:text-primary underline decoration-[#EE4D2D] underline-offset-4" href="#">Shopee Mall</a></li>
+<li><a class="hover:text-primary underline decoration-[#EE4D2D] underline-offset-4" href="#">Payment Methods</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#2d2f2f] dark:text-[#f6f6f6] uppercase tracking-widest text-[10px]">About Shopee</h4>
+<ul class="flex flex-col gap-1 text-gray-500 hover:text-[#EE4D2D]">
+<li><a class="hover:text-primary underline decoration-[#EE4D2D] underline-offset-4" href="#">About Us</a></li>
+<li><a class="hover:text-primary underline decoration-[#EE4D2D] underline-offset-4" href="#">Shopee Careers</a></li>
+<li><a class="hover:text-primary underline decoration-[#EE4D2D] underline-offset-4" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#2d2f2f] dark:text-[#f6f6f6] uppercase tracking-widest text-[10px]">Payment</h4>
+<div class="flex flex-wrap gap-2">
+<div class="w-10 h-6 bg-white rounded shadow-sm flex items-center justify-center p-1">VISA</div>
+<div class="w-10 h-6 bg-white rounded shadow-sm flex items-center justify-center p-1">MC</div>
+<div class="w-10 h-6 bg-white rounded shadow-sm flex items-center justify-center p-1">PP</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#2d2f2f] dark:text-[#f6f6f6] uppercase tracking-widest text-[10px]">Logistics</h4>
+<div class="flex flex-wrap gap-2">
+<div class="w-10 h-6 bg-white rounded shadow-sm flex items-center justify-center p-1">SPX</div>
+<div class="w-10 h-6 bg-white rounded shadow-sm flex items-center justify-center p-1">DHL</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#2d2f2f] dark:text-[#f6f6f6] uppercase tracking-widest text-[10px]">Follow Us</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary" data-icon="photo_camera">photo_camera</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary" data-icon="video_library">video_library</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-surface-container-high flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-gray-400 text-[10px]">© 2024 Shopee. All Rights Reserved.</div>
+<div class="font-bold text-[#EE4D2D]">Shopee</div>
+</div>
+</footer>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center py-2 pb-safe bg-white/80 dark:bg-[#2d2f2f]/80 z-50 backdrop-blur-xl border-t border-gray-100 dark:border-gray-800 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] md:hidden">
+<a class="flex flex-col items-center justify-center text-[#EE4D2D] font-bold transition-transform duration-200 scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-medium font-['Inter']">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="text-[10px] font-medium font-['Inter']">Mall</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="live_tv">live_tv</span>
+<span class="text-[10px] font-medium font-['Inter']">Live</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="text-[10px] font-medium font-['Inter']">Notifications</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[10px] font-medium font-['Inter']">Me</span>
+</a>
+</nav>
+</body></html>

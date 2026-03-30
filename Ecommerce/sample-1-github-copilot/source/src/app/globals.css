@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #b22203;
+  --color-primary-dim: #9d1a00;
+  --color-primary-container: #ff775b;
+  --color-primary-fixed: #ff775b;
+  --color-primary-fixed-dim: #ff5c3b;
+
+  --color-secondary: #b22101;
+  --color-secondary-dim: #9d1b00;
+  --color-secondary-container: #ffc4b7;
+
+  --color-tertiary: #7f3f9f;
+  --color-tertiary-dim: #723292;
+  --color-tertiary-container: #de98ff;
+
+  --color-error: #b41340;
+  --color-error-dim: #a70138;
+  --color-error-container: #f74b6d;
+
+  --color-surface: #f6f6f6;
+  --color-surface-dim: #d3d5d5;
+  --color-surface-bright: #f6f6f6;
+  --color-surface-container: #e7e8e8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0f1f1;
+  --color-surface-container-high: #e1e3e3;
+  --color-surface-container-highest: #dbdddd;
+  --color-surface-variant: #dbdddd;
+
+  --color-background: #f6f6f6;
+
+  --color-on-primary: #ffefec;
+  --color-on-primary-container: #4b0700;
+  --color-on-secondary: #ffefec;
+  --color-on-secondary-container: #8e1700;
+  --color-on-tertiary: #feeeff;
+  --color-on-tertiary-container: #510c72;
+  --color-on-surface: #2d2f2f;
+  --color-on-surface-variant: #5a5c5c;
+  --color-on-background: #2d2f2f;
+  --color-on-error: #ffefef;
+  --color-on-error-container: #510017;
+
+  --color-outline: #767777;
+  --color-outline-variant: #acadad;
+
+  --color-inverse-surface: #0c0f0f;
+  --color-inverse-on-surface: #9c9d9d;
+  --color-inverse-primary: #fd5837;
+
+  --color-shopee: #ee4d2d;
+
+  --font-sans: "Inter", sans-serif;
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.product-card:hover .add-to-cart-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
