@@ -8,6 +8,15 @@ Files added:
 - `styles.css` — basic layout styles
 - `images/` — screenshot assets (login, home, cart, checkout, payment)
 
+Quick inline preview from markdown viewers (GitLab/GitHub/VSCode):
+
+![Login](images/login.png)
+![Login Modal](images/login-modal.png)
+![Home](images/home.png)
+![Cart](images/cart.png)
+![Checkout](images/checkout.png)
+![Payment](images/payment.png)
+
 To preview locally:
 
 ```bash
