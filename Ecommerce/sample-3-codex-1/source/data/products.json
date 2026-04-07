@@ -1,0 +1,128 @@
+[
+  {
+    "id": "p1",
+    "slug": "ao-linen-voan-core",
+    "name": "Áo Linen Voan Core",
+    "category": "Thời trang nữ",
+    "description": "Phom áo nhẹ, chất liệu linen mềm, tông màu editorial cho ngày hè thanh lịch.",
+    "longDescription": "Thiết kế được định hướng như một editorial piece, giữ form gọn, tôn chất liệu và dễ phối trong nhịp sống thành thị.",
+    "price": 890000,
+    "compareAtPrice": 1120000,
+    "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+    ],
+    "accent": "#b22204",
+    "inventory": 24,
+    "rating": 4.9,
+    "sold": 128,
+    "tags": ["Bestseller", "Linen", "Look mới"]
+  },
+  {
+    "id": "p2",
+    "slug": "dam-satin-song-hong",
+    "name": "Đầm Satin Sông Hồng",
+    "category": "Bộ sưu tập mới",
+    "description": "Đầm satin rủ eo, sắc kem ấm, tạo chuyển động mềm và sang trọng.",
+    "longDescription": "Chất liệu satin có độ rơi đẹp, lên look ban ngày lẫn buổi tối và vẫn giữ được tinh thần thanh lịch tinh giản.",
+    "price": 1290000,
+    "compareAtPrice": 1590000,
+    "image": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "accent": "#165db2",
+    "inventory": 12,
+    "rating": 4.8,
+    "sold": 94,
+    "tags": ["New", "Satin", "Event"]
+  },
+  {
+    "id": "p3",
+    "slug": "set-blazer-do-gach",
+    "name": "Set Blazer Đỏ Gạch",
+    "category": "Công sở cao cấp",
+    "description": "Set blazer và quần suông, tông màu đỏ gạch đậm nhiệt và mạnh mẽ.",
+    "longDescription": "Một look power dressing nhưng vẫn mềm, hợp cho pitching, sự kiện và những ngày cần dấu ấn thị giác rõ ràng.",
+    "price": 1790000,
+    "compareAtPrice": 2150000,
+    "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=900&q=80"
+    ],
+    "accent": "#b22204",
+    "inventory": 8,
+    "rating": 4.95,
+    "sold": 61,
+    "tags": ["Limited", "Blazer", "Power look"]
+  },
+  {
+    "id": "p4",
+    "slug": "ao-khoac-crop-blue-note",
+    "name": "Áo Khoác Crop Blue Note",
+    "category": "Street luxe",
+    "description": "Áo khoác crop mang tinh thần đô thị, màu xanh điện tạo điểm nhấn sắc nét.",
+    "longDescription": "Tỷ lệ crop được cân đối để tôn dáng mà vẫn giữ được tính ứng dụng trong ngày.",
+    "price": 990000,
+    "compareAtPrice": null,
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "accent": "#165db2",
+    "inventory": 19,
+    "rating": 4.7,
+    "sold": 75,
+    "tags": ["Blue note", "Outerwear", "Trend"]
+  },
+  {
+    "id": "p5",
+    "slug": "chan-vay-lua-curve",
+    "name": "Chân Váy Lụa Curve",
+    "category": "Essentials",
+    "description": "Chân váy lụa midi tạo chuyển động uốn mềm và dễ lên look editorial.",
+    "longDescription": "Món đồ có thể đi cùng áo linen, blazer hoặc tee tối giản, giữ được tính linh hoạt cao.",
+    "price": 720000,
+    "compareAtPrice": 880000,
+    "image": "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "accent": "#b22204",
+    "inventory": 34,
+    "rating": 4.85,
+    "sold": 143,
+    "tags": ["Midi", "Lụa", "Daily"]
+  },
+  {
+    "id": "p6",
+    "slug": "tui-da-mini-editorial",
+    "name": "Túi Da Mini Editorial",
+    "category": "Phụ kiện",
+    "description": "Chiếc túi mini cân bằng giữa tính dụng và form đồ họa tối giản.",
+    "longDescription": "Kích thước gọn cho smartphone, thẻ và son, phù hợp để hoàn thiện một look thành thị gọn ghẽ.",
+    "price": 1140000,
+    "compareAtPrice": null,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80"
+    ],
+    "accent": "#165db2",
+    "inventory": 16,
+    "rating": 4.76,
+    "sold": 87,
+    "tags": ["Accessory", "Leather", "Gift"]
+  }
+]

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: #f6f6f6;
+  --surface-low: #f0f1f1;
+  --surface-lowest: #ffffff;
+  --surface-high: #e1e3e3;
+  --ink: #2d2f2f;
+  --muted: #5a5c5c;
+  --outline: rgba(118, 119, 119, 0.15);
+  --primary: #b22203;
+  --primary-container: #ff775b;
+  --secondary: #a03740;
+  --tertiary: #7f3f9f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(255, 119, 91, 0.16), transparent 30%),
+    radial-gradient(circle at top right, rgba(127, 63, 159, 0.08), transparent 24%),
+    var(--surface);
+  color: var(--ink);
+  font-family: var(--font-inter), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .signature-button {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-200 hover:-translate-y-0.5;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  }
+
+  .content-shell {
+    @apply mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10;
+  }
+}

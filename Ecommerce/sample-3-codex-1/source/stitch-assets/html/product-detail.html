@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Editorial Marketplace | Chi Tiết Sản Phẩm</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1a1c1c",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#c2e8ff",
+                        "tertiary-container": "#007ea7",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#b62506",
+                        "secondary-fixed-dim": "#aac7ff",
+                        "on-primary-container": "#fffbff",
+                        "on-secondary-fixed": "#001b3e",
+                        "surface-variant": "#e2e2e2",
+                        "outline-variant": "#e3beb6",
+                        "on-secondary-container": "#003874",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#d6e3ff",
+                        "inverse-on-surface": "#f1f1f1",
+                        "primary": "#b22204",
+                        "background": "#f9f9f9",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#001e2c",
+                        "outline": "#8f7069",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#6ca3fd",
+                        "secondary": "#165db2",
+                        "on-surface-variant": "#5b403b",
+                        "surface-container-low": "#f3f3f3",
+                        "on-secondary-fixed-variant": "#00458d",
+                        "on-tertiary-container": "#fbfcff",
+                        "primary-fixed-dim": "#ffb4a4",
+                        "surface": "#f9f9f9",
+                        "tertiary-fixed-dim": "#76d1ff",
+                        "primary-fixed": "#ffdad3",
+                        "inverse-primary": "#ffb4a4",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#004d67",
+                        "surface-bright": "#f9f9f9",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#d63c1e",
+                        "on-primary-fixed-variant": "#8d1600",
+                        "on-primary-fixed": "#3e0500",
+                        "on-background": "#1a1c1c",
+                        "tertiary": "#006385",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-high": "#e8e8e8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Be Vietnam Pro"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-[100] bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-3 max-w-screen-2xl mx-auto font-['Be_Vietnam_Pro'] text-sm tracking-tight">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-black italic text-orange-700 dark:text-orange-600" href="#">The Editorial Marketplace</a>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-orange-700 dark:text-orange-400 font-bold border-b-2 border-orange-700" href="#">Trang chủ</a>
+<a class="text-neutral-600 dark:text-neutral-400 hover:text-orange-600 transition-colors" href="#">Sản phẩm</a>
+<a class="text-neutral-600 dark:text-neutral-400 hover:text-orange-600 transition-colors" href="#">Bộ sưu tập</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden md:block">
+<input class="bg-surface-container-low border-none rounded-full px-6 py-2 w-64 focus:ring-2 focus:ring-secondary/40 text-xs" placeholder="Tìm kiếm sản phẩm..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400">search</span>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-neutral-600 hover:text-primary cursor-pointer">shopping_cart</span>
+<span class="material-symbols-outlined text-neutral-600 hover:text-primary cursor-pointer">notifications</span>
+<span class="material-symbols-outlined text-neutral-600 hover:text-primary cursor-pointer">account_circle</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Side Navigation (Category Bar) -->
+<div class="mt-16 bg-neutral-100 dark:bg-neutral-900 overflow-x-auto no-scrollbar">
+<div class="flex gap-8 px-6 py-2 w-full whitespace-nowrap max-w-screen-2xl mx-auto font-['Be_Vietnam_Pro'] font-medium">
+<a class="flex items-center gap-2 text-orange-700 dark:text-orange-400 font-bold" href="#"><span class="material-symbols-outlined text-lg">grid_view</span>Danh mục</a>
+<a class="flex items-center gap-2 text-neutral-500 hover:bg-neutral-200 px-3 py-1 rounded-full transition-all" href="#"><span class="material-symbols-outlined text-lg">bolt</span>Flash Sale</a>
+<a class="flex items-center gap-2 text-neutral-500 hover:bg-neutral-200 px-3 py-1 rounded-full transition-all" href="#"><span class="material-symbols-outlined text-lg">confirmation_number</span>Mã giảm giá</a>
+<a class="flex items-center gap-2 text-neutral-500 hover:bg-neutral-200 px-3 py-1 rounded-full transition-all" href="#"><span class="material-symbols-outlined text-lg">live_tv</span>Shopee Live</a>
+</div>
+</div>
+<!-- Main Content Canvas -->
+<main class="max-w-7xl mx-auto px-4 md:px-6 pt-8 pb-24">
+<!-- Breadcrumbs -->
+<nav class="flex text-xs text-neutral-500 mb-6 gap-2">
+<a class="hover:text-primary" href="#">Trang chủ</a>
+<span>/</span>
+<a class="hover:text-primary" href="#">Thời Trang Nam</a>
+<span>/</span>
+<a class="hover:text-primary" href="#">Áo Khoác</a>
+<span>/</span>
+<span class="text-on-surface truncate max-w-[200px]">Áo Bomber Heritage Edition - Signature Kinetic Collection</span>
+</nav>
+<!-- Product Core Section -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+<!-- Left: Gallery -->
+<div class="md:col-span-5 lg:col-span-5 space-y-4">
+<div class="aspect-square bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm group relative">
+<img alt="Main Product" class="w-full h-full object-cover" data-alt="high-end brown bomber jacket displayed on a minimalist studio background with soft cinematic lighting and natural fabric texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGi8qz8bEdfM23gilF3K8aF0Q7VOrxe3y3EO607QhWzTg8IQTODiihjAv4oLSMN7lBGI_xYlj9RpdckakWbjBN_X_AuMK8vnspC8M9_dI6TeqhCoetuVHKhOPvyVQ94lNmtPqWXaiviQZd3qZR1Dzdiq8kxG3ndOMifFUYA_SJ1GpFE8Ak2wB_3nndOMP7Mp9l8Wgo74mzI7IBfMOrVSeMhO6H8b-Y3d-WMlKOLBT5pNHY9fwjYsrIjDkGH8Xe2v7IJfuEA-epOhc"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Mới về</div>
+</div>
+<div class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+<div class="w-20 aspect-square rounded-lg border-2 border-primary overflow-hidden flex-shrink-0 cursor-pointer">
+<img alt="Thumb 1" class="w-full h-full object-cover" data-alt="close up of a stylish brown jacket collar with detailed stitching and premium brass buttons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUHzC_jYNX2XV1LC1Tc1fW8Fr8BuScK_Kkape1VFBhr-8k2parSxGsCFfgtjbAhKDQOJa1Azv1YhXvf4g0WhTWQc9JU2oWXd7GVpOZ6mTNIA6Ig-sgOjSTxFcxifHnKRkstpDdHnKhG5Vf7ei-3xLcaifCvIx5qYNdF7qYwEj00yY-utIW4iXVgdtaGblXcdZGe4_6d4pk9ghHmqOCmtcesr7enE-q9Cl_RHj8v4Fb-5YIo5-uYo3RAFv5dA96WnZb9pioxGR9jGg"/>
+</div>
+<div class="w-20 aspect-square rounded-lg border-2 border-transparent hover:border-primary/40 overflow-hidden flex-shrink-0 cursor-pointer transition-colors">
+<img alt="Thumb 2" class="w-full h-full object-cover" data-alt="lifestyle shot of a brown leather jacket sleeve against a urban concrete wall background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnNGUBT-z6G3G90ION0RNXJf2qwM6rCmU-s9VroK9HmRZ1K4HyUNTtUzD7xzh5dMFqRC4sNoq2tXHMTGU7oxV6A_VDZFE74lKg46-9YwgGLYQKiGjTHbC3nEfT8laro_jUWfT-RS25aNLFWGAC2qQq3QgmlNBFH2JMQpySU8coSlfXa7fCexL4ULM7z7m3OF1S7KknO55f8t8-uoyGCmX1KQJPQU2J-CB0_wtNQwW2I2K2t4_OAZOElXK2BOJ4VdQ1GqQi605wJOs"/>
+</div>
+<div class="w-20 aspect-square rounded-lg border-2 border-transparent hover:border-primary/40 overflow-hidden flex-shrink-0 cursor-pointer transition-colors">
+<img alt="Thumb 3" class="w-full h-full object-cover" data-alt="detail photo of a jacket pocket showing high quality craftsmanship and heavy canvas material" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb-huSmUknjm3n0AuSrqwsaIjgs6ozsTXA0ae0spRCItod1tBTQJ_H_ca1pVI_OUj8VZwfz3Pxlw_ybPlXai1BeQDF8M32oDDRADelpxPwE8BboL8p40Ht0RcnGI0mxbamELIGF8iBAXYc9T13vLuXOWZChRl-5gacJ4gAwLz7SkQzwJqaL8AkgqJ0-mweYkMudaAoZlX0wKzeae55RGkWIcp9kX4f1H1lOsSHKZHDeN2-wS63pzDpCrn6LdOAiivdOONA7q0Sypo"/>
+</div>
+<div class="w-20 aspect-square rounded-lg border-2 border-transparent hover:border-primary/40 overflow-hidden flex-shrink-0 cursor-pointer transition-colors">
+<img alt="Thumb 4" class="w-full h-full object-cover" data-alt="wide shot of multiple folded premium garments in a modern minimalist boutique setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACR87k8_qLvre_s1Ft6qy1FJYPH3DoquUMjvcqFpbhVBPHWdGIGPgnkNpMpw0Fxph6qY2-2aGFM1rhJ5cKUaCQfw7qe5HoZlz97aD-I6YF899IvqFjizJS-YDUV6qv6hf1CC9Dj_mPuBKmg-jGze9JtNc-q539JvkI5rGREkm-wMALHhT_GkjqezBN0N3HLlnDiZ2bJyso-Cp9D-iJD7qLUeLnxlAf--6XU2pdR6457s8gpcfA8U9hJmhNgmogzhoeZpaLEb_r9Ck"/>
+</div>
+</div>
+</div>
+<!-- Right: Information -->
+<div class="md:col-span-7 lg:col-span-7 space-y-6">
+<div class="space-y-2">
+<h1 class="text-2xl font-headline font-bold text-on-surface leading-tight">Áo Bomber Heritage Edition - Signature Kinetic Collection - Kháng Nước Cao Cấp</h1>
+<div class="flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1">
+<span class="text-orange-500 font-bold underline">4.9</span>
+<div class="flex text-orange-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+<div class="w-px h-3 bg-neutral-300"></div>
+<div class="flex gap-1">
+<span class="font-bold underline">1.2k</span>
+<span class="text-neutral-500">Đánh giá</span>
+</div>
+<div class="w-px h-3 bg-neutral-300"></div>
+<div class="flex gap-1">
+<span class="font-bold">4.5k</span>
+<span class="text-neutral-500">Đã bán</span>
+</div>
+</div>
+</div>
+<!-- Price Section -->
+<div class="p-6 rounded-xl bg-surface-container-low flex items-center gap-4">
+<span class="text-neutral-400 line-through text-lg">₫1.250.000</span>
+<div class="flex items-baseline gap-1 text-primary">
+<span class="text-4xl font-headline font-black">₫799.000</span>
+</div>
+<span class="bg-primary text-white text-[10px] px-2 py-0.5 rounded-sm font-bold">-36% GIẢM</span>
+</div>
+<!-- Vouchers -->
+<div class="space-y-3">
+<h3 class="text-sm font-semibold text-neutral-500">Mã Giảm Giá Của Shop</h3>
+<div class="flex flex-wrap gap-2">
+<div class="flex items-center bg-orange-50 dark:bg-orange-950/30 text-primary border border-primary/20 rounded-md px-3 py-1 text-xs font-bold">
+                            Giảm ₫20k
+                        </div>
+<div class="flex items-center bg-orange-50 dark:bg-orange-950/30 text-primary border border-primary/20 rounded-md px-3 py-1 text-xs font-bold">
+                            Giảm ₫50k
+                        </div>
+<div class="flex items-center bg-orange-50 dark:bg-orange-950/30 text-primary border border-primary/20 rounded-md px-3 py-1 text-xs font-bold">
+                            15% Hoàn Xu
+                        </div>
+</div>
+</div>
+<!-- Shipping -->
+<div class="flex gap-6 text-sm">
+<span class="text-neutral-500 min-w-[100px]">Vận Chuyển</span>
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-green-600 font-medium">
+<span class="material-symbols-outlined text-lg">local_shipping</span>
+                            Miễn phí vận chuyển
+                        </div>
+<div class="text-neutral-500 text-xs">Vận chuyển từ TP. Hồ Chí Minh tới Quận 1</div>
+</div>
+</div>
+<!-- Variants -->
+<div class="space-y-4 pt-4 border-t border-dashed border-neutral-200">
+<div class="flex items-center gap-6">
+<span class="text-neutral-500 min-w-[100px] text-sm">Màu Sắc</span>
+<div class="flex gap-3">
+<button class="px-4 py-2 text-xs border border-primary text-primary rounded-xl font-medium bg-primary/5">Nâu Heritage</button>
+<button class="px-4 py-2 text-xs border border-neutral-200 text-neutral-600 rounded-xl font-medium hover:border-primary/50 transition-all">Đen Midnight</button>
+<button class="px-4 py-2 text-xs border border-neutral-200 text-neutral-600 rounded-xl font-medium hover:border-primary/50 transition-all">Xanh Olive</button>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-neutral-500 min-w-[100px] text-sm">Kích Cỡ</span>
+<div class="flex gap-3">
+<button class="w-10 h-10 border border-neutral-200 rounded-xl flex items-center justify-center text-xs font-bold hover:border-primary transition-all">S</button>
+<button class="w-10 h-10 border border-primary rounded-xl flex items-center justify-center text-xs font-bold bg-primary text-white">M</button>
+<button class="w-10 h-10 border border-neutral-200 rounded-xl flex items-center justify-center text-xs font-bold hover:border-primary transition-all">L</button>
+<button class="w-10 h-10 border border-neutral-200 rounded-xl flex items-center justify-center text-xs font-bold hover:border-primary transition-all">XL</button>
+</div>
+</div>
+</div>
+<!-- Quantity & Actions -->
+<div class="flex items-center gap-6 pt-6">
+<span class="text-neutral-500 min-w-[100px] text-sm">Số Lượng</span>
+<div class="flex items-center border border-neutral-200 rounded-xl overflow-hidden">
+<button class="px-3 py-2 hover:bg-neutral-100 transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<input class="w-12 text-center border-x border-neutral-200 py-2 text-sm focus:outline-none" type="text" value="1"/>
+<button class="px-3 py-2 hover:bg-neutral-100 transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<span class="text-xs text-neutral-400">983 sản phẩm có sẵn</span>
+</div>
+<div class="flex gap-4 pt-6">
+<button class="flex-1 flex items-center justify-center gap-2 py-4 border-2 border-primary text-primary font-bold rounded-xl bg-primary/5 hover:bg-primary/10 transition-all scale-95 active:scale-90">
+<span class="material-symbols-outlined">shopping_cart_checkout</span>
+                        Thêm Vào Giỏ Hàng
+                    </button>
+<button class="flex-1 py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:opacity-90 transition-all scale-95 active:scale-90">
+                        Mua Ngay
+                    </button>
+</div>
+<div class="flex gap-6 py-4 border-t border-neutral-100 mt-4">
+<div class="flex items-center gap-1 text-xs text-secondary font-medium">
+<span class="material-symbols-outlined text-sm">verified</span>
+                        Hoàn tiền 100%
+                    </div>
+<div class="flex items-center gap-1 text-xs text-secondary font-medium">
+<span class="material-symbols-outlined text-sm">security</span>
+                        Bảo hành 12 tháng
+                    </div>
+<div class="flex items-center gap-1 text-xs text-secondary font-medium">
+<span class="material-symbols-outlined text-sm">sync</span>
+                        Đổi trả 15 ngày
+                    </div>
+</div>
+</div>
+</div>
+<!-- Shop Info Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col md:flex-row items-center gap-8 mb-12">
+<div class="flex items-center gap-4 min-w-[280px]">
+<div class="w-20 h-20 rounded-full overflow-hidden border-2 border-neutral-100">
+<img alt="Shop Logo" class="w-full h-full object-cover" data-alt="professional portrait of a creative entrepreneur in a minimal bright office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHrQlGyazUtC3IBIn5KCoNFvhT6886GCAf1lOgqyTuwHuTiVaoB8LxywOPJZ9P0B6wmRvw5qAXKwEH-mDWG8POFCW1OGPU_laiwnpqcyNEFS8vkgpbfeKqoLJhC_o3UmTQpqBQyFy9yMJEUovaTdy1Bti4Ob-0rZ007x5NXT3H8mhCJQ0vLc17rmSjD1NSnp5QGuZDh0Q9wuHK65k7AFjwgLzLM1VapysED0hc-iruwodrLjFMPL5UVWyX7-VrVs2h1W-7wFwvOHU"/>
+</div>
+<div>
+<h4 class="font-bold text-lg leading-tight">Editorial Signature</h4>
+<p class="text-xs text-neutral-400 mb-2">Online 5 phút trước</p>
+<div class="flex gap-2">
+<button class="px-3 py-1 bg-primary/5 text-primary text-xs font-bold rounded-lg border border-primary/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">chat</span> Chat ngay
+                        </button>
+<button class="px-3 py-1 bg-neutral-100 text-neutral-600 text-xs font-bold rounded-lg border border-neutral-200 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">store</span> Xem Shop
+                        </button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 flex-1 text-sm">
+<div class="flex justify-between gap-4">
+<span class="text-neutral-400">Đánh Giá</span>
+<span class="text-primary font-bold">15.2k</span>
+</div>
+<div class="flex justify-between gap-4">
+<span class="text-neutral-400">Tỉ Lệ Phản Hồi</span>
+<span class="text-primary font-bold">98%</span>
+</div>
+<div class="flex justify-between gap-4">
+<span class="text-neutral-400">Tham Gia</span>
+<span class="text-primary font-bold">4 Năm Trước</span>
+</div>
+<div class="flex justify-between gap-4">
+<span class="text-neutral-400">Sản Phẩm</span>
+<span class="text-primary font-bold">152</span>
+</div>
+<div class="flex justify-between gap-4">
+<span class="text-neutral-400">Thời Gian Phản Hồi</span>
+<span class="text-primary font-bold">Trong Vài Giờ</span>
+</div>
+<div class="flex justify-between gap-4">
+<span class="text-neutral-400">Người Theo Dõi</span>
+<span class="text-primary font-bold">45.8k</span>
+</div>
+</div>
+</div>
+<!-- Detail Tabs Section -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="flex border-b border-neutral-100 overflow-x-auto no-scrollbar">
+<button class="px-8 py-5 text-sm font-bold text-primary border-b-2 border-primary whitespace-nowrap bg-orange-50/30">CHI TIẾT SẢN PHẨM</button>
+<button class="px-8 py-5 text-sm font-medium text-neutral-500 hover:text-primary transition-colors whitespace-nowrap">ĐÁNH GIÁ (1.2k)</button>
+<button class="px-8 py-5 text-sm font-medium text-neutral-500 hover:text-primary transition-colors whitespace-nowrap">THÔNG SỐ KỸ THUẬT</button>
+</div>
+<div class="p-8 space-y-8">
+<!-- Description -->
+<section class="space-y-4 max-w-4xl">
+<h5 class="bg-neutral-50 p-2 text-sm font-bold tracking-widest text-neutral-600 uppercase">MÔ TẢ SẢN PHẨM</h5>
+<div class="text-sm text-neutral-700 leading-relaxed space-y-4">
+<p class="font-medium text-lg text-on-surface">Khám phá phong cách di sản cùng bộ sưu tập Kinetic Curator mới nhất.</p>
+<p>Áo Bomber Heritage Edition là sự kết hợp hoàn hảo giữa thiết kế cổ điển và công nghệ vải hiện đại. Với lớp phủ Nano kháng nước bền bỉ, chiếc áo không chỉ giúp bạn giữ ấm mà còn bảo vệ tối ưu trước những cơn mưa bất chợt.</p>
+<ul class="list-disc pl-5 space-y-2">
+<li>Chất liệu: Cotton Canvas mật độ cao, bền bỉ và giữ form tốt.</li>
+<li>Lót trong: Silk-blend mềm mại, thoáng khí.</li>
+<li>Khóa kéo: YKK Brass Signature cao cấp, mượt mà.</li>
+<li>Thiết kế: Túi hông chìm, túi ngực an toàn, bo thun cổ tay co giãn 4 chiều.</li>
+</ul>
+<div class="grid grid-cols-2 gap-4 mt-8">
+<img alt="Lifestyle 1" class="rounded-xl w-full" data-alt="lifestyle urban shot of a model wearing the brown jacket walking down a modern city street at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiPfVxgtI2NET7aNP9_P5smvoCw8p2-WaVQ-fHCeUTqyYBiUwCjMExk_YpaEClZaLu5SnPdFZMwAf6dcVopmXCKg7jB32P81X9c6RjkOIfTjU-v6Wo-PH9qncClOcOnkuygb3uPl_zDkJbQOnTG0ZWBZuE2Wqwa5xQJrtrlg6DqkohfhJ1EH8TgFuJTZElrKaFlf9JbDK35ewT56IBRnc2UEnDVc1Ngub6mvHIu7m1BVj2zvoU_DeKpP6VYAzBY0mcBzGRTvNl-G8"/>
+<img alt="Lifestyle 2" class="rounded-xl w-full" data-alt="close up of jacket details being touched by a hand highlighting the quality and texture of the material" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCITPoPmebWIVwkXA4y9ge6yInNLSlUta-T6p6c06NPetMmB68U1Oe4Z7rAaxOgV6d-VU7ZG2RnBrxfPWKJ1qjiuBFx6Ogi7y-4p2o1lxFoRGwmd-xY_-GlrgjUKn3cgmy55aKETe9vgmQICdXQquuIgxzNf_XRi5nUr3pnNpKjluYiIPQw-KH03lhnrPI88WH8HZxSfrGXQA9AaLL7hxoWoTSgWuA-mmGwTfZdADgVSqel9C7e6KqjkyEuwCepZYX1ihBhyWGrHLQ"/>
+</div>
+</div>
+</section>
+<!-- Reviews Peek -->
+<section class="space-y-6">
+<h5 class="bg-neutral-50 p-2 text-sm font-bold tracking-widest text-neutral-600 uppercase">ĐÁNH GIÁ SẢN PHẨM</h5>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-center bg-orange-50/30 p-8 rounded-2xl border border-primary/10">
+<div class="text-center">
+<div class="text-4xl font-black text-primary mb-1">4.9<span class="text-lg text-primary/60"> trên 5</span></div>
+<div class="flex justify-center text-orange-400 mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-2">
+<button class="px-4 py-1.5 bg-white border border-primary text-primary text-xs rounded-lg font-medium">Tất Cả</button>
+<button class="px-4 py-1.5 bg-white border border-neutral-200 text-neutral-600 text-xs rounded-lg font-medium">5 Sao (1.1k)</button>
+<button class="px-4 py-1.5 bg-white border border-neutral-200 text-neutral-600 text-xs rounded-lg font-medium">4 Sao (20)</button>
+<button class="px-4 py-1.5 bg-white border border-neutral-200 text-neutral-600 text-xs rounded-lg font-medium">Có Hình Ảnh / Video (452)</button>
+</div>
+</div>
+<!-- Individual Review -->
+<div class="space-y-6 pt-6">
+<div class="flex gap-4 pb-6 border-b border-neutral-100">
+<div class="w-10 h-10 rounded-full bg-neutral-200 overflow-hidden flex-shrink-0">
+<img alt="Reviewer" class="w-full h-full object-cover" data-alt="friendly male user avatar icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMmX3aVH-yVuUBD2yQss8hA-tDjUpI-rwpPgPDTLnjzIeCREC2cWZ7eGybeGJ8v11pquuxZ1KUgULWvw3J8pKevKbdkO1uhltGkDv7VqMMjjkY2HeOY7HuoW-ssbCYeCnbw_D30odzzXs9fEZN8jPoLSkgYoRsfC_7W2IT85Ik9SiFtoPLEdKpt068LAEEFcPhwdvy3kSOG_o3y6VR5dieyfUawNSEXq-w6pkxqHr59y-x-iyM8ZWB-yDjfuWI5JyNckx15ccWat8"/>
+</div>
+<div class="space-y-2 flex-1">
+<div class="flex justify-between">
+<span class="text-sm font-bold">h*****8</span>
+<span class="text-xs text-neutral-400">2024-03-12 14:20</span>
+</div>
+<div class="flex text-orange-400">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-sm text-neutral-700">Áo đẹp hơn cả trong hình luôn shop ơi. Vải dày dặn, mặc ấm, đường chỉ cực kỳ sắc nét. Sẽ ủng hộ shop thêm nhiều sản phẩm khác!</p>
+<div class="flex gap-2 pt-2">
+<div class="w-16 h-16 rounded-md overflow-hidden">
+<img alt="User Photo" class="w-full h-full object-cover" data-alt="customer photo of the jacket laying on a bed in natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnJ04KAGMdtGyQvdrjLrL4_OnhQAdZ70RG5cpimJ-JG89OSDZFjlXYWpYGyMSPx3l0MXucEfExFzoGC6pbC79biZoQfh9oWmXl1ADabyzaCfvUE6Hq7nDwoFop-Wr5mIXMo-INJWWcFbDuOay8Kqr-OLfkkjRV8HfQ0jJwzwoCMFtPdXRslZ2i2FCCh9ztNj5NOx4HHE0KISPrE1Hs6ni3awTzqOa-ZbkQZWqVw5uknNiTlfqg5hY6YkXCDU4vSutFWo1RrvcGkP8"/>
+</div>
+</div>
+<div class="flex items-center gap-1 text-xs text-neutral-400 cursor-pointer hover:text-primary">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+                                    Hữu ích (12)
+                                </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-950 font-['Inter'] text-xs text-neutral-500">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 px-10 py-16 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1 space-y-4">
+<h6 class="text-lg font-bold text-neutral-800 dark:text-neutral-200">The Editorial Marketplace</h6>
+<p class="text-xs">Sứ mệnh mang đến những trải nghiệm mua sắm đẳng cấp và đậm chất nghệ thuật cho người tiêu dùng Việt Nam.</p>
+</div>
+<div class="space-y-4">
+<h6 class="font-bold text-on-surface uppercase text-[10px] tracking-widest">Chăm sóc khách hàng</h6>
+<ul class="space-y-2">
+<li><a class="hover:text-primary transition-all" href="#">Trung Tâm Trợ Giúp</a></li>
+<li><a class="hover:text-primary transition-all" href="#">Thanh Toán</a></li>
+<li><a class="hover:text-primary transition-all" href="#">Vận Chuyển</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h6 class="font-bold text-on-surface uppercase text-[10px] tracking-widest">Về chúng tôi</h6>
+<ul class="space-y-2">
+<li><a class="hover:text-primary transition-all" href="#">Giới Thiệu</a></li>
+<li><a class="hover:text-primary transition-all" href="#">Tuyển Dụng</a></li>
+<li><a class="hover:text-primary transition-all" href="#">Điều Khoản</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h6 class="font-bold text-on-surface uppercase text-[10px] tracking-widest">Theo dõi chúng tôi</h6>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-xl cursor-pointer hover:text-primary">social_leaderboard</span>
+<span class="material-symbols-outlined text-xl cursor-pointer hover:text-primary">chat</span>
+<span class="material-symbols-outlined text-xl cursor-pointer hover:text-primary">camera</span>
+</div>
+</div>
+<div class="space-y-4">
+<h6 class="font-bold text-on-surface uppercase text-[10px] tracking-widest">Tải ứng dụng</h6>
+<div class="flex gap-2">
+<div class="w-20 h-20 bg-white p-1 rounded-lg border border-neutral-200">
+<img alt="QR Code" class="w-full h-full" data-alt="qr code leading to the mobile application store" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSfeNnSUG8IFmvv1W2cj_8dlXkQfzZWZrLoVaZnjBn84bEFieYp9AnYqFzkQOfijp7YgMo_hJXg7503fWg_ZZXi5BmEUcNFZkR8cL_kLib3yM1faPMs1_2JWUzsUmCZ9b_a4ASyeydXavT9GtgUaI30eAfElMjymPWZJby5ta-b4fHafP1LBMqRNd59PF83R2_z-e9Vmi7xaK2EvpupR7-vcUFmXse8wKdO4LgjXZ9zDIYhyOidKfgHz0gpL2GTb8o8ojE_6peKhs"/>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center py-8 border-t border-neutral-200 dark:border-neutral-800">
+            © 2024 The Editorial Marketplace. All rights reserved.
+        </div>
+</footer>
+<!-- Mobile Navigation -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md z-50 rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] text-[10px] font-semibold uppercase">
+<div class="flex flex-col items-center justify-center text-neutral-400">
+<span class="material-symbols-outlined">home</span>
+            Trang chủ
+        </div>
+<div class="flex flex-col items-center justify-center text-orange-700 bg-orange-50 rounded-xl px-3 py-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+            Dạo
+        </div>
+<div class="flex flex-col items-center justify-center text-neutral-400">
+<span class="material-symbols-outlined">live_tv</span>
+            Live
+        </div>
+<div class="flex flex-col items-center justify-center text-neutral-400">
+<span class="material-symbols-outlined">notifications</span>
+            Thông báo
+        </div>
+<div class="flex flex-col items-center justify-center text-neutral-400">
+<span class="material-symbols-outlined">person</span>
+            Tôi
+        </div>
+</nav>
+</body></html>
