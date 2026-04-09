@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Cart | The Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#6a0d1c",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#dbdddd",
+                        "tertiary-dim": "#723292",
+                        "surface-container": "#e7e8e8",
+                        "error-dim": "#a70138",
+                        "outline-variant": "#acadad",
+                        "secondary-container": "#ffc3c3",
+                        "on-surface": "#2d2f2f",
+                        "surface-bright": "#f6f6f6",
+                        "tertiary-container": "#de98ff",
+                        "error-container": "#f74b6d",
+                        "on-surface-variant": "#5a5c5c",
+                        "error": "#b41340",
+                        "on-error": "#ffefef",
+                        "tertiary": "#7f3f9f",
+                        "background": "#f6f6f6",
+                        "surface-container-high": "#e1e3e3",
+                        "on-primary": "#ffefec",
+                        "tertiary-fixed-dim": "#d08bf0",
+                        "tertiary-fixed": "#de98ff",
+                        "on-secondary": "#ffefee",
+                        "secondary-fixed": "#ffc3c3",
+                        "surface": "#f6f6f6",
+                        "surface-dim": "#d3d5d5",
+                        "secondary-fixed-dim": "#ffafb0",
+                        "surface-tint": "#b22203",
+                        "primary-container": "#ff775b",
+                        "secondary": "#a03740",
+                        "on-secondary-fixed-variant": "#912c36",
+                        "on-background": "#2d2f2f",
+                        "primary-dim": "#9d1a00",
+                        "on-primary-container": "#4b0700",
+                        "primary": "#b22203",
+                        "on-primary-fixed-variant": "#5c0b00",
+                        "on-tertiary-container": "#510c72",
+                        "primary-fixed": "#ff775b",
+                        "inverse-on-surface": "#9c9d9d",
+                        "inverse-primary": "#fd5837",
+                        "surface-container-highest": "#dbdddd",
+                        "on-tertiary-fixed-variant": "#5b1a7b",
+                        "on-tertiary-fixed": "#300047",
+                        "secondary-dim": "#902b35",
+                        "outline": "#767777",
+                        "on-error-container": "#510017",
+                        "on-primary-fixed": "#000000",
+                        "surface-container-low": "#f0f1f1",
+                        "on-secondary-container": "#85222e",
+                        "primary-fixed-dim": "#ff5c3b",
+                        "on-tertiary": "#feeeff",
+                        "inverse-surface": "#0c0f0f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #b22203 0%, #ff775b 100%);
+        }
+        .ghost-border {
+            border: 1px solid rgba(172, 173, 173, 0.15);
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 32px rgba(45, 47, 47, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black italic text-orange-700 font-inter tracking-tight">The Curator</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-orange-700 font-bold border-b-2 border-orange-700 transition-colors" href="#">Home</a>
+<a class="text-zinc-600 hover:text-orange-600 transition-colors" href="#">Collections</a>
+<a class="text-zinc-600 hover:text-orange-600 transition-colors" href="#">Trending</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:block relative">
+<input class="bg-surface-container-highest border-none rounded-full px-4 py-2 text-sm w-64 focus:ring-1 focus:ring-primary" placeholder="Search curated goods..." type="text"/>
+</div>
+<div class="flex gap-4">
+<button class="active:scale-95 duration-200 text-zinc-600 hover:text-orange-600 transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="active:scale-95 duration-200 text-zinc-600 hover:text-orange-600 transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="active:scale-95 duration-200 text-zinc-600 hover:text-orange-600 transition-colors">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="flex-grow pt-28 pb-20 px-6 max-w-7xl mx-auto w-full">
+<!-- Header -->
+<header class="mb-12">
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2 font-headline">Shopping Cart</h1>
+<p class="text-on-surface-variant font-medium">Review your curated selection before checkout.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Items Column -->
+<div class="lg:col-span-8 space-y-4">
+<!-- Select All Bar -->
+<div class="flex items-center justify-between bg-surface-container-low px-6 py-4 rounded-xl">
+<div class="flex items-center gap-4">
+<input class="rounded text-primary focus:ring-primary h-5 w-5 border-outline-variant" type="checkbox"/>
+<span class="font-bold text-sm uppercase tracking-wider text-on-surface">Select All (3 Items)</span>
+</div>
+<button class="text-secondary text-sm font-bold hover:underline">Remove Selected</button>
+</div>
+<!-- Product List -->
+<div class="space-y-4">
+<!-- Item 1 -->
+<div class="flex items-center gap-4 p-6 bg-surface-container-lowest rounded-xl editorial-shadow group transition-transform hover:scale-[1.01]">
+<input checked="" class="rounded text-primary focus:ring-primary h-5 w-5 border-outline-variant" type="checkbox"/>
+<div class="relative flex-shrink-0">
+<img alt="Product Image" class="w-24 h-32 object-cover rounded-lg" data-alt="Modern minimalist wristwatch with a tan leather strap on a clean white background with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-awIehsR-QEr747ewr1WWO7_53c9yRSqoUDuaTYJMq_RpchJVsmWYhF8phpll4jGbamOfe1JGe4kT77LkWn6cVzqZk7VfstC0WlerCKsaiu1OSQ9jT_Uu0M5ILgvsx5W9hGeNp1EsqfBzoNR1mAYyWT3xT5SFLfPhL9glk_CSi1S8vTZ9TMRlweE9q9yAw1z1ZKkucGN6wjLbJadvu_bOCvGZivXfifAfgLRjKhAL2MHc0_rCNzcQymoKF2_1bZTzEim_nzMyW0R"/>
+</div>
+<div class="flex-grow flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h3 class="text-on-surface font-bold text-lg mb-1">Architect Series Watch</h3>
+<p class="text-on-surface-variant text-sm mb-4">Edition: Midnight Gold / 42mm</p>
+<div class="flex items-center bg-surface-container-low w-fit rounded-full px-2 py-1 ghost-border">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="remove">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-sm">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xl font-black text-on-surface">$245.00</p>
+<button class="text-on-surface-variant hover:text-error transition-colors mt-2">
+<span class="material-symbols-outlined text-xl" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-4 p-6 bg-surface-container-lowest rounded-xl editorial-shadow group transition-transform hover:scale-[1.01]">
+<input checked="" class="rounded text-primary focus:ring-primary h-5 w-5 border-outline-variant" type="checkbox"/>
+<div class="relative flex-shrink-0">
+<img alt="Product Image" class="w-24 h-32 object-cover rounded-lg" data-alt="Artisanal sourdough bread loaf on a dark rustic table with warm natural light and flour dusting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjmNfOcO8qyD-Bo7oEa3cizw0yBZYCNjU_X9JJ6UiRP82Lp9VWJnkrJqGNIfDct-Plhxtp8pQEbmj-ZRFkvWqE0OsSzdsZttNIoGriZ9j4XlYjWmYdECvZEfCWr5lcrBlo6o6eUKK99XpRULYOu0YNJdEWnf6MqogU84bVUPHpg4cmXAGwpXama3fAOfVHL-i8SUi7fLHQu_DmVJOplb7FmCOMt30dAl4qZGVJmacJIqPi3NDFxhVeOEs6BTaWkx4myXyltpbgxZlz"/>
+</div>
+<div class="flex-grow flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h3 class="text-on-surface font-bold text-lg mb-1">Hand-Cracked Sourdough</h3>
+<p class="text-on-surface-variant text-sm mb-4">Fresh Batch / Large</p>
+<div class="flex items-center bg-surface-container-low w-fit rounded-full px-2 py-1 ghost-border">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="remove">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-sm">2</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xl font-black text-on-surface">$24.00</p>
+<button class="text-on-surface-variant hover:text-error transition-colors mt-2">
+<span class="material-symbols-outlined text-xl" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-4 p-6 bg-surface-container-lowest rounded-xl editorial-shadow group transition-transform hover:scale-[1.01]">
+<input class="rounded text-primary focus:ring-primary h-5 w-5 border-outline-variant" type="checkbox"/>
+<div class="relative flex-shrink-0">
+<img alt="Product Image" class="w-24 h-32 object-cover rounded-lg opacity-60 grayscale" data-alt="Professional studio headphones on a wooden desk with moody low-key lighting and bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFdOZXu12lMd3gqAuzk1hrqQDgnhSEdC7GHOVSal_m7gJzBwJ3yZVkYT0U7yNzx_nAKDKqu2aup4QJ1ESxj_fYr0dhFZ_I9HQn-fmmPgk25fpv3lPSU_WuwmK8GHPOYmorIrLzpj1qNCj-YvULleebgYH7c8fQ0CP_azb0-IKDFPtx5-gZYIXLMWRto9s-cJ8k33Y-6fohTw35Duq-bUbRLo6Pl520jyDBZNB6FDHBMMqywI6jxif3n1e9Stz99Zmv-XWsQ52c_cRq"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-on-surface/80 text-white text-[10px] uppercase font-bold px-2 py-1 rounded">Out of Stock</span>
+</div>
+</div>
+<div class="flex-grow flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h3 class="text-on-surface font-bold text-lg mb-1 opacity-60">Studio X1 Wireless</h3>
+<p class="text-on-surface-variant text-sm mb-4 opacity-60">Carbon Black</p>
+<div class="flex items-center bg-surface-container-low w-fit rounded-full px-2 py-1 ghost-border opacity-50">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-sm" data-icon="remove">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-sm">0</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xl font-black text-on-surface opacity-60">$299.00</p>
+<button class="text-on-surface-variant hover:text-error transition-colors mt-2">
+<span class="material-symbols-outlined text-xl" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Hidden in active view -->
+<div class="hidden flex-col items-center justify-center py-24 text-center">
+<div class="w-24 h-24 bg-surface-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-outline" data-icon="shopping_bag">shopping_bag</span>
+</div>
+<h2 class="text-2xl font-bold text-on-surface mb-2">Your cart is currently empty</h2>
+<p class="text-on-surface-variant mb-8 max-w-xs">Looks like you haven't added any curated items yet. Start exploring our latest collections.</p>
+<button class="signature-gradient text-on-primary font-bold px-8 py-3 rounded-xl active:scale-95 duration-200">Start Shopping</button>
+</div>
+</div>
+<!-- Summary Sidebar -->
+<div class="lg:col-span-4 space-y-6 sticky top-28">
+<!-- Promo Section -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow">
+<h4 class="text-sm font-bold uppercase tracking-widest text-on-surface mb-4">Promo Code</h4>
+<div class="flex gap-2">
+<input class="flex-grow bg-surface-container-low border-none rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary font-medium" placeholder="CURATOR20" type="text"/>
+<button class="bg-on-surface text-surface px-4 rounded-lg font-bold text-xs uppercase tracking-tight active:scale-95 transition-all">Apply</button>
+</div>
+<div class="mt-4 flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+<span class="text-xs font-bold uppercase">CURATOR20 applied: -20% off</span>
+</div>
+</div>
+<!-- Order Summary -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow">
+<h4 class="text-sm font-bold uppercase tracking-widest text-on-surface mb-6 border-b border-surface-container pb-4">Order Summary</h4>
+<div class="space-y-4 mb-6">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Subtotal</span>
+<span class="text-on-surface font-bold">$269.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Promo Discount</span>
+<span class="text-tertiary font-bold">-$53.80</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Shipping</span>
+<span class="text-on-surface font-bold">$12.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Estimated Tax</span>
+<span class="text-on-surface font-bold">$18.50</span>
+</div>
+</div>
+<div class="pt-6 border-t border-surface-container flex justify-between items-end mb-8">
+<div>
+<p class="text-xs font-bold uppercase text-on-surface-variant tracking-widest">Total Amount</p>
+<p class="text-3xl font-black text-on-surface">$245.70</p>
+</div>
+</div>
+<button class="w-full signature-gradient text-on-primary font-bold py-5 rounded-xl shadow-lg active:scale-95 duration-200 flex items-center justify-center gap-3">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-[10px] text-center text-on-surface-variant mt-6 uppercase tracking-tighter">
+                        Free delivery on orders over $300. Satisfaction guaranteed.
+                    </p>
+</div>
+<!-- Trust Badge Bento -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<p class="text-[10px] font-bold uppercase tracking-widest">Secure Checkout</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<p class="text-[10px] font-bold uppercase tracking-widest">Buyer Protection</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Recently Viewed / Recommendations -->
+<section class="mt-24">
+<h2 class="text-2xl font-bold mb-8 font-headline">Recommended For You</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Rec 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-3 relative">
+<img alt="Rec" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Classic canvas sneakers in bright yellow against a clean aesthetic background with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6RYsYwGUT-zMQEAGTXrCmqKVPkLuKhPX8q9p8q9Wc56jYdARBf0z1wb7oJrFL7DNA87SBWhZ3t1frz-Rr4vC4FVHg9TGOV3m1_O7wlhalXxDBlSiy4TUVzyH4vp83ko2r9kdjI1T6YWSXP6duaKI8wT8gKj4bUw1srx-UB0i-ycFlD8bIgaJAEbHQx-uTSy0ojH6rohviW2hJxnogO6j0dmgkLrC9IXgQEZsJ3sOinM5qzY5ZiwjdkhhmDiTOScKEDHZy6Aco9HNo"/>
+<button class="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<h4 class="font-bold text-on-surface">Vantage Canvas Lows</h4>
+<p class="text-sm text-on-surface-variant">$85.00</p>
+</div>
+<!-- Rec 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-3 relative">
+<img alt="Rec" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Sleek white over-ear headphones on a minimalist gray surface with architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwF5ewgmkFJZgAK1FhJmnmhrIlnK88trC4cBpNMwHANNK-V9_hIQSCYzN33KYe8vnIRIdAzxTVsLvvQZE34tZ5xBgNQcOb9l5ijWVArfn4MskrpmVfXmhXdRXA0ci7qx0tXStKU6FyLGN4wNKeltzrXufQbZKYZbFXOkKMH_jA4RUzO_pY2ikEXRAshZ-VMW3dMrFI0jQOq3X0C73iOqfPV3WCApdBAV_ZvAQxX8aNqTvyUoQfx5n0VJ8C5WFQQ4u6e4QR1X1HJ8CI"/>
+<button class="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<h4 class="font-bold text-on-surface">Pure Audio Wireless</h4>
+<p class="text-sm text-on-surface-variant">$199.00</p>
+</div>
+<!-- Rec 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-3 relative">
+<img alt="Rec" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="High-performance modern running shoes with a unique sole design against a clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLQVtsplfFHlBevmr7Ss9sNSI0AC1QmZRAKEX-jyGpPxgX8PVAogc9h6v8W5WwSLagY1VidtJZ6fa2yquZkHqjS7plb7YcPjbl5fguSyOpE09TJMk1pOwSGHh9M7NGxXxiBIfmzpfonZrsKeYNR7up6G6HAiC3ySi1l1ifRd9T_0jsVXLJpZhXyi9zUoOirtq-s8EhAvz6WjUh0UEbYMAUVtUHFA3AKFeHMfGZgpJDf5wRL5Amm7kdJR1PZxVpINyO_P4ndRdsnSzA"/>
+<button class="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<h4 class="font-bold text-on-surface">Aero-Run 5.0</h4>
+<p class="text-sm text-on-surface-variant">$160.00</p>
+</div>
+<!-- Rec 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-3 relative">
+<img alt="Rec" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Vibrant red athletic sneaker close-up with sharp focus on texture and dynamic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtBfz92b7Uj0IWvnLS3iIOTYuUa4J5M_rT4hDR0MVWfMb5Jb7bgYRzQswiNICPQGC3v-NZkZ4WSoEz-gs4ma8v1mFsNwgl2r5oOAO2flAH3sekZIsudyOwFcdqd4z0PuluiMlKLbdgmuC9A31zg8PINQ_6lqO5NL9cahF1kkeeLKkI3ZOnO1wyUrHPk3wQaT3J2sbKgtrM96hp9K7aJy1hDaMn1d-blO8B99D4-D5TRLfvufknCSrpgkkxNWMlnK6V88b5mbnV85YZ"/>
+<button class="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<h4 class="font-bold text-on-surface">Ignite Performance Red</h4>
+<p class="text-sm text-on-surface-variant">$135.00</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-100 w-full py-12 px-6 mt-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<span class="text-xl font-black text-zinc-900 mb-4 block">The Curator</span>
+<p class="text-zinc-500 text-xs uppercase tracking-widest leading-relaxed">
+                    Elevating your digital marketplace experience through intentional design and refined curation.
+                </p>
+</div>
+<div>
+<h5 class="font-bold text-xs uppercase tracking-[0.2em] mb-4 text-zinc-900">Service</h5>
+<ul class="space-y-2">
+<li><a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Help Center</a></li>
+<li><a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Payment Methods</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-xs uppercase tracking-[0.2em] mb-4 text-zinc-900">Partners</h5>
+<ul class="space-y-2">
+<li><a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Shipping Partners</a></li>
+<li><a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Socials</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-xs uppercase tracking-[0.2em] mb-4 text-zinc-900">Download</h5>
+<ul class="space-y-2">
+<li><a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Mobile App</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-200">
+<p class="text-[10px] text-zinc-400 uppercase tracking-widest">© 2024 The Digital Curator. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

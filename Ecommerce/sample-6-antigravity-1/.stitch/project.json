@@ -1,0 +1,311 @@
+{
+  "projectId": "16350391539561472399",
+  "designSystem": {
+    "id": "asset-stub-assets-d64cb065f44040cbb91714676f7fca86-1775531969992",
+    "displayName": "Kinetic Marketplace",
+    "primary": "#b22203",
+    "primaryContainer": "#ff775b",
+    "surface": "#f6f6f6",
+    "surfaceLow": "#f0f1f1",
+    "surfaceLowest": "#ffffff",
+    "text": "#2d2f2f",
+    "accent": "#7f3f9f",
+    "radius": "0.75rem",
+    "glass": "rgba(255, 255, 255, 0.7)",
+    "blur": "24px"
+  },
+  "screens": [
+    {
+      "id": "37f054f266fb47c5ae192eb4a9da3dc6",
+      "title": "homepage",
+      "htmlPath": ".stitch/raw/html/homepage.html",
+      "screenshotPath": ".stitch/raw/screenshots/homepage.png"
+    },
+    {
+      "id": "2dc8d45b23724f28bcc07ffeed2ef9ef",
+      "title": "product-detail",
+      "htmlPath": ".stitch/raw/html/product-detail.html",
+      "screenshotPath": ".stitch/raw/screenshots/product-detail.png"
+    },
+    {
+      "id": "36080bcfeae94cb7aced0e764751468f",
+      "title": "shopping-cart",
+      "htmlPath": ".stitch/raw/html/shopping-cart.html",
+      "screenshotPath": ".stitch/raw/screenshots/shopping-cart.png"
+    },
+    {
+      "id": "b2da4f4710f849a4a46afee0f12ef261",
+      "title": "admin-dashboard",
+      "htmlPath": ".stitch/raw/html/admin-dashboard.html",
+      "screenshotPath": ".stitch/raw/screenshots/admin-dashboard.png"
+    },
+    {
+      "id": "7cd34e1609e14c6e9bb8f09c64076037",
+      "title": "login",
+      "htmlPath": ".stitch/raw/html/login.html",
+      "screenshotPath": ".stitch/raw/screenshots/login.png"
+    },
+    {
+      "id": "d9b8370f48d145bebde842768c1a04f9",
+      "title": "search-results",
+      "htmlPath": ".stitch/raw/html/search-results.html",
+      "screenshotPath": ".stitch/raw/screenshots/search-results.png"
+    },
+    {
+      "id": "49615c7e6f45457085ec283042ddef8c",
+      "title": "register",
+      "htmlPath": ".stitch/raw/html/register.html",
+      "screenshotPath": ".stitch/raw/screenshots/register.png"
+    },
+    {
+      "id": "d4090930c34441b98b26d7a8a2aadccd",
+      "title": "my-orders",
+      "htmlPath": ".stitch/raw/html/my-orders.html",
+      "screenshotPath": ".stitch/raw/screenshots/my-orders.png"
+    },
+    {
+      "id": "b238cd5866364e7bb92b1def575b71cb",
+      "title": "product-management",
+      "htmlPath": ".stitch/raw/html/product-management.html",
+      "screenshotPath": ".stitch/raw/screenshots/product-management.png"
+    },
+    {
+      "id": "9c71b130bad64c76b360a682b3a1d01e",
+      "title": "checkout",
+      "htmlPath": ".stitch/raw/html/checkout.html",
+      "screenshotPath": ".stitch/raw/screenshots/checkout.png"
+    }
+  ],
+  "extractedAssets": [
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDpW-utRIhNgErrSGWNX4GWkwoJD0iNjSCb-CqKfiwaGdLzb_FOSV0U2tSBtDiti0VsVM9aiuj1EXrC4JabPnLGYlu3TCf8UGcHTkuNx8OH1-0UHvB8NWorjgWXyxluk-xQ_Lh1HzBBhZyofYMa49UXB97EjojLwcGqDB7pSxcJMzslWLFUAYMIzD4b9A5GGhO-tuUVR8nPVz4Ft6MoRZb41rB8G3RCLroKZiwi2qYoxYQcUUHMMBQKSyJ30Wyi9OAumqKvPQRdCzBD",
+      "localPath": "/stitch-assets/homepage-01.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDBNTu2AagDivSW9rODNFl23l23AliD7Ekq8z1u942AGI94_m7rSq0Lu5qBfHpgBvzMsfEX8b0W_1wJOqAJhqPjMjvWJFvJZoRre1RtM_FWqPU8uh68fa9tYc6xlZ5BlfN8ZcnX2Y3Qfh0j_AbpoE7emtxq2xAynTL-UVCb7bUyAUUIses23xOv0IrgI_ngP95kh-v87FmfY7RIp7om_PqH4SLWXQ-OESHqt47yT0omnSa21fB0PvSokA4IJUPcBm4d1Q9Wax_67-s3",
+      "localPath": "/stitch-assets/homepage-02.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDFD-6JCIYmZ-CN41oMMH1DAujoLoCJmpOC-7_51Rw64AM9mHemw-cKlXN1APAdPawdzeADIKYD_kg6kYw8OFpPhXvbz_OcwJOA-WFOt6mb_ieIQRKiTJma1NLXBuSBq8zorbGvQo5X4nFtjRnbImmBWv3mA621c1oA2sDTeM5Il03P04sTZNl9Vfn2i_Hhn1fMUHAnkRug7krcJnBOeY6yO3c_ZV_vxdVR9vJLS9OjoHH46bCHPJTCC0yYli_JtQoAFNv_klXUwd0u",
+      "localPath": "/stitch-assets/homepage-03.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBv9ZzjeJXsav0ITQ8mzPCC71OJusQfm_QvUTePY6_n_aglzK3mB39RpFso0UH_23hBok-xrwkXw_mjmKazyW8xxw0KpitVMeLjcTJ9R18jQsJDgrkx8whwa3ZQWfjI0vXQ0kBPuB6PJSq0ExWXAEBkguJXig5RLbNxJLsOZh_7oQ1JxrVa0ji157lw1qEi-AlCfyagwqNQ9K8qPM_DZ6MRo1IWX6Vy1t6bihcoB65M3o8N6Kv05PC8-EVUE-KLXEO44MWvF5xvgHL5",
+      "localPath": "/stitch-assets/homepage-04.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuCSihI-qHfR4pA6dgnL2ikz70h-PxgntNoWzEb5IoU1z0WefgZWHJCcgv11OcZhS2dRk3P5CBYAipG_Q6toO5NAS1AbJol9FJANnyuyH2wWj1o08QlGcGhRHKcwBInaqUTRncFZxId1udZjEalk4Na53RRVBXE6-DFy6gEhTUyyZv1kXnmZgEw8hTv-2H-jrf3zxXUjVbrO-b5EwbQP9L3X3GsSA8CwNb_B9iYQKo28-_a8k5pGht_MQj1PnR4I6Fpp7dZOZ-aWgsPA",
+      "localPath": "/stitch-assets/homepage-05.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5_ljYwRw9apq0nU0UQ8hu5-F6Z1jO1kneSWDWlhw459gbzESWpQTzlQ8cY-requCc6jDVY4TcOEzymP47Dqwig2H0RZ3WisPYP3pfYYlDglLLDOOV6bNXVwTBL_UISKcS1L0LjJZ-bvja_5_Q1nhYAdDVAAhoSxOYg384oM0EMTttkpdWQzMC4zBr9pRSJej8Pcm76CBwb_yRb-AG5qnWOKGUCkEjc3PdluZFvnpGeIxvN10Ar_eLeOpk96xUmg5ZtNEZoDMbPuvZ",
+      "localPath": "/stitch-assets/homepage-06.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAmficmT9cNCpQgpswKbjG4S9BAIkaBgscuJbZLW24_T2gsPH-GwcJtVSIsxTzyWYMy8Lhfgm5exvilWSAPuXqXh1Vb6YNoQq6MRkwTX21APCZ0GyXi7lc5_GiiiyAtbycSqN2lpquH86eReA3hBT1xCJR45y_TC62L8Qo2TW87d_Rr5CCZRJXcHpJ6IMAeULuPUKv4izwxMSI1o5gkKOw8KnC_fMPpcb02t0A3L3e1fcFSRZMh6iJPrllLAVTGjAWOUQrVgcrlEytK",
+      "localPath": "/stitch-assets/homepage-07.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAjb65aHvM0q_1v0YJ5DupQsJlaG2fBkudPwHP5hZuOAi1KZo6FNJo1X5nmW-K2OoFwdHGLxAzdT1mA0obSuQBsgLv4lthbf-0DKzL20CzH-yfYF9fG6YA1-H7hZbj0gzagN3XS2xY9Z7PPAfDThMsTFqFNPjUDxYef8mNN1-eLMdpUuGG-DxCtksTmp_cDTeQ7pP9tekeYgM2kwehxlWLR1fXA4YyvmSg4LVe_oMeZdRkKCThA94xs5VShrwpZ31iVlbHERvhJBEjo",
+      "localPath": "/stitch-assets/homepage-08.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAjJ4ccJWKQ3gBGxF3U1869wGkI-rYFGoAx6RfA02IUriaVGys1hYFb08V7z2z6j0DBLOtO4AAHNe9wb0fNbHPIT5JSuciGCRb38MHwWxkTkvE8EpVgVIg9-8P7r1aGLVmczkGjNthZBh0FjPMpoZzwQpUVj9_2WoeiPk4COQnQeYhdiUno87dH3MzoMhFt-o_XEnDnB0vx24tLQTLempBtyp2JwuJ2EtMPGyaG7zcwiBmMaKK7UZ_zCqmBgHNT8WTP0RhFxHc3dwxB",
+      "localPath": "/stitch-assets/homepage-09.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBWmICpP2e0q2odlFDAX-egL1tkZMZyOtRPnK7BaGHnRZG2SwyG2OhGUeDlv8vjZWFX1ceGqA4t52NoWAdE7i5mapJrpmflmkVQL-8NEZp5tbd9XXsr5v8YNLLSj5uVM3uuewI_fhocH-kS1n-SRG_nbbyTU6LfFCDM_HtN37m1Kr3lAgDDLG21zQKpabCb74C2gjsZ_lj6bwkKDEj_EQ-a--OMc_b0cDp_avvRjKVEuvM37_e-f50yptdEGEFyyCxDtRDXM0zwNENd",
+      "localPath": "/stitch-assets/homepage-10.jpg"
+    },
+    {
+      "page": "homepage",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuA8lIEJsnQySNglkbm4taGPtY7PCEi6mbN6Z5FlD_J5FHUtLE9RDzoL6IXTcO5leEb_5GuoVj3kb4NbQHayMTDNE8Ga9jm45FLcqpU-ukUKTdPuhEvCUEMoAS65f2pmn_wvwI8N9OdG--a90Nb7CVDlY-e6AOs76bSbdPqdH_dzAKYiSnMKsGCgy9KKBqbhgyMuEW-vcSXv_syj56RBtcGi89KrWP11T4YCFvezG-ypr7yqcQi4-RuxdZRHIM1BJdGz5XIeGjkuF5_T",
+      "localPath": "/stitch-assets/homepage-11.jpg"
+    },
+    {
+      "page": "product-detail",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuCkuaHa0jTqXqR77awIDqNxYTKGynui-wkGW7YnI2O9rnJq_x11LDzfarHnoB4wF7axTQgjcwq9pMEZ4dtg4LUkNz83gXBvXjFi0eEEXF-ImlwRTDsAmPB03Mqj7xkJ7wFxWHeA9S-FvcAY8SETghKaNTyqkl-9HqDATDVqtySPIs8FPDvnpecouaMEkOWI8VGNplbLqBggZASjwC5CfIGsi0Zp3XUvkSGQWv5DTHZ3obJDZMaSrYu9R9nCIXoxrD5m-vsPM37LFa8n",
+      "localPath": "/stitch-assets/product-detail-01.jpg"
+    },
+    {
+      "page": "product-detail",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBebl3MB6KOrKpR2LqAh5m8xdIgalQG1Dk9bG9F_O8DYxBfV99Ybty7QtiHtHBWQFBeW5ryD_CMk1Ba2bYs1OgOcmXII5kW6AFHV-IsJ2VKGF6PzBhA3g4EIBhG9MtcyNsQ53RDAmPA8VgB2U0dU4KIgHgObCEJqezR3-bTffSIq2XOq6Bp83QlFb1twyFP50HY8xdPT0LeA-p_WlGGD9G_VJJeCmi7Yp64nJEGP7paxrIi-WHQwMy9fjiLa93G7DvVfjM1RV1EWVrv",
+      "localPath": "/stitch-assets/product-detail-02.jpg"
+    },
+    {
+      "page": "product-detail",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBhsSNLe6kquc93kgy5p3KOkuYnnoeR_yao2cH4OjMnkA21xQslQpDqA2bqvPUic9D-jnj877t-7cfyfjdE_PLN-H7wjBsbuOvleSGpamy1gaFM7S1KXWymviJIvD4gLByBN22cATzY475hiUFKGgQ_qb1i4QJnh2w6lkfYYsP_4gIGsxPcMYBa5UdRpuwJ4rq1BExU4yXOktKMqvkdwrbzmhtcp2EHxpyT1luHFWqyTeZwoHS6O5I4FwvY5LFbpWQzCS4G6ip9QbAW",
+      "localPath": "/stitch-assets/product-detail-03.jpg"
+    },
+    {
+      "page": "product-detail",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBgrEj1Ccu36gf4k695vQhRO4hk8etb0sLoEWWa-O8qFTwIviwsqO3zJWiLTDSSwUGE45CAOa4hg-We8PC238aHpzS7yPkO1zO3CTl5nDtLwN99G3kqANz01wklWYGH6bsBo-Hda5Ap2IcHm429iyZQHw_FFt4hNhwVtWiYAYT4AJFSORAvuwmMaooJchriDzfIm0gih_2IjOc54i4PpEA4Lbz_NzA84hsSxkni_9IrUTToQ-_GuuKZs-3_fbnzKoh3yG9nHf9lPu8Z",
+      "localPath": "/stitch-assets/product-detail-04.jpg"
+    },
+    {
+      "page": "product-detail",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDl_Fw6dTueQ_TUCquSnAaxUAtuclwr8aZdcURm12T9HI9gqoyOvoNTxBwd9qfZGjZt1EmP9L71BK45B7GLwSC0xl4uhNn7izUQcjuBJhR6BQRH8a3dRh8z2duEStsF0SUK_Pm4XTimwlGkDpdjkJFswQzJvfLoZ0HhUnR1lb0I7ph3SVKJOkS98fpTWVzsFg6IFeak3FNh-fCUBemcRsjt4-r-u1GvQso52bNnFKFzlLsgMyxdjTIl3TpERN0sgB6vPiLasHjUKFMY",
+      "localPath": "/stitch-assets/product-detail-05.jpg"
+    },
+    {
+      "page": "product-detail",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAO7zsIvqhTHrdWnQYAFztyhUQA1sNfrbYO6Mu-K0SxrOUqOrj4AnpmpGHaEttIjCrrdI_cLMtR0pObNN_BoBRHpTPdkVAkRKdUoTmGCrtTdKwetgGFOw9Tl9KUNoJfMe0J81kKk-a6DaNcH-FdiP3RqzGHVoACtpDwZM65tirDrRZTK8iMC2Sx7jHWkHz2lBDtnc2tjedMB0mYWfZfO92CfXYvIH-3rVv8C6tB8Wik5Z3R6y81uLAcrmVjB9HXIN2qApO-ZsjeoiKE",
+      "localPath": "/stitch-assets/product-detail-06.jpg"
+    },
+    {
+      "page": "product-detail",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuC4t26iI5UGFLgWWfN7uVCnwy1A7LUdn0U0acAjrt2Zgsdar0EJWnv7oy8Ql0VhFlgcJi_bqtl2r9KM6nVOs1PM-rZoZVyUw5oOZoNpDHYZEH9wdDo9SDyiVQ1ILlK9tb1OLRwURxwBBKiunSSUoQtmWR6SENoTU2FhWRVZg10wB03BKBrqDK0UxHTUNKrhjzpcOWEL8Y_TP2PxrDMPfehtZHCvFlXwMtdzRcQdGDMy7dNaChLt98NzxCEGp7Sz7zC1y1ls6r6fVhh2",
+      "localPath": "/stitch-assets/product-detail-07.jpg"
+    },
+    {
+      "page": "product-detail",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHq-cl1EMx0NQoR_uj1KBNJrGcF3zz8PUi7p-SsTjqOTHuCRiyGppIEl2XelnYEibgJ6LVSqqnX4HH62VnX9Qy_h_pLjnDO0lhnRZTUIcjrZ3Ox2ZT2AiBvHMazI1Ibp8ut3Z7j2tjIf5cGMyoP4LPfVPo15jsnAlYtGxExOrvmwqiH96PPIKwd0tXmlO4NJPa8AEA2BlusiSYbF1bHx1gyIPvWy_pGIsINLMe_hTGvv3-eDl1VGApWOk5lMSAnUGUQZAOcjxYNflv",
+      "localPath": "/stitch-assets/product-detail-08.jpg"
+    },
+    {
+      "page": "shopping-cart",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-awIehsR-QEr747ewr1WWO7_53c9yRSqoUDuaTYJMq_RpchJVsmWYhF8phpll4jGbamOfe1JGe4kT77LkWn6cVzqZk7VfstC0WlerCKsaiu1OSQ9jT_Uu0M5ILgvsx5W9hGeNp1EsqfBzoNR1mAYyWT3xT5SFLfPhL9glk_CSi1S8vTZ9TMRlweE9q9yAw1z1ZKkucGN6wjLbJadvu_bOCvGZivXfifAfgLRjKhAL2MHc0_rCNzcQymoKF2_1bZTzEim_nzMyW0R",
+      "localPath": "/stitch-assets/shopping-cart-01.jpg"
+    },
+    {
+      "page": "shopping-cart",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBjmNfOcO8qyD-Bo7oEa3cizw0yBZYCNjU_X9JJ6UiRP82Lp9VWJnkrJqGNIfDct-Plhxtp8pQEbmj-ZRFkvWqE0OsSzdsZttNIoGriZ9j4XlYjWmYdECvZEfCWr5lcrBlo6o6eUKK99XpRULYOu0YNJdEWnf6MqogU84bVUPHpg4cmXAGwpXama3fAOfVHL-i8SUi7fLHQu_DmVJOplb7FmCOMt30dAl4qZGVJmacJIqPi3NDFxhVeOEs6BTaWkx4myXyltpbgxZlz",
+      "localPath": "/stitch-assets/shopping-cart-02.jpg"
+    },
+    {
+      "page": "shopping-cart",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFdOZXu12lMd3gqAuzk1hrqQDgnhSEdC7GHOVSal_m7gJzBwJ3yZVkYT0U7yNzx_nAKDKqu2aup4QJ1ESxj_fYr0dhFZ_I9HQn-fmmPgk25fpv3lPSU_WuwmK8GHPOYmorIrLzpj1qNCj-YvULleebgYH7c8fQ0CP_azb0-IKDFPtx5-gZYIXLMWRto9s-cJ8k33Y-6fohTw35Duq-bUbRLo6Pl520jyDBZNB6FDHBMMqywI6jxif3n1e9Stz99Zmv-XWsQ52c_cRq",
+      "localPath": "/stitch-assets/shopping-cart-03.jpg"
+    },
+    {
+      "page": "shopping-cart",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuC6RYsYwGUT-zMQEAGTXrCmqKVPkLuKhPX8q9p8q9Wc56jYdARBf0z1wb7oJrFL7DNA87SBWhZ3t1frz-Rr4vC4FVHg9TGOV3m1_O7wlhalXxDBlSiy4TUVzyH4vp83ko2r9kdjI1T6YWSXP6duaKI8wT8gKj4bUw1srx-UB0i-ycFlD8bIgaJAEbHQx-uTSy0ojH6rohviW2hJxnogO6j0dmgkLrC9IXgQEZsJ3sOinM5qzY5ZiwjdkhhmDiTOScKEDHZy6Aco9HNo",
+      "localPath": "/stitch-assets/shopping-cart-04.jpg"
+    },
+    {
+      "page": "shopping-cart",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAwF5ewgmkFJZgAK1FhJmnmhrIlnK88trC4cBpNMwHANNK-V9_hIQSCYzN33KYe8vnIRIdAzxTVsLvvQZE34tZ5xBgNQcOb9l5ijWVArfn4MskrpmVfXmhXdRXA0ci7qx0tXStKU6FyLGN4wNKeltzrXufQbZKYZbFXOkKMH_jA4RUzO_pY2ikEXRAshZ-VMW3dMrFI0jQOq3X0C73iOqfPV3WCApdBAV_ZvAQxX8aNqTvyUoQfx5n0VJ8C5WFQQ4u6e4QR1X1HJ8CI",
+      "localPath": "/stitch-assets/shopping-cart-05.jpg"
+    },
+    {
+      "page": "shopping-cart",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBLQVtsplfFHlBevmr7Ss9sNSI0AC1QmZRAKEX-jyGpPxgX8PVAogc9h6v8W5WwSLagY1VidtJZ6fa2yquZkHqjS7plb7YcPjbl5fguSyOpE09TJMk1pOwSGHh9M7NGxXxiBIfmzpfonZrsKeYNR7up6G6HAiC3ySi1l1ifRd9T_0jsVXLJpZhXyi9zUoOirtq-s8EhAvz6WjUh0UEbYMAUVtUHFA3AKFeHMfGZgpJDf5wRL5Amm7kdJR1PZxVpINyO_P4ndRdsnSzA",
+      "localPath": "/stitch-assets/shopping-cart-06.jpg"
+    },
+    {
+      "page": "shopping-cart",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAtBfz92b7Uj0IWvnLS3iIOTYuUa4J5M_rT4hDR0MVWfMb5Jb7bgYRzQswiNICPQGC3v-NZkZ4WSoEz-gs4ma8v1mFsNwgl2r5oOAO2flAH3sekZIsudyOwFcdqd4z0PuluiMlKLbdgmuC9A31zg8PINQ_6lqO5NL9cahF1kkeeLKkI3ZOnO1wyUrHPk3wQaT3J2sbKgtrM96hp9K7aJy1hDaMn1d-blO8B99D4-D5TRLfvufknCSrpgkkxNWMlnK6V88b5mbnV85YZ",
+      "localPath": "/stitch-assets/shopping-cart-07.jpg"
+    },
+    {
+      "page": "admin-dashboard",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqzZAKf3vwUw5A6Zo9WoBSNDfBkeyhSOhAetZOpxJEhhlMK1l4v9oL0RR-kPZEwFxPqC0Bj8hiMfhDm5isf6F6PTiq8qzVaB4exlJkg4DpFRgwyOMzz9myYjokQtHQBV-_Al1fH9vpJsKawssJY9eTv1I6a9snDEYn9HpEMLm4BSF4iomR-pl8FktQN_OtDyEt7QtiQ3fa95tFNXx4uUY2H2jZ-NmakP-AskJhTpFcAfWHHRSHCfzcyQyhXR-hf70eaRIxtP0Zmjrd",
+      "localPath": "/stitch-assets/admin-dashboard-01.jpg"
+    },
+    {
+      "page": "login",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAVmqTjcmWOMXXRAP1tTg3-KRK0zzn-IyNTc836r_xOEiWgo4wVlw6I2gPhqzH5Oqj44i577eK3ctoxfmqG3G7hwFjZ90fNsXQ2Wjvx2SeKwLxncrKpC-MgMb54FYsNfLZU1OBoVEGN1R8Ze1ZFcVE5vORpzP3gjFjGH8ef5T7EI7wyDEm5akmgu4dvGWM16D46i9DTji2IKOSIHLYW9akDfLursq6fM-VMRWRYyVYLuK1kVRkMZ58mSKTyw82AVpl06Tj3ibnn-esz",
+      "localPath": "/stitch-assets/login-01.jpg"
+    },
+    {
+      "page": "login",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuCkSPaTr7C-9Y4U9Cck-UH2VQO4CUg8YSXr0coXSqjPCr7RsvZ2lmAEgOnZPSzCM8MwE5oj3IWljmMPTgo31LMhb0pcky2EftP6H-ezPMTiyAhltIthTCkF-OifTA6noM4Tvc0it0ZsfC7BTYzz64a3S42Sn4g1kluCndk_bRLSJybKoN_day1fCYB4LyXxVpxly9WujJvrhftNpHilq1_eE6MgsZ2P2t8nirnCI4YWz43yE__ZuGwqKjpNp5fHBdc8WdRPUjitLlku",
+      "localPath": "/stitch-assets/login-02.jpg"
+    },
+    {
+      "page": "login",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAqMUmRzPDL1nZci1xL--tQDGE1wpwQq0ZZB8gND3dR80EbKfCH95Fug9Wil-bvDHA1oTb173yuYSVuKZGrdD7Lblawu1l_ymjl7UFbBuYBGyAXtEkkaOP7UobeOV6RKmqfaQY66WNBH6K9sCkEvDwlImY8_g35_nclIhGOabq5nAEy-x4WFvUFd5qKF8ENcCxo8L5GRY-n_a0NScVv0ANNET76KET5YbyVREPLseQjK9LoFHes3pF20XkCc9PiQEMGT8xrK82nom5a",
+      "localPath": "/stitch-assets/login-03.jpg"
+    },
+    {
+      "page": "search-results",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBfEZJ1a2eAzBXZe2QpJN_OaNQ0rdH18R6EEGx8WfXH_dPyGCikfUHgroCt2MOrItbULcFfARvHuA3O7LYFwAFGblR084zWI2aEjOok3wt8TQcokPt31pOu_QigmEVmL9izyUeW18VFKRwTXclW50nM3r7YopNnbsddSuWQMvWsqkmWSpmXeTJIGv3fJjwWal-UXpt-PTSl-_ZQRF_z2kk4Ndax8_m8YZLq0wkoqAmyv4roeHCSRQjhm1SC2EMzJQ6Ey9rE1ORzJO9m",
+      "localPath": "/stitch-assets/search-results-01.jpg"
+    },
+    {
+      "page": "search-results",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuB8hrpIyp5WCW61TUa4pV7ElafvR4X6U8PZQzGtroNEqylbEPC80J2uoBZhXRAbVc-SewDEovxv170gm4GnuONGXwMI0lkovJ0bTzAb49LZbFxigLoC-HTS-GpiGnIUb8an8lHafK1o7aVC9JOTq0bkWGyaCDPNDyXo8zmY_-LqGevagmt7w7xfLj1pkksBmpcWh14gMc6s3mksQ3SDD7CamvmxLIfNkyfqquFU2ZZcpateypU2YwOEv_lwuACf7Y-oj0TOIJFkpegh",
+      "localPath": "/stitch-assets/search-results-02.jpg"
+    },
+    {
+      "page": "search-results",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAYq7X7GpBAi5jyp52c9Tu1zHFQXY2C-Di-KOZXrDPSW766JdVFEfis4WTEjSII_Y9sbIcVhzCgunX4Xs1ecmOs93tlHr6bFyQQp9S6La5_hTjQ0_kPWC43V4czoaCAAXzDR5be5HFOcpYikh-A8zpNag4PFauly2GqoVv5UldUCOTAZ6zJaHRA90fa1iBRR1M6HQakYCuXYsHBey71jdRSREP2FTK66f-ANwFIxjK1mN-WaIBe6oSsALw0fq0uZYz1aMGhrxKDmEiF",
+      "localPath": "/stitch-assets/search-results-03.jpg"
+    },
+    {
+      "page": "search-results",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0wzRqRwtCk4BwHuR6JqQxpmgOGM2TzSbaJ7IpwjHvVSxaLnfXgHxJ12jk_jG7XElQJEBQEr4gm2T88URLCgRlBKpmx_pXj5_53A4tnV0ScfpXl5YdL9GYp6qvY4jzAw9AlIic_8tnbTkcqMVu4Y_PhkDgoirl-qrNMMLWSetU5b2X_64UeiWSnKP9xulxvz7qxv4jngY623OwAwBq8iDnjCtIIfDNnpb5yMQGJDxhrJSJ52WAX0oIMREVh7Cz_qxH9AUGMluooOdt",
+      "localPath": "/stitch-assets/search-results-04.jpg"
+    },
+    {
+      "page": "search-results",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuCYpQR1PT-S7PomQds68mRcX82-iPitPprh1CJC3Wd43-o5lC7gSu2nOi_sL6gyNduAACF82kayLQ9SI2h4a2VktXuTUjkLvIY4bpUJgOiXV1mChm6UtYgCJVGMZEzYYI-xZcwtJVD_iHdRSwqNFVUzulk5WGRsiROoOdL_y5T_mP9--SMM4PMmp19hwmNO2BQIfrUngioqt1G2XAqieGcbAJcmrwbABjFeh0MuyDbi7R6A8XtKhvem4ui6045MXpUJyLhqrUB8zT_Y",
+      "localPath": "/stitch-assets/search-results-05.jpg"
+    },
+    {
+      "page": "search-results",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAEFFyA6U8KF4N7WIzD7diLWWGV9yrW0zdf8i5UMyJdgbMJEzggizxpBJQYJttYgzkGlErSeCIfWGyAC8EQ7WCxGSPtLv1n6xzhY3KkwcMoHX4enqncQjZtzadYPZTkjkES_Is2i1o7SRmkiB80_0c5JlHAT4ZPJDxdEI119UqmsPucB_Bd6yE7n44d0LL7LttyM_xveIs9HEqg2HjuLWrbPTrZxSpa1jEjunbBvjYUfy461nLcoAKs5jvLS-MdgLPLHOOufqspdd10",
+      "localPath": "/stitch-assets/search-results-06.jpg"
+    },
+    {
+      "page": "register",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyZL8Vzy4F8E85BLCle4mqEal4A_GtzSs_a2Jq0HQqIiyaZe14EDRGlK6RjKUDC82DL6zEAfKABpYwGrqREG84Pl3_3qIYWzXGr5W8Bt55vznegPIVnGEM6-rvye4erbSjA6uPYj09olipHykgvTCD5_RV8rfuQuDR-mZa-SBn6YqMKzLBkYzxVNjVo6moDh27z8oILeBne5-QcWGa8QmB2y4UVVoFH8G9z6jvvO2DjInyA3Jug2JU4j5jx1FLHepBCiZenFcT4iok",
+      "localPath": "/stitch-assets/register-01.jpg"
+    },
+    {
+      "page": "my-orders",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuCfqkpv3WsKtaNrOUFnvL6Jb3qmg_2h3kXTDSIMh7ifZcgifGZcCnzQPweYCu1eoJ2eEWxYdNUzFycRWeU4qBLUKPv7UIgMGd8jl6RrY0fj63aM1dleD7aiSBvW8ciQick-2bqf2lRz65XroPkAv1Ps6pM0AD9wkFjEWCZAT40gqFQYeVicOS_HckMCJ7QB2xzkm_S5gpZiIsIaMZgE-3oQ2iyXxQj-S83vxN9lFzZNpMSKtRGj9dm3ZhIGqWiFjcZZ7ukK8011coDj",
+      "localPath": "/stitch-assets/my-orders-01.jpg"
+    },
+    {
+      "page": "my-orders",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDZ6bB9pVqSflQ-djdxu06NW9z-95ykeAGNmxjnhXB12qfQ1Gw2yjiwGythdMMfbmShiU74-XYzTG2xw6nLFViT7DPjgDbm4kein6LCm0CUQhPfZGpG-KmCfMxOaix9FT9EiFLdiALPljsrBElMvHjqJU0bsJlPelvpOsfBHOaT55yr9jmDHAgfClbfmj5okuDAiFxTKpGvwDo8-o1DLhgAf9wC_r7ynJ4g10txREzt_20SBQFAe_gu40Niirtzx5JtQvNVT0HwD1Kw",
+      "localPath": "/stitch-assets/my-orders-02.jpg"
+    },
+    {
+      "page": "my-orders",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuC6r6xaYAz_ET9xnY7gNcTtA9kdAJ5WtF16DJEvA5ly62MyTEV5K_xXoal1Fe_q0SaYEbJ35d27CsR3jBdzeIiMZTCPwJzcMnFwmdTGcWajaENcPzH63wUrhu8kaOOanv7Q0gtXYukrKB5byqVrubUwBcw8-vBqWYKceaTmxyGAqJfBKEwqivBa_muU0EHZS9F3bBqrQSYOlLGjtzZwhJoA8-lXUuw5UxZkFIqO71HNp0pnBi1cLOtlSZXHH6Mwl8wfpKowJN4dMP1U",
+      "localPath": "/stitch-assets/my-orders-03.jpg"
+    },
+    {
+      "page": "my-orders",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBfH7dKEktL-Jl8mvE-mUnxz7rBqYflQ8wqSV-4QUoDszrDwOWAJr37I0ZSeI1c_7hdV4YjpQlp-ZQrn6Nlif_8ldSewppr1svUx2OZIbtjza25B-iofhfEjQF-kjh3kv8wtewY9x8jXOk9MiN33k-AtQyP-Zjp3D-Oq8am483hXVlk0iC5wrFVRACeAPDadfhRTQ9VPE5xjXYVgFPD_y7PWAhk888bIfOQOslIakMpj6V_kfk2DKHngEREA5-nP6-2_SbVI_xe2Msn",
+      "localPath": "/stitch-assets/my-orders-04.jpg"
+    },
+    {
+      "page": "product-management",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDgY7M0cRYIRYDVPiJf8itk5Pic08JtKBm64AsR8v5iwZbqjCaQn1RxiJ5l5dpVnDMnEtTy-5TE1-Tl6YmI5QJaz7N3RHFiUr6Inithb9wptg-l5_aS9B0f_eye2YO963W37qEET-tdHg7eio0rFUIiAqvZlnCxS8JMd3adMt53AmNjBKvawD_PZXh9O4QulqbP5t_GmIu5UvxKgwomYqfNXihtz40f3y4i3UzUaLXNF7dcMz1xKLzrWcPTeWcWixHknmYulqujjx9g",
+      "localPath": "/stitch-assets/product-management-01.jpg"
+    },
+    {
+      "page": "product-management",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBBHpAj64zW5p0nLRQ9rtF2pfSZWy0hvJETfl8iYbX-O0uHU-G065Y50Ii3brqJIZ1ovnXO2a9m26-0EW3ckTaNlubyss0WFfhwzgurwVi0qfF5BrHDTbGqegGcNE2oWemn1IF__8EazqSuxnNJ1FKIGX5y9VFm6JOGCMB710HWaGRTDuBaMOWZs5x-sIc-mh_TMZcjDx2JHzgieYR457csR2N0sBvxIEM9e10LnF9lKPxI7EMGXhsEBLnPJutgcA-51gYtsf0tkUha",
+      "localPath": "/stitch-assets/product-management-02.jpg"
+    },
+    {
+      "page": "product-management",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBUmoZ3mtStLDAmUZ1RejBmXHqIYG3XdbdALVF3e_l_lnp4MQlXxry4be4v2GytN0rxBbZIAlotKNuMzmPgpGXDnqrD2XHIoBgSe3CNn22JMfkyaH1J_ucQwTgsyby9rDCgOBHiRG2sV9UDpPiQZKQKcOdlLc00AJ7uAouLEdvLNSvd0dydG9nQPERpyion7l3LW4kHrZjqdIHuZoHuLzajFuLThtfvmeG2F701t8s_H8k3G4-IjEmyHTs29GucK4TdfEid6bPHTYrS",
+      "localPath": "/stitch-assets/product-management-03.jpg"
+    },
+    {
+      "page": "checkout",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDTvaHTM9jydTSQ9HBV8SiemKaeyvfZ9o_Y_FyttudwbHBQ-ptmnC55OnwMh-nTY6zzc9xygZuEk2_yRN4n3O-rqsEbsdwFawUE5Us7bXTqW9Aalwob29QVV6TRK-S6s8SdfqOGf3bs_mdJSjO1ZbyNiNB1eJ8g3v9gygH7cTuZuuvgN5Uc10KRL9a6-iAEtuNbbiy-kWK_9J6nufg6JZAJ3Y8wFR4S0qU48UDscii_WBZMIABleX4FIIMPUIpOWaz0xeReT3ShHSDO",
+      "localPath": "/stitch-assets/checkout-01.jpg"
+    },
+    {
+      "page": "checkout",
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuC0OttbFpZyHD_PbRS-4KxRqCloQx4ZomGTcCCAypMZzLTBolNSJdyq2gJiOlkVl6eUs1TqPhrkKS6ilYogiCOdqitHOB7DBQNN9QVBrGqG2UdLOWRBuCe_mSBfYwOUIAOGO-OQDuYmvAC2yGUYsMDBqAV07n5QRP5aeI-62v65oKd87KpMXzF-ypqx6lak-BPNQwrpO1Xisvjo7yutFWqP9vJIJ_t3ggcSuExiWuB91FBWC1GYOWaC3M0fjAaKkVHuF1VlgDKcgkfj",
+      "localPath": "/stitch-assets/checkout-02.jpg"
+    }
+  ]
+}

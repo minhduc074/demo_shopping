@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Curator | Product Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#6a0d1c",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-variant": "#dbdddd",
+                      "tertiary-dim": "#723292",
+                      "surface-container": "#e7e8e8",
+                      "error-dim": "#a70138",
+                      "outline-variant": "#acadad",
+                      "secondary-container": "#ffc3c3",
+                      "on-surface": "#2d2f2f",
+                      "surface-bright": "#f6f6f6",
+                      "tertiary-container": "#de98ff",
+                      "error-container": "#f74b6d",
+                      "on-surface-variant": "#5a5c5c",
+                      "error": "#b41340",
+                      "on-error": "#ffefef",
+                      "tertiary": "#7f3f9f",
+                      "background": "#f6f6f6",
+                      "surface-container-high": "#e1e3e3",
+                      "on-primary": "#ffefec",
+                      "tertiary-fixed-dim": "#d08bf0",
+                      "tertiary-fixed": "#de98ff",
+                      "on-secondary": "#ffefee",
+                      "secondary-fixed": "#ffc3c3",
+                      "surface": "#f6f6f6",
+                      "surface-dim": "#d3d5d5",
+                      "secondary-fixed-dim": "#ffafb0",
+                      "surface-tint": "#b22203",
+                      "primary-container": "#ff775b",
+                      "secondary": "#a03740",
+                      "on-secondary-fixed-variant": "#912c36",
+                      "on-background": "#2d2f2f",
+                      "primary-dim": "#9d1a00",
+                      "on-primary-container": "#4b0700",
+                      "primary": "#b22203",
+                      "on-primary-fixed-variant": "#5c0b00",
+                      "on-tertiary-container": "#510c72",
+                      "primary-fixed": "#ff775b",
+                      "inverse-on-surface": "#9c9d9d",
+                      "inverse-primary": "#fd5837",
+                      "surface-container-highest": "#dbdddd",
+                      "on-tertiary-fixed-variant": "#5b1a7b",
+                      "on-tertiary-fixed": "#300047",
+                      "secondary-dim": "#902b35",
+                      "outline": "#767777",
+                      "on-error-container": "#510017",
+                      "on-primary-fixed": "#000000",
+                      "surface-container-low": "#f0f1f1",
+                      "on-secondary-container": "#85222e",
+                      "primary-fixed-dim": "#ff5c3b",
+                      "on-tertiary": "#feeeff",
+                      "inverse-surface": "#0c0f0f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Inter"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #b22203 0%, #ff775b 100%);
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl shadow-sm">
+<nav class="flex justify-between items-center px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black italic text-orange-700 dark:text-orange-500 font-inter tracking-tight">The Curator</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-orange-700 dark:text-orange-500 font-bold border-b-2 border-orange-700 font-inter tracking-tight py-1" href="#">Products</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-inter tracking-tight" href="#">Categories</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-inter tracking-tight" href="#">Collections</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<input class="bg-surface-container-low border-none rounded-full px-4 py-2 text-sm w-64 focus:ring-2 focus:ring-primary/20" placeholder="Search curated goods..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2 text-on-surface-variant">search</span>
+</div>
+<div class="flex gap-4 items-center">
+<button class="active:scale-95 duration-200 text-zinc-600 dark:text-zinc-400 hover:text-orange-600"><span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span></button>
+<button class="active:scale-95 duration-200 text-zinc-600 dark:text-zinc-400 hover:text-orange-600"><span class="material-symbols-outlined" data-icon="notifications">notifications</span></button>
+<button class="active:scale-95 duration-200 text-zinc-600 dark:text-zinc-400 hover:text-orange-600"><span class="material-symbols-outlined" data-icon="account_circle">account_circle</span></button>
+</div>
+</div>
+</nav>
+</header>
+<main class="mt-24 px-6 max-w-7xl mx-auto w-full mb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left: Image Gallery (Asymmetric Layout) -->
+<div class="lg:col-span-7 flex flex-col md:flex-row gap-4">
+<div class="flex md:flex-col gap-3 order-2 md:order-1">
+<div class="w-20 h-20 rounded-xl overflow-hidden cursor-pointer ring-2 ring-primary">
+<img class="w-full h-full object-cover" data-alt="close-up of a high-quality organic cotton white t-shirt texture and premium stitching detail in soft natural studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkuaHa0jTqXqR77awIDqNxYTKGynui-wkGW7YnI2O9rnJq_x11LDzfarHnoB4wF7axTQgjcwq9pMEZ4dtg4LUkNz83gXBvXjFi0eEEXF-ImlwRTDsAmPB03Mqj7xkJ7wFxWHeA9S-FvcAY8SETghKaNTyqkl-9HqDATDVqtySPIs8FPDvnpecouaMEkOWI8VGNplbLqBggZASjwC5CfIGsi0Zp3XUvkSGQWv5DTHZ3obJDZMaSrYu9R9nCIXoxrD5m-vsPM37LFa8n"/>
+</div>
+<div class="w-20 h-20 rounded-xl overflow-hidden cursor-pointer bg-surface-container-low opacity-60 hover:opacity-100">
+<img class="w-full h-full object-cover" data-alt="minimalist black t-shirt hanging on a wooden hanger against a clean textured beige wall background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBebl3MB6KOrKpR2LqAh5m8xdIgalQG1Dk9bG9F_O8DYxBfV99Ybty7QtiHtHBWQFBeW5ryD_CMk1Ba2bYs1OgOcmXII5kW6AFHV-IsJ2VKGF6PzBhA3g4EIBhG9MtcyNsQ53RDAmPA8VgB2U0dU4KIgHgObCEJqezR3-bTffSIq2XOq6Bp83QlFb1twyFP50HY8xdPT0LeA-p_WlGGD9G_VJJeCmi7Yp64nJEGP7paxrIi-WHQwMy9fjiLa93G7DvVfjM1RV1EWVrv"/>
+</div>
+<div class="w-20 h-20 rounded-xl overflow-hidden cursor-pointer bg-surface-container-low opacity-60 hover:opacity-100">
+<img class="w-full h-full object-cover" data-alt="folded stack of various colored premium basic t-shirts in charcoal navy and olive green on a wooden shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhsSNLe6kquc93kgy5p3KOkuYnnoeR_yao2cH4OjMnkA21xQslQpDqA2bqvPUic9D-jnj877t-7cfyfjdE_PLN-H7wjBsbuOvleSGpamy1gaFM7S1KXWymviJIvD4gLByBN22cATzY475hiUFKGgQ_qb1i4QJnh2w6lkfYYsP_4gIGsxPcMYBa5UdRpuwJ4rq1BExU4yXOktKMqvkdwrbzmhtcp2EHxpyT1luHFWqyTeZwoHS6O5I4FwvY5LFbpWQzCS4G6ip9QbAW"/>
+</div>
+<div class="w-20 h-20 rounded-xl overflow-hidden cursor-pointer bg-surface-container-low opacity-60 hover:opacity-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="play_circle">play_circle</span>
+</div>
+</div>
+<div class="flex-1 order-1 md:order-2">
+<div class="aspect-[4/5] bg-surface-container-lowest rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="hero shot of a young man wearing a crisp white premium organic cotton t-shirt standing in a sun-drenched modern loft" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgrEj1Ccu36gf4k695vQhRO4hk8etb0sLoEWWa-O8qFTwIviwsqO3zJWiLTDSSwUGE45CAOa4hg-We8PC238aHpzS7yPkO1zO3CTl5nDtLwN99G3kqANz01wklWYGH6bsBo-Hda5Ap2IcHm429iyZQHw_FFt4hNhwVtWiYAYT4AJFSORAvuwmMaooJchriDzfIm0gih_2IjOc54i4PpEA4Lbz_NzA84hsSxkni_9IrUTToQ-_GuuKZs-3_fbnzKoh3yG9nHf9lPu8Z"/>
+<div class="absolute top-4 right-4 signature-gradient text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Editor's Choice</div>
+</div>
+</div>
+</div>
+<!-- Right: Product Info -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-sm font-medium text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Official Store Exclusive</span>
+</div>
+<h1 class="text-4xl font-black text-on-surface tracking-tight leading-tight uppercase italic">The Essential Curator Tee</h1>
+<div class="flex items-center gap-4 mt-2">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star_half" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+<span class="ml-2 text-sm font-bold text-on-surface">4.8</span>
+</div>
+<div class="h-1 w-1 rounded-full bg-outline-variant"></div>
+<span class="text-sm text-on-surface-variant font-medium">2.5k curated reviews</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-4">
+<div class="flex items-baseline gap-4">
+<span class="text-4xl font-black text-primary tracking-tighter">$49.00</span>
+<span class="text-lg text-on-surface-variant line-through">$65.00</span>
+<span class="bg-secondary text-white text-xs font-bold px-2 py-1 rounded-lg">-25% OFF</span>
+</div>
+<div class="flex items-center gap-2 text-sm text-secondary font-bold italic">
+<span class="material-symbols-outlined text-base" data-icon="bolt">bolt</span>
+                        Limited time offer ending in 12h : 45m : 02s
+                    </div>
+</div>
+<!-- Variant Selectors -->
+<div class="flex flex-col gap-6">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Select Color</span>
+<span class="text-xs font-bold text-primary">White Selected</span>
+</div>
+<div class="flex gap-3">
+<button class="w-10 h-10 rounded-full bg-white ring-2 ring-primary ring-offset-2"></button>
+<button class="w-10 h-10 rounded-full bg-zinc-900 ring-1 ring-outline-variant hover:ring-2 hover:ring-primary hover:ring-offset-2 transition-all"></button>
+<button class="w-10 h-10 rounded-full bg-blue-700 ring-1 ring-outline-variant hover:ring-2 hover:ring-primary hover:ring-offset-2 transition-all"></button>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Select Size</span>
+<a class="text-xs font-bold text-primary underline" href="#">Size Guide</a>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-3 rounded-xl bg-surface-container-low text-on-surface font-bold hover:bg-surface-container-high transition-colors">S</button>
+<button class="flex-1 py-3 rounded-xl signature-gradient text-white font-bold shadow-lg shadow-primary/20">M</button>
+<button class="flex-1 py-3 rounded-xl bg-surface-container-low text-on-surface font-bold hover:bg-surface-container-high transition-colors">L</button>
+<button class="flex-1 py-3 rounded-xl bg-surface-container-low text-on-surface font-bold hover:bg-surface-container-high transition-colors">XL</button>
+</div>
+</div>
+</div>
+<!-- Quantity & Actions -->
+<div class="flex flex-col gap-4 mt-2">
+<div class="flex items-center gap-4">
+<div class="flex items-center bg-surface-container-low rounded-xl p-1 h-14">
+<button class="w-12 h-full flex items-center justify-center hover:text-primary"><span class="material-symbols-outlined" data-icon="remove">remove</span></button>
+<span class="w-12 text-center font-bold">1</span>
+<button class="w-12 h-full flex items-center justify-center hover:text-primary"><span class="material-symbols-outlined" data-icon="add">add</span></button>
+</div>
+<button class="flex-1 h-14 bg-surface-container-low text-primary font-black uppercase tracking-widest rounded-xl hover:bg-surface-container-high transition-all active:scale-95">Add to Cart</button>
+</div>
+<button class="w-full h-14 signature-gradient text-white font-black uppercase tracking-widest rounded-xl shadow-xl shadow-primary/30 hover:opacity-90 transition-all active:scale-95">Buy Now</button>
+</div>
+<!-- Shop Info -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex items-center justify-between mt-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="professional modern minimalist clothing brand logo emblem on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl_Fw6dTueQ_TUCquSnAaxUAtuclwr8aZdcURm12T9HI9gqoyOvoNTxBwd9qfZGjZt1EmP9L71BK45B7GLwSC0xl4uhNn7izUQcjuBJhR6BQRH8a3dRh8z2duEStsF0SUK_Pm4XTimwlGkDpdjkJFswQzJvfLoZ0HhUnR1lb0I7ph3SVKJOkS98fpTWVzsFg6IFeak3FNh-fCUBemcRsjt4-r-u1GvQso52bNnFKFzlLsgMyxdjTIl3TpERN0sgB6vPiLasHjUKFMY"/>
+</div>
+<div>
+<p class="font-black text-on-surface uppercase italic">Curator Labs</p>
+<p class="text-xs text-on-surface-variant">Active 5m ago | 98% Rating</p>
+</div>
+</div>
+<button class="px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-colors uppercase tracking-tight">Follow</button>
+</div>
+</div>
+</div>
+<!-- Details & Reviews Section -->
+<div class="mt-20">
+<div class="flex border-b border-outline-variant/20 mb-8 overflow-x-auto whitespace-nowrap">
+<button class="px-8 py-4 text-primary font-black border-b-4 border-primary uppercase tracking-widest">Details</button>
+<button class="px-8 py-4 text-on-surface-variant font-bold hover:text-on-surface transition-colors uppercase tracking-widest">Specifications</button>
+<button class="px-8 py-4 text-on-surface-variant font-bold hover:text-on-surface transition-colors uppercase tracking-widest">Reviews (2.5k)</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+<!-- Description Content -->
+<div class="lg:col-span-2 space-y-8">
+<div class="prose prose-zinc prose-lg max-w-none">
+<h3 class="text-2xl font-black text-on-surface uppercase tracking-tight italic mb-4">Elevate Your Everyday</h3>
+<p class="text-on-surface-variant leading-relaxed">Crafted for the modern minimalist, our Essential Curator Tee is more than just a basic. Using 100% long-staple organic cotton, we've developed a fabric weight that achieves the perfect drape—substantial enough to hold its shape, yet breathable for all-day comfort.</p>
+<ul class="mt-6 space-y-3">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Heavyweight 240GSM Organic Cotton
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Reinforced dual-stitch neck ribbing
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Ethically manufactured in Portugal
+                            </li>
+</ul>
+</div>
+<!-- User Review Example -->
+<div class="space-y-6 pt-12">
+<h4 class="text-lg font-black uppercase tracking-widest">Community Gallery</h4>
+<div class="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+<div class="flex-shrink-0 w-48 h-64 rounded-xl overflow-hidden bg-surface-container-low group relative">
+<img class="w-full h-full object-cover" data-alt="urban fashion photography of a person wearing a white t-shirt styled with denim and sneakers in a city setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO7zsIvqhTHrdWnQYAFztyhUQA1sNfrbYO6Mu-K0SxrOUqOrj4AnpmpGHaEttIjCrrdI_cLMtR0pObNN_BoBRHpTPdkVAkRKdUoTmGCrtTdKwetgGFOw9Tl9KUNoJfMe0J81kKk-a6DaNcH-FdiP3RqzGHVoACtpDwZM65tirDrRZTK8iMC2Sx7jHWkHz2lBDtnc2tjedMB0mYWfZfO92CfXYvIH-3rVv8C6tB8Wik5Z3R6y81uLAcrmVjB9HXIN2qApO-ZsjeoiKE"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-bold text-sm">@alex_v</span>
+</div>
+</div>
+<div class="flex-shrink-0 w-48 h-64 rounded-xl overflow-hidden bg-surface-container-low group relative">
+<img class="w-full h-full object-cover" data-alt="lifestyle portrait of a young woman wearing an oversized white t-shirt in a minimalist white room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4t26iI5UGFLgWWfN7uVCnwy1A7LUdn0U0acAjrt2Zgsdar0EJWnv7oy8Ql0VhFlgcJi_bqtl2r9KM6nVOs1PM-rZoZVyUw5oOZoNpDHYZEH9wdDo9SDyiVQ1ILlK9tb1OLRwURxwBBKiunSSUoQtmWR6SENoTU2FhWRVZg10wB03BKBrqDK0UxHTUNKrhjzpcOWEL8Y_TP2PxrDMPfehtZHCvFlXwMtdzRcQdGDMy7dNaChLt98NzxCEGp7Sz7zC1y1ls6r6fVhh2"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-bold text-sm">@sarah_m</span>
+</div>
+</div>
+<div class="flex-shrink-0 w-48 h-64 rounded-xl overflow-hidden bg-surface-container-low group relative">
+<img class="w-full h-full object-cover" data-alt="casual fashion shot of a person in a navy t-shirt leaning against an old brick wall in soft afternoon sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHq-cl1EMx0NQoR_uj1KBNJrGcF3zz8PUi7p-SsTjqOTHuCRiyGppIEl2XelnYEibgJ6LVSqqnX4HH62VnX9Qy_h_pLjnDO0lhnRZTUIcjrZ3Ox2ZT2AiBvHMazI1Ibp8ut3Z7j2tjIf5cGMyoP4LPfVPo15jsnAlYtGxExOrvmwqiH96PPIKwd0tXmlO4NJPa8AEA2BlusiSYbF1bHx1gyIPvWy_pGIsINLMe_hTGvv3-eDl1VGApWOk5lMSAnUGUQZAOcjxYNflv"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-bold text-sm">@j_walker</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Specs / Tonal Box -->
+<div class="space-y-8">
+<div class="bg-surface-container-low rounded-2xl p-8 space-y-6">
+<h4 class="text-sm font-black uppercase tracking-widest text-on-surface">Specifications</h4>
+<div class="space-y-4">
+<div class="flex justify-between border-b border-outline-variant/10 pb-3">
+<span class="text-sm text-on-surface-variant uppercase font-medium">Composition</span>
+<span class="text-sm font-bold">100% Organic Cotton</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 pb-3">
+<span class="text-sm text-on-surface-variant uppercase font-medium">Weight</span>
+<span class="text-sm font-bold">240 GSM</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 pb-3">
+<span class="text-sm text-on-surface-variant uppercase font-medium">Fit</span>
+<span class="text-sm font-bold">Oversized / Boxy</span>
+</div>
+<div class="flex justify-between">
+<span class="text-sm text-on-surface-variant uppercase font-medium">Care</span>
+<span class="text-sm font-bold">Machine Wash Cold</span>
+</div>
+</div>
+<div class="pt-4 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="eco">eco</span>
+</div>
+<p class="text-xs font-bold leading-tight uppercase">Sustainably sourced &amp; PETA-Approved Vegan</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-zinc-100 dark:bg-zinc-900 border-t-0">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<span class="text-xl font-black text-zinc-900 dark:text-zinc-100 font-inter uppercase italic tracking-tighter">The Curator</span>
+<p class="mt-4 text-xs font-inter text-zinc-500 uppercase tracking-widest leading-relaxed">Defining the digital aesthetic through hand-picked essentials and intentional design.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-inter text-xs uppercase tracking-widest font-black text-on-surface">Support</h5>
+<a class="font-inter text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline" href="#">Help Center</a>
+<a class="font-inter text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline" href="#">Payment Methods</a>
+<a class="font-inter text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline" href="#">Shipping Partners</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-inter text-xs uppercase tracking-widest font-black text-on-surface">Company</h5>
+<a class="font-inter text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline" href="#">About Us</a>
+<a class="font-inter text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline" href="#">Socials</a>
+<a class="font-inter text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline" href="#">Mobile App</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-inter text-xs uppercase tracking-widest font-black text-on-surface">Subscribe</h5>
+<div class="flex">
+<input class="bg-surface-container-highest border-none rounded-l-lg px-3 py-2 text-xs w-full focus:ring-0" placeholder="Email" type="email"/>
+<button class="bg-primary text-white px-3 py-2 rounded-r-lg"><span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-200 dark:border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-inter text-xs uppercase tracking-widest text-zinc-500">© 2024 The Digital Curator. All Rights Reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-zinc-400 text-lg" data-icon="credit_card">credit_card</span>
+<span class="material-symbols-outlined text-zinc-400 text-lg" data-icon="local_shipping">local_shipping</span>
+<span class="material-symbols-outlined text-zinc-400 text-lg" data-icon="security">security</span>
+</div>
+</div>
+</footer>
+</body></html>

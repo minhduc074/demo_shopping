@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#6a0d1c",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#dbdddd",
+                    "tertiary-dim": "#723292",
+                    "surface-container": "#e7e8e8",
+                    "error-dim": "#a70138",
+                    "outline-variant": "#acadad",
+                    "secondary-container": "#ffc3c3",
+                    "on-surface": "#2d2f2f",
+                    "surface-bright": "#f6f6f6",
+                    "tertiary-container": "#de98ff",
+                    "error-container": "#f74b6d",
+                    "on-surface-variant": "#5a5c5c",
+                    "error": "#b41340",
+                    "on-error": "#ffefef",
+                    "tertiary": "#7f3f9f",
+                    "background": "#f6f6f6",
+                    "surface-container-high": "#e1e3e3",
+                    "on-primary": "#ffefec",
+                    "tertiary-fixed-dim": "#d08bf0",
+                    "tertiary-fixed": "#de98ff",
+                    "on-secondary": "#ffefee",
+                    "secondary-fixed": "#ffc3c3",
+                    "surface": "#f6f6f6",
+                    "surface-dim": "#d3d5d5",
+                    "secondary-fixed-dim": "#ffafb0",
+                    "surface-tint": "#b22203",
+                    "primary-container": "#ff775b",
+                    "secondary": "#a03740",
+                    "on-secondary-fixed-variant": "#912c36",
+                    "on-background": "#2d2f2f",
+                    "primary-dim": "#9d1a00",
+                    "on-primary-container": "#4b0700",
+                    "primary": "#b22203",
+                    "on-primary-fixed-variant": "#5c0b00",
+                    "on-tertiary-container": "#510c72",
+                    "primary-fixed": "#ff775b",
+                    "inverse-on-surface": "#9c9d9d",
+                    "inverse-primary": "#fd5837",
+                    "surface-container-highest": "#dbdddd",
+                    "on-tertiary-fixed-variant": "#5b1a7b",
+                    "on-tertiary-fixed": "#300047",
+                    "secondary-dim": "#902b35",
+                    "outline": "#767777",
+                    "on-error-container": "#510017",
+                    "on-primary-fixed": "#000000",
+                    "surface-container-low": "#f0f1f1",
+                    "on-secondary-container": "#85222e",
+                    "primary-fixed-dim": "#ff5c3b",
+                    "on-tertiary": "#feeeff",
+                    "inverse-surface": "#0c0f0f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-signature-gradient {
+        background: linear-gradient(135deg, #b22203 0%, #ff775b 100%);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f6f6f6;
+        color: #2d2f2f;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black italic text-orange-700">The Curator</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-600 font-medium hover:text-orange-600 transition-colors" href="#">Catalog</a>
+<a class="text-zinc-600 font-medium hover:text-orange-600 transition-colors" href="#">Collections</a>
+<a class="text-orange-700 font-bold border-b-2 border-orange-700" href="#">Checkout</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-zinc-600 hover:text-orange-700 transition-colors">shopping_cart</button>
+<button class="material-symbols-outlined text-zinc-600 hover:text-orange-700 transition-colors">account_circle</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Stepper Indicator -->
+<section class="mb-12">
+<div class="flex items-center justify-between max-w-3xl mx-auto relative">
+<div class="absolute top-1/2 left-0 w-full h-0.5 bg-surface-container-high -z-10 -translate-y-1/2"></div>
+<!-- Step 1: Cart -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface">Cart</span>
+</div>
+<!-- Step 2: Shipping -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-signature-gradient text-on-primary flex items-center justify-center shadow-lg ring-4 ring-white">
+<span class="font-bold">2</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Shipping</span>
+</div>
+<!-- Step 3: Payment -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="font-bold">3</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Payment</span>
+</div>
+<!-- Step 4: Confirm -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="font-bold">4</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Confirm</span>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Checkout Details -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Delivery Address Section -->
+<section>
+<div class="flex justify-between items-end mb-6">
+<div>
+<h2 class="text-3xl font-black tracking-tight text-on-surface">Delivery Address</h2>
+<p class="text-on-surface-variant text-sm mt-1">Where should we send your curated items?</p>
+</div>
+<button class="text-primary font-bold text-sm hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">edit</span>
+                            Change
+                        </button>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-bl-full -mr-8 -mt-8 transition-all group-hover:bg-primary-container/20"></div>
+<div class="flex items-start gap-4">
+<div class="p-3 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-primary">home</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Alexander Vance</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                                    742 Evergreen Terrace, Springfield<br/>
+                                    Apartment 4B, Oregon 97403<br/>
+                                    United States
+                                </p>
+<p class="mt-4 text-sm font-medium text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">phone</span>
+                                    +1 (555) 0123-4567
+                                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Shipping Method Section -->
+<section>
+<h2 class="text-3xl font-black tracking-tight text-on-surface mb-6">Shipping Method</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="relative flex cursor-pointer rounded-xl bg-surface-container-lowest p-6 shadow-sm ring-2 ring-primary">
+<input checked="" class="sr-only" name="shipping" type="radio" value="standard"/>
+<div class="flex flex-col gap-1">
+<span class="text-lg font-bold">Standard Delivery</span>
+<span class="text-sm text-on-surface-variant">3-5 Business Days</span>
+<span class="mt-2 font-bold text-primary">$12.00</span>
+</div>
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</label>
+<label class="relative flex cursor-pointer rounded-xl bg-surface-container-low p-6 transition-colors hover:bg-surface-container-lowest">
+<input class="sr-only" name="shipping" type="radio" value="express"/>
+<div class="flex flex-col gap-1">
+<span class="text-lg font-bold">Priority Express</span>
+<span class="text-sm text-on-surface-variant">Next Day Delivery</span>
+<span class="mt-2 font-bold text-on-surface">$28.00</span>
+</div>
+</label>
+</div>
+</section>
+<!-- Payment Method Section -->
+<section>
+<h2 class="text-3xl font-black tracking-tight text-on-surface mb-6">Payment Method</h2>
+<div class="space-y-4">
+<!-- Credit Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border-2 border-primary">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">credit_card</span>
+<span class="font-bold text-lg">Credit or Debit Card</span>
+</div>
+<div class="flex gap-2">
+<div class="h-6 w-10 bg-zinc-100 rounded flex items-center justify-center text-[10px] font-bold text-zinc-400">VISA</div>
+<div class="h-6 w-10 bg-zinc-100 rounded flex items-center justify-center text-[10px] font-bold text-zinc-400">MC</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Card Number</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-primary" placeholder="XXXX XXXX XXXX 4242" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Expiry Date</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-primary" placeholder="MM / YY" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">CVC</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface focus:ring-1 focus:ring-primary" placeholder="***" type="password"/>
+</div>
+</div>
+</div>
+<!-- E-Wallet Alternative -->
+<div class="bg-surface-container-low p-6 rounded-xl flex items-center justify-between cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">account_balance_wallet</span>
+<span class="font-bold">E-Wallet (Apple Pay / Google Pay)</span>
+</div>
+<span class="material-symbols-outlined text-zinc-400">radio_button_unchecked</span>
+</div>
+<!-- COD Alternative -->
+<div class="bg-surface-container-low p-6 rounded-xl flex items-center justify-between cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">payments</span>
+<span class="font-bold">Cash on Delivery</span>
+</div>
+<span class="material-symbols-outlined text-zinc-400">radio_button_unchecked</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-4">
+<div class="sticky top-28 space-y-6">
+<div class="bg-white p-8 rounded-2xl shadow-xl shadow-zinc-200/50 overflow-hidden relative">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-container/5 rounded-full blur-3xl"></div>
+<h3 class="text-2xl font-black tracking-tight mb-8">Order Summary</h3>
+<!-- Mini Product List (The "Digital Curator" Editorial Style) -->
+<div class="space-y-6 mb-8">
+<div class="flex gap-4">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="minimalist ceramic white watch on white background with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTvaHTM9jydTSQ9HBV8SiemKaeyvfZ9o_Y_FyttudwbHBQ-ptmnC55OnwMh-nTY6zzc9xygZuEk2_yRN4n3O-rqsEbsdwFawUE5Us7bXTqW9Aalwob29QVV6TRK-S6s8SdfqOGf3bs_mdJSjO1ZbyNiNB1eJ8g3v9gygH7cTuZuuvgN5Uc10KRL9a6-iAEtuNbbiy-kWK_9J6nufg6JZAJ3Y8wFR4S0qU48UDscii_WBZMIABleX4FIIMPUIpOWaz0xeReT3ShHSDO"/>
+</div>
+<div class="flex-1 min-w-0">
+<h5 class="text-sm font-bold truncate">Essential Quartz Watch</h5>
+<p class="text-xs text-on-surface-variant">Silver / Leather</p>
+<p class="text-sm font-bold text-primary mt-1">$245.00</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="vibrant red athletic sneaker jumping in mid-air against a clean grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0OttbFpZyHD_PbRS-4KxRqCloQx4ZomGTcCCAypMZzLTBolNSJdyq2gJiOlkVl6eUs1TqPhrkKS6ilYogiCOdqitHOB7DBQNN9QVBrGqG2UdLOWRBuCe_mSBfYwOUIAOGO-OQDuYmvAC2yGUYsMDBqAV07n5QRP5aeI-62v65oKd87KpMXzF-ypqx6lak-BPNQwrpO1Xisvjo7yutFWqP9vJIJ_t3ggcSuExiWuB91FBWC1GYOWaC3M0fjAaKkVHuF1VlgDKcgkfj"/>
+</div>
+<div class="flex-1 min-w-0">
+<h5 class="text-sm font-bold truncate">Velocity Runner X</h5>
+<p class="text-xs text-on-surface-variant">Neon Red / Size 10</p>
+<p class="text-sm font-bold text-primary mt-1">$159.00</p>
+</div>
+</div>
+</div>
+<!-- Calculations -->
+<div class="space-y-4 border-t border-zinc-100 pt-6 mb-8">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="font-bold">$404.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Shipping Fee</span>
+<span class="font-bold">$12.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Discount (WELCOME10)</span>
+<span class="font-bold text-secondary">-$40.40</span>
+</div>
+<div class="flex justify-between pt-4 border-t border-zinc-100">
+<span class="text-lg font-black uppercase tracking-widest">Total</span>
+<span class="text-2xl font-black text-primary">$375.60</span>
+</div>
+</div>
+<!-- CTA Button -->
+<button class="w-full bg-signature-gradient text-on-primary py-5 rounded-xl font-black text-lg uppercase tracking-widest shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200">
+                            Place Order
+                        </button>
+<p class="text-center text-[10px] text-on-surface-variant mt-4 leading-relaxed px-4">
+                            By clicking "Place Order", you agree to our Terms of Service and Privacy Policy.
+                        </p>
+</div>
+<!-- Security Badge -->
+<div class="flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-xs font-bold uppercase tracking-widest">Secure Encrypted Payment</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-12 px-6 mt-auto bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-black text-zinc-900 dark:text-zinc-100 mb-4">The Digital Curator.</div>
+<p class="text-xs text-zinc-500 font-inter uppercase tracking-widest leading-relaxed">
+                    Elevating the ordinary into the extraordinary through intentional curation.
+                </p>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-zinc-100 mb-4">Shop</h4>
+<ul class="space-y-2">
+<li><a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline transition-opacity" href="#">New Arrivals</a></li>
+<li><a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline transition-opacity" href="#">Best Sellers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-zinc-100 mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline transition-opacity" href="#">Help Center</a></li>
+<li><a class="text-xs uppercase tracking-widest text-zinc-500 hover:text-orange-600 underline transition-opacity" href="#">Shipping Partners</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-zinc-100 mb-4">Social</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-zinc-500 cursor-pointer hover:text-orange-600">brand_awareness</span>
+<span class="material-symbols-outlined text-zinc-500 cursor-pointer hover:text-orange-600">public</span>
+<span class="material-symbols-outlined text-zinc-500 cursor-pointer hover:text-orange-600">camera</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-200 dark:border-zinc-800 text-center">
+<p class="text-[10px] text-zinc-500 uppercase tracking-[0.2em]">© 2024 The Digital Curator. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

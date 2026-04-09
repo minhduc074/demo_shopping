@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Register | The Curator</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#6a0d1c",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-variant": "#dbdddd",
+                      "tertiary-dim": "#723292",
+                      "surface-container": "#e7e8e8",
+                      "error-dim": "#a70138",
+                      "outline-variant": "#acadad",
+                      "secondary-container": "#ffc3c3",
+                      "on-surface": "#2d2f2f",
+                      "surface-bright": "#f6f6f6",
+                      "tertiary-container": "#de98ff",
+                      "error-container": "#f74b6d",
+                      "on-surface-variant": "#5a5c5c",
+                      "error": "#b41340",
+                      "on-error": "#ffefef",
+                      "tertiary": "#7f3f9f",
+                      "background": "#f6f6f6",
+                      "surface-container-high": "#e1e3e3",
+                      "on-primary": "#ffefec",
+                      "tertiary-fixed-dim": "#d08bf0",
+                      "tertiary-fixed": "#de98ff",
+                      "on-secondary": "#ffefee",
+                      "secondary-fixed": "#ffc3c3",
+                      "surface": "#f6f6f6",
+                      "surface-dim": "#d3d5d5",
+                      "secondary-fixed-dim": "#ffafb0",
+                      "surface-tint": "#b22203",
+                      "primary-container": "#ff775b",
+                      "secondary": "#a03740",
+                      "on-secondary-fixed-variant": "#912c36",
+                      "on-background": "#2d2f2f",
+                      "primary-dim": "#9d1a00",
+                      "on-primary-container": "#4b0700",
+                      "primary": "#b22203",
+                      "on-primary-fixed-variant": "#5c0b00",
+                      "on-tertiary-container": "#510c72",
+                      "primary-fixed": "#ff775b",
+                      "inverse-on-surface": "#9c9d9d",
+                      "inverse-primary": "#fd5837",
+                      "surface-container-highest": "#dbdddd",
+                      "on-tertiary-fixed-variant": "#5b1a7b",
+                      "on-tertiary-fixed": "#300047",
+                      "secondary-dim": "#902b35",
+                      "outline": "#767777",
+                      "on-error-container": "#510017",
+                      "on-primary-fixed": "#000000",
+                      "surface-container-low": "#f0f1f1",
+                      "on-secondary-container": "#85222e",
+                      "primary-fixed-dim": "#ff5c3b",
+                      "on-tertiary": "#feeeff",
+                      "inverse-surface": "#0c0f0f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Inter"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #b22203 0%, #ff775b 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black italic text-orange-700 tracking-tight">The Curator</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-600 hover:text-orange-600 transition-colors font-medium" href="#">Home</a>
+<a class="text-zinc-600 hover:text-orange-600 transition-colors font-medium" href="#">Categories</a>
+<a class="text-zinc-600 hover:text-orange-600 transition-colors font-medium" href="#">Magazine</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-600">search</span>
+<span class="material-symbols-outlined text-zinc-600">shopping_cart</span>
+</div>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center pt-24 pb-12 px-6">
+<div class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl relative">
+<div class="hidden lg:block relative overflow-hidden group">
+<img alt="Lifestyle curation" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Premium lifestyle still life with designer magazine, warm coffee in ceramic mug, and sunlight dappling across a minimalist wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyZL8Vzy4F8E85BLCle4mqEal4A_GtzSs_a2Jq0HQqIiyaZe14EDRGlK6RjKUDC82DL6zEAfKABpYwGrqREG84Pl3_3qIYWzXGr5W8Bt55vznegPIVnGEM6-rvye4erbSjA6uPYj09olipHykgvTCD5_RV8rfuQuDR-mZa-SBn6YqMKzLBkYzxVNjVo6moDh27z8oILeBne5-QcWGa8QmB2y4UVVoFH8G9z6jvvO2DjInyA3Jug2JU4j5jx1FLHepBCiZenFcT4iok"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-12 left-12 right-12 text-white">
+<h1 class="text-4xl font-extrabold tracking-tight mb-4">Curate Your World</h1>
+<p class="text-lg opacity-90 font-light leading-relaxed">Join an exclusive community of tastemakers. Experience a marketplace designed with intentionality and energetic sophistication.</p>
+</div>
+</div>
+<div class="p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+<div class="mb-10">
+<h2 class="text-3xl font-bold text-on-surface tracking-tight mb-2">Create Account</h2>
+<p class="text-on-surface-variant font-medium">Begin your journey with The Curator.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="w-full px-4 py-3 bg-surface-container-highest border-none rounded-xl focus:ring-1 focus:ring-primary text-on-surface placeholder:text-outline transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email</label>
+<input class="w-full px-4 py-3 bg-surface-container-highest border-none rounded-xl focus:ring-1 focus:ring-primary text-on-surface placeholder:text-outline transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant">Phone</label>
+<input class="w-full px-4 py-3 bg-surface-container-highest border-none rounded-xl focus:ring-1 focus:ring-primary text-on-surface placeholder:text-outline transition-all" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2 relative">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant">Password</label>
+<input class="w-full px-4 py-3 bg-surface-container-highest border-none rounded-xl focus:ring-1 focus:ring-primary text-on-surface placeholder:text-outline transition-all" placeholder="••••••••" type="password"/>
+</div>
+<div class="space-y-2 relative">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant">Confirm Password</label>
+<input class="w-full px-4 py-3 bg-surface-container-highest border-none rounded-xl focus:ring-1 focus:ring-primary text-on-surface placeholder:text-outline transition-all" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div class="flex items-start gap-3 py-2">
+<input class="mt-1 rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" id="terms" type="checkbox"/>
+<label class="text-sm text-on-surface-variant leading-snug" for="terms">
+                            I agree to the <a class="text-primary hover:underline font-semibold" href="#">Terms and Conditions</a> and understand how my data is handled according to the <a class="text-primary hover:underline font-semibold" href="#">Privacy Policy</a>.
+                        </label>
+</div>
+<button class="w-full signature-gradient text-on-primary font-bold py-4 rounded-xl shadow-lg shadow-primary/20 hover:opacity-90 active:scale-95 transition-all duration-200 uppercase tracking-widest text-sm" type="submit">
+                        Create Account
+                    </button>
+</form>
+<div class="mt-10 text-center">
+<p class="text-on-surface-variant">Already have an account? 
+                        <a class="text-primary font-bold ml-1 hover:underline" href="#">Login</a>
+</p>
+</div>
+<div class="mt-12 pt-8 border-t border-surface-container-high flex flex-wrap justify-center gap-6">
+<button class="flex items-center gap-2 px-6 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">
+<span class="material-symbols-outlined text-lg">google</span> Google
+                    </button>
+<button class="flex items-center gap-2 px-6 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">
+<span class="material-symbols-outlined text-lg">ios</span> Apple
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full py-12 px-6 mt-auto bg-zinc-100">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-black text-zinc-900 mb-4">The Curator</div>
+<p class="text-xs text-zinc-500 uppercase tracking-widest leading-relaxed">© 2024 The Digital Curator. All Rights Reserved.</p>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-widest text-zinc-900 mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-xs text-zinc-500 uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Help Center</a></li>
+<li><a class="text-xs text-zinc-500 uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Payment Methods</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-widest text-zinc-900 mb-4">Connect</h4>
+<ul class="space-y-2">
+<li><a class="text-xs text-zinc-500 uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Socials</a></li>
+<li><a class="text-xs text-zinc-500 uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Mobile App</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-widest text-zinc-900 mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-xs text-zinc-500 uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="text-xs text-zinc-500 uppercase tracking-widest hover:text-orange-600 underline transition-opacity" href="#">Shipping Partners</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

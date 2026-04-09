@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#6a0d1c",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#dbdddd",
+                    "tertiary-dim": "#723292",
+                    "surface-container": "#e7e8e8",
+                    "error-dim": "#a70138",
+                    "outline-variant": "#acadad",
+                    "secondary-container": "#ffc3c3",
+                    "on-surface": "#2d2f2f",
+                    "surface-bright": "#f6f6f6",
+                    "tertiary-container": "#de98ff",
+                    "error-container": "#f74b6d",
+                    "on-surface-variant": "#5a5c5c",
+                    "error": "#b41340",
+                    "on-error": "#ffefef",
+                    "tertiary": "#7f3f9f",
+                    "background": "#f6f6f6",
+                    "surface-container-high": "#e1e3e3",
+                    "on-primary": "#ffefec",
+                    "tertiary-fixed-dim": "#d08bf0",
+                    "tertiary-fixed": "#de98ff",
+                    "on-secondary": "#ffefee",
+                    "secondary-fixed": "#ffc3c3",
+                    "surface": "#f6f6f6",
+                    "surface-dim": "#d3d5d5",
+                    "secondary-fixed-dim": "#ffafb0",
+                    "surface-tint": "#b22203",
+                    "primary-container": "#ff775b",
+                    "secondary": "#a03740",
+                    "on-secondary-fixed-variant": "#912c36",
+                    "on-background": "#2d2f2f",
+                    "primary-dim": "#9d1a00",
+                    "on-primary-container": "#4b0700",
+                    "primary": "#b22203",
+                    "on-primary-fixed-variant": "#5c0b00",
+                    "on-tertiary-container": "#510c72",
+                    "primary-fixed": "#ff775b",
+                    "inverse-on-surface": "#9c9d9d",
+                    "inverse-primary": "#fd5837",
+                    "surface-container-highest": "#dbdddd",
+                    "on-tertiary-fixed-variant": "#5b1a7b",
+                    "on-tertiary-fixed": "#300047",
+                    "secondary-dim": "#902b35",
+                    "outline": "#767777",
+                    "on-error-container": "#510017",
+                    "on-primary-fixed": "#000000",
+                    "surface-container-low": "#f0f1f1",
+                    "on-secondary-container": "#85222e",
+                    "primary-fixed-dim": "#ff5c3b",
+                    "on-tertiary": "#feeeff",
+                    "inverse-surface": "#0c0f0f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #b22203 0%, #ff775b 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black italic text-orange-700 font-inter tracking-tight">The Curator</span>
+<div class="hidden md:flex gap-6">
+<a class="text-zinc-500 hover:text-orange-600 transition-colors font-medium text-sm" href="#">Dashboard</a>
+<a class="text-zinc-500 hover:text-orange-600 transition-colors font-medium text-sm" href="#">Products</a>
+<a class="text-orange-700 font-bold border-b-2 border-orange-700 transition-colors text-sm" href="#">Orders</a>
+<a class="text-zinc-500 hover:text-orange-600 transition-colors font-medium text-sm" href="#">Customers</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative group hidden sm:block">
+<input class="bg-surface-container-low border-none rounded-full py-2 px-4 text-sm w-64 focus:ring-1 focus:ring-primary" placeholder="Search orders..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2 text-on-surface-variant text-xl">search</span>
+</div>
+<div class="flex gap-2">
+<button class="p-2 text-zinc-600 hover:text-orange-700 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="p-2 text-zinc-600 hover:text-orange-700 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-zinc-600 hover:text-orange-700 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+</header>
+<main class="pt-24 pb-16 px-6 max-w-7xl mx-auto">
+<!-- Header Section -->
+<div class="mb-8">
+<h1 class="text-3xl font-black text-on-surface tracking-tight mb-2">My Orders</h1>
+<p class="text-on-surface-variant font-medium">Track your curated selections and purchase history.</p>
+</div>
+<!-- Tabbed Navigation (The Filter) -->
+<div class="flex flex-nowrap overflow-x-auto gap-2 pb-4 mb-8 no-scrollbar">
+<button class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-bold shadow-sm whitespace-nowrap active:scale-95 transition-all">All</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold hover:bg-surface-container-highest transition-all whitespace-nowrap active:scale-95">To Pay</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold hover:bg-surface-container-highest transition-all whitespace-nowrap active:scale-95">To Ship</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold hover:bg-surface-container-highest transition-all whitespace-nowrap active:scale-95">To Receive</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold hover:bg-surface-container-highest transition-all whitespace-nowrap active:scale-95">Completed</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold hover:bg-surface-container-highest transition-all whitespace-nowrap active:scale-95">Cancelled</button>
+</div>
+<!-- Order List Grid (Bento Style Layout) -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Order Card 1: Completed -->
+<div class="bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-lg group">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4 border-b border-surface-container-low pb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<div>
+<p class="font-bold text-on-surface leading-none mb-1">Maison Minimaliste</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Order ID: #CUR-882190</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Completed</span>
+<span class="text-on-surface-variant text-sm font-medium">May 12, 2024</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-6 mb-6">
+<div class="relative w-24 h-24 sm:w-32 sm:h-32 shrink-0 overflow-hidden rounded-lg">
+<img alt="Luxury Watch" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of a sleek minimalist wristwatch with a tan leather strap on a soft grey background with high-end lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfqkpv3WsKtaNrOUFnvL6Jb3qmg_2h3kXTDSIMh7ifZcgifGZcCnzQPweYCu1eoJ2eEWxYdNUzFycRWeU4qBLUKPv7UIgMGd8jl6RrY0fj63aM1dleD7aiSBvW8ciQick-2bqf2lRz65XroPkAv1Ps6pM0AD9wkFjEWCZAT40gqFQYeVicOS_HckMCJ7QB2xzkm_S5gpZiIsIaMZgE-3oQ2iyXxQj-S83vxN9lFzZNpMSKtRGj9dm3ZhIGqWiFjcZZ7ukK8011coDj"/>
+</div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-on-surface mb-2">Heritage Chronograph - Limited Edition</h3>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">Premium stainless steel casing with Italian leather strap. Hand-assembled with precision movement for the modern professional.</p>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant text-sm font-medium">Qty: 1</span>
+<span class="text-2xl font-black text-primary">$450.00</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-end gap-3 pt-4 border-t border-surface-container-low">
+<button class="px-6 py-2 rounded-xl text-primary font-bold border-2 border-primary/10 hover:border-primary/30 transition-all active:scale-95">Track Order</button>
+<button class="px-8 py-2 rounded-xl signature-gradient text-on-primary font-bold shadow-md hover:shadow-lg transition-all active:scale-95">Reorder</button>
+<button class="px-6 py-2 rounded-xl bg-tertiary text-on-tertiary font-bold hover:bg-tertiary-dim transition-all active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                        Review
+                    </button>
+</div>
+</div>
+<!-- Order Card 2: To Ship -->
+<div class="bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-lg group">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4 border-b border-surface-container-low pb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div>
+<p class="font-bold text-on-surface leading-none mb-1">The Tech Lab</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Order ID: #CUR-993012</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="bg-primary-container/20 text-primary-dim px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">To Ship</span>
+<span class="text-on-surface-variant text-sm font-medium">May 15, 2024</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-6 mb-6">
+<div class="relative w-24 h-24 sm:w-32 sm:h-32 shrink-0 overflow-hidden rounded-lg">
+<img alt="Wireless Headphones" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Matte black wireless headphones floating against a soft beige background with clean architectural shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ6bB9pVqSflQ-djdxu06NW9z-95ykeAGNmxjnhXB12qfQ1Gw2yjiwGythdMMfbmShiU74-XYzTG2xw6nLFViT7DPjgDbm4kein6LCm0CUQhPfZGpG-KmCfMxOaix9FT9EiFLdiALPljsrBElMvHjqJU0bsJlPelvpOsfBHOaT55yr9jmDHAgfClbfmj5okuDAiFxTKpGvwDo8-o1DLhgAf9wC_r7ynJ4g10txREzt_20SBQFAe_gu40Niirtzx5JtQvNVT0HwD1Kw"/>
+</div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-on-surface mb-2">SonicFlow Noise Cancelling Over-Ear</h3>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">Immersive sound experience with 40-hour battery life and adaptive transparency mode.</p>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant text-sm font-medium">Qty: 1</span>
+<span class="text-2xl font-black text-primary">$299.00</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-end gap-3 pt-4 border-t border-surface-container-low">
+<button class="px-6 py-2 rounded-xl text-on-surface-variant font-bold border-2 border-outline-variant/30 hover:bg-surface-container-low transition-all active:scale-95">Cancel Order</button>
+<button class="px-8 py-2 rounded-xl signature-gradient text-on-primary font-bold shadow-md hover:shadow-lg transition-all active:scale-95">Contact Seller</button>
+</div>
+</div>
+<!-- Order Card 3: Multi-item Order -->
+<div class="bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-lg group">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4 border-b border-surface-container-low pb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<div>
+<p class="font-bold text-on-surface leading-none mb-1">Aura Living</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Order ID: #CUR-104422</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="bg-tertiary-container/30 text-tertiary-fixed-dim px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Completed</span>
+<span class="text-on-surface-variant text-sm font-medium">Apr 28, 2024</span>
+</div>
+</div>
+<!-- Multi Item Summary -->
+<div class="flex items-center gap-4 mb-6 overflow-hidden">
+<div class="flex -space-x-4">
+<img class="w-16 h-16 rounded-lg ring-4 ring-white object-cover" data-alt="Artisan ceramic vase with organic texture and earthy tones on a sunlit wooden table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6r6xaYAz_ET9xnY7gNcTtA9kdAJ5WtF16DJEvA5ly62MyTEV5K_xXoal1Fe_q0SaYEbJ35d27CsR3jBdzeIiMZTCPwJzcMnFwmdTGcWajaENcPzH63wUrhu8kaOOanv7Q0gtXYukrKB5byqVrubUwBcw8-vBqWYKceaTmxyGAqJfBKEwqivBa_muU0EHZS9F3bBqrQSYOlLGjtzZwhJoA8-lXUuw5UxZkFIqO71HNp0pnBi1cLOtlSZXHH6Mwl8wfpKowJN4dMP1U"/>
+<img class="w-16 h-16 rounded-lg ring-4 ring-white object-cover" data-alt="Cozy knit wool throw blanket in cream color draped over a modern armchair." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfH7dKEktL-Jl8mvE-mUnxz7rBqYflQ8wqSV-4QUoDszrDwOWAJr37I0ZSeI1c_7hdV4YjpQlp-ZQrn6Nlif_8ldSewppr1svUx2OZIbtjza25B-iofhfEjQF-kjh3kv8wtewY9x8jXOk9MiN33k-AtQyP-Zjp3D-Oq8am483hXVlk0iC5wrFVRACeAPDadfhRTQ9VPE5xjXYVgFPD_y7PWAhk888bIfOQOslIakMpj6V_kfk2DKHngEREA5-nP6-2_SbVI_xe2Msn"/>
+<div class="w-16 h-16 rounded-lg ring-4 ring-white bg-surface-container-highest flex items-center justify-center text-on-surface font-bold text-sm">+1</div>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-bold text-on-surface">Spring Essentials Bundle</h3>
+<p class="text-on-surface-variant text-sm">3 items total from Aura Living</p>
+</div>
+<div class="text-right">
+<span class="text-2xl font-black text-primary">$182.50</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-end gap-3 pt-4 border-t border-surface-container-low">
+<button class="px-8 py-2 rounded-xl signature-gradient text-on-primary font-bold shadow-md hover:shadow-lg transition-all active:scale-95">Buy Again</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-zinc-100">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2">
+<span class="text-xl font-black text-zinc-900 block mb-4">THE DIGITAL CURATOR.</span>
+<p class="text-zinc-500 text-sm max-w-xs normal-case tracking-normal">Elevating your lifestyle through intentional selection and sophisticated commerce experiences.</p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-zinc-900 font-bold text-xs uppercase tracking-widest mb-2">Support</span>
+<a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline" href="#">Help Center</a>
+<a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline" href="#">Payment Methods</a>
+<a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline" href="#">Shipping Partners</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-zinc-900 font-bold text-xs uppercase tracking-widest mb-2">Connect</span>
+<a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline" href="#">Socials</a>
+<a class="text-zinc-500 text-xs uppercase tracking-widest hover:text-orange-600 underline" href="#">Mobile App</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-200 flex justify-between items-center">
+<p class="text-zinc-500 text-[10px] uppercase tracking-widest">© 2024 The Digital Curator. All Rights Reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-zinc-400">payments</span>
+<span class="material-symbols-outlined text-zinc-400">local_shipping</span>
+</div>
+</div>
+</footer>
+<!-- Bottom Nav for Mobile -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-lg border-t border-zinc-100 flex justify-around items-center py-3 z-50">
+<a class="flex flex-col items-center gap-1 text-zinc-500" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-zinc-500" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Shop</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-orange-700" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Orders</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-zinc-500" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Account</span>
+</a>
+</div>
+</body></html>
