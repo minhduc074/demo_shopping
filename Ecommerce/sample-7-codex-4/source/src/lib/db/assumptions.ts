@@ -1,0 +1,15 @@
+export const expectedSchema = {
+  users: ["id", "email", "phone", "full_name", "password_hash", "role", "created_at", "updated_at"],
+  sessions: ["id", "user_id", "token_hash", "expires_at", "created_at"],
+  password_reset_tokens: ["id", "user_id", "token_hash", "expires_at", "used_at", "created_at"],
+  categories: ["id", "name", "slug", "description", "image_url", "parent_id", "is_active", "created_at", "updated_at"],
+  products: ["id", "category_id", "name", "slug", "short_description", "description", "brand", "status", "base_price", "compare_at_price", "currency", "thumbnail_url", "is_featured", "created_at", "updated_at"],
+  product_images: ["id", "product_id", "image_url", "alt_text", "sort_order"],
+  product_variants: ["id", "product_id", "sku", "name", "attributes", "price", "compare_at_price", "stock_quantity", "is_default", "is_active"],
+  carts: ["id", "user_id", "session_key", "status", "created_at", "updated_at"],
+  cart_items: ["id", "cart_id", "product_id", "variant_id", "quantity", "unit_price", "created_at", "updated_at"],
+  addresses: ["id", "user_id", "full_name", "phone", "line1", "line2", "ward", "district", "province", "postal_code", "is_default", "created_at", "updated_at"],
+  shipping_methods: ["id", "code", "name", "description", "fee", "estimated_days_min", "estimated_days_max", "is_active", "created_at", "updated_at"],
+  orders: ["id", "order_number", "user_id", "status", "payment_status", "payment_method", "shipping_method_id", "shipping_name", "shipping_phone", "shipping_line1", "shipping_line2", "shipping_ward", "shipping_district", "shipping_province", "shipping_postal_code", "subtotal", "shipping_fee", "discount_amount", "total", "note", "created_at", "updated_at"],
+  order_items: ["id", "order_id", "product_id", "variant_id", "product_name", "variant_name", "sku", "quantity", "unit_price", "line_total", "product_image_url"],
+} as const;

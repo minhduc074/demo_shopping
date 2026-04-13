@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d3d5d5",
+                    "on-tertiary": "#fff1dd",
+                    "on-primary-fixed": "#000000",
+                    "secondary": "#006665",
+                    "primary-fixed-dim": "#ff5c3b",
+                    "on-tertiary-fixed": "#392700",
+                    "primary-container": "#ff775b",
+                    "on-surface": "#2d2f2f",
+                    "on-secondary-fixed": "#004747",
+                    "primary-fixed": "#ff775b",
+                    "surface-container": "#e7e8e8",
+                    "on-secondary-container": "#005c5b",
+                    "tertiary-fixed-dim": "#ebab00",
+                    "on-primary-container": "#4b0700",
+                    "secondary-dim": "#005958",
+                    "error-dim": "#a70138",
+                    "tertiary-fixed": "#fcb800",
+                    "error": "#b41340",
+                    "inverse-primary": "#fd5837",
+                    "tertiary-dim": "#694a00",
+                    "background": "#f6f6f6",
+                    "on-primary": "#ffefec",
+                    "error-container": "#f74b6d",
+                    "on-secondary": "#bcfffd",
+                    "on-tertiary-container": "#533a00",
+                    "primary": "#b22203",
+                    "surface-container-high": "#e1e3e3",
+                    "surface-variant": "#dbdddd",
+                    "outline": "#767777",
+                    "outline-variant": "#acadad",
+                    "tertiary": "#785600",
+                    "secondary-container": "#62f8f6",
+                    "tertiary-container": "#fcb800",
+                    "inverse-surface": "#0c0f0f",
+                    "surface-container-low": "#f0f1f1",
+                    "on-tertiary-fixed-variant": "#5e4200",
+                    "surface-bright": "#f6f6f6",
+                    "secondary-fixed": "#62f8f6",
+                    "on-primary-fixed-variant": "#5c0b00",
+                    "surface-tint": "#b22203",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#006665",
+                    "on-error-container": "#510017",
+                    "on-surface-variant": "#5a5c5c",
+                    "inverse-on-surface": "#9c9d9d",
+                    "primary-dim": "#9d1a00",
+                    "surface-container-highest": "#dbdddd",
+                    "secondary-fixed-dim": "#4fe9e7",
+                    "on-error": "#ffefef",
+                    "surface": "#f6f6f6",
+                    "on-background": "#2d2f2f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Be Vietnam Pro"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Be Vietnam Pro', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-none bg-[#ffffff]/70 backdrop-blur-xl dark:bg-[#2d2f2f]/70 shadow-[0_32px_64px_-15px_rgba(45,47,47,0.04)]">
+<div class="flex items-center justify-between px-6 py-3 max-w-[1440px] mx-auto w-full">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-bold italic tracking-tighter text-[#EE4D2D]">The Editorial</span>
+<div class="hidden lg:flex items-center gap-6 font-['Be_Vietnam_Pro'] text-sm tracking-tight">
+<a class="text-[#2d2f2f] dark:text-[#f6f6f6] hover:text-[#EE4D2D] transition-colors" href="#">Flash Sale</a>
+<a class="text-[#EE4D2D] font-bold border-b-2 border-[#EE4D2D] pb-1" href="#">Sản Phẩm Mới</a>
+<a class="text-[#2d2f2f] dark:text-[#f6f6f6] hover:text-[#EE4D2D] transition-colors" href="#">Thương Hiệu</a>
+<a class="text-[#2d2f2f] dark:text-[#f6f6f6] hover:text-[#EE4D2D] transition-colors" href="#">Xu Hướng</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-[#f0f1f1] dark:hover:bg-[#3d3f3f] rounded-lg transition-all scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="p-2 hover:bg-[#f0f1f1] dark:hover:bg-[#3d3f3f] rounded-lg transition-all scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden">
+<img alt="User Profile" data-alt="User profile avatar of a smiling man with professional lighting and clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCcW9uDtfnC3X1tdizDWTWZyqj6m3VpweRn_kHcc-33iFfsndgHOWw-lSMUW4ELCSHUE6g4VtCDJjP5zbCkcVK6fAaLI1qZTRP1FX4jFq4tya68ALHhRrPO-8HabQ3tkcC_hzr5aNiNx_9WI8ObXiXIVs6X7aFbycjINfn0NtQM5Yqmz546jTG-l-AdKuNNwrkA1SDC_Z98jFp4D6PUprXwn2gkrV3Z7Mnic89JEvyt6wXSPENhvqXcx-065YlVkVqqJFsXI_Ofh3H"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 max-w-[1440px] mx-auto px-6">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 text-on-surface-variant text-sm mb-8">
+<a class="hover:text-primary transition-colors" href="#">Trang chủ</a>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Thời Trang</a>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+<span class="font-medium text-on-surface">Áo Blazer Velvet Midnight</span>
+</nav>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+<!-- Left: Gallery -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden aspect-[4/5] relative">
+<img class="w-full h-full object-cover" data-alt="Premium midnight blue velvet blazer with intricate silk lapel detailing on a minimalist editorial background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl3_GGIYqREnUEroM4LQsETE7qlND7F0IomqzH9Ki1ob3-QmO7PtDnlO-qMrPX3vsNErE5EHgLdU1KUa6HAO1RQS8JfIZmSSEdpe7FRyJf4eS2fsdEzILtZoRWqd0pkifYprlSv9D2KClg8g3G0WTwKp2D0GlQ_vh_V2cW9IyYOCp-aAGmu4PH9xiJ0C9kL9rpb0eomzprQehq4GF7DCIO8fPospqlulQzcwNcGflgmfxdlq49mpoGCFum2oOdoDN8UwZGxW2udkr-"/>
+<span class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-fixed font-bold px-4 py-1 rounded-br-xl rounded-tl-none text-sm">-30% MÙA LỄ HỘI</span>
+</div>
+<div class="grid grid-cols-5 gap-4">
+<div class="aspect-square rounded-lg border-2 border-primary overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover opacity-100" data-alt="Close up detail of velvet texture and premium stitching on a blue blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-1vd9p5UOeP90O_pjmY4RBiiWaF8_SJcus0LJRj1uOmKI5My5-EttPkrzp-9sJODBHExQckXzJWgEErvcSopgR_e4VSlP_-dqzi4E9_1irstZ3guRShNjUvy0Ya9x9USA5-JpaSXI5WPpmB9oCquDZ6UulCEEv2i-eXAVonkA5Y4E6nZvRClDxES_bjgXclEIxiOUC4srUDJ04jjH6xpB2VuqrP8_8wmCRTg_jiyynM6UbmeBIq4CUvoOU4Djxr5JByBDnnthLxR6"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-low overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Model wearing a tailored velvet blazer in an elegant interior setting with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkazcoek-C-yloUpgIxE3B21cKPUXi79oCU8sXeGAPGQdzrFTshwpMclfBYkbdEp8rV8IPhrAWC1yBjJB8PVnFIkWdLrvrRW7lqcIXnBfmzCkbk_UrFiVi1QzcfU55okB9nqndOiVvIcjklJP3Xvz2XyTYZWQnIY_hIKFU5NO9fmk8m0rRUM83DCOgxDVqjMT0Gw7-eeVn_bxJn_IPy8T7iKsCS1NpEbGmaIt7fCARYV5A_nUPqm41q6yMyNDvtLVq68VieXLh-n9"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-low overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Rear view of a navy blazer showing the perfect fit and tailored shoulder construction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOP_sWj_92g0_6j1VAq_XZes1x-d3TURi1yhhnmUCXMZpf25pCZX8TpH2dM8QZn7QtFYr0cyJaDtayMOti9jPvnrvI5Pie17Rh7R7IDPkCcc94VJpMa9vdM9ug-ZWrzooWqWF842PZTskLA7XGmVbj0E7UK1Cm5pnI2YYJYtgXTFhFvFEwutx9vRmMbRTipqp1eu-eabNm9QhIfZ3W-Anh90Z2rdIEN_bapJGos-5rBDylAlBHX5kTFXoOZ3nf2gR61-LYrafcJAqM"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-low overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Close up of inner silk lining and brand label of a luxury garment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhNvnKPi_qJG86MhHtSZkdWq4XJuvG1U2P69u47vcjg6e2O2MXoKpRZRsgCKDH0j4cCNXbXf578qvH9rjemURqxglI-UIDR5mAv_OyXKYwgImgySUhmBg_4GIvemy1vqvPMikwlzXXvLG9YIOCWxUPug5Rs97l-ODtxRx3b6ZGLuHLgdYJbgn8YfH6ozlryQCcZNIdxbNF9OEUJ0no3y0t_-oXvY6J4cHYXhveCRPqIJtf68wTHrkeRxcP0zLv97pz5xXnEQjALApL"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-low relative overflow-hidden cursor-pointer hover:opacity-80 transition-opacity flex items-center justify-center">
+<img class="w-full h-full object-cover blur-sm" data-alt="Lifestyle shot of clothing hung in a high-end designer boutique" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzt5EVXeXzXIzLQnvLT1c4ElctBBogkZOwhgMMJ5_YLOOGjkJ-6rLdqPzo1V5KsL-SlZjKc6XtpSoiIdE9DikOiKSOViY3bykIBNiSYShJ40XkhfMIl0UB2fZuzWnS5z6jbCf4wPHbplsXE7SbWtKuqrwLTcphX_1lS7qlmroPDfWrE1zQRI6VratHX8ZJrK6dp20cI1ZsgSxiwOOUqdJ5NyOBpIwWweBCEEW_ryTD37gJxfJUKNZUtpq320_vpEqc5YkPIVe6PR4L"/>
+<span class="absolute inset-0 bg-black/30 flex items-center justify-center text-white font-bold">+2</span>
+</div>
+</div>
+</div>
+<!-- Right: Details -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="mb-2 flex items-center gap-2">
+<span class="text-primary font-semibold tracking-widest text-xs uppercase">Premium Edition</span>
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="ml-2 text-on-surface-variant text-xs">(128 Đánh giá)</span>
+</div>
+</div>
+<h1 class="text-3xl lg:text-4xl font-bold text-on-surface mb-4 leading-tight">Áo Blazer Velvet Midnight - Thiết Kế Thủ Công Đặc Biệt</h1>
+<div class="flex items-baseline gap-4 mb-8 p-6 bg-surface-container-low rounded-xl">
+<span class="text-4xl font-bold text-primary">2.450.000đ</span>
+<span class="text-xl text-on-surface-variant line-through">3.500.000đ</span>
+</div>
+<div class="space-y-8 mb-10">
+<!-- Color Selection -->
+<div>
+<label class="block text-sm font-semibold mb-3 text-on-surface">Màu sắc: <span class="font-normal text-on-surface-variant">Midnight Navy</span></label>
+<div class="flex gap-3">
+<button class="w-10 h-10 rounded-full bg-[#000033] border-2 border-primary ring-2 ring-surface ring-inset shadow-md"></button>
+<button class="w-10 h-10 rounded-full bg-[#1a1a1a] border-2 border-transparent hover:border-outline-variant transition-all"></button>
+<button class="w-10 h-10 rounded-full bg-[#4a0e0e] border-2 border-transparent hover:border-outline-variant transition-all"></button>
+</div>
+</div>
+<!-- Size Selection -->
+<div>
+<div class="flex justify-between items-center mb-3">
+<label class="text-sm font-semibold text-on-surface">Kích thước</label>
+<button class="text-primary text-xs font-medium hover:underline">Hướng dẫn chọn size</button>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-6 py-2 rounded-lg bg-surface-container-highest/50 border-2 border-transparent text-sm font-medium hover:bg-surface-container-lowest transition-all">S</button>
+<button class="px-6 py-2 rounded-lg bg-surface-container-lowest border-2 border-primary text-sm font-bold text-primary transition-all">M</button>
+<button class="px-6 py-2 rounded-lg bg-surface-container-highest/50 border-2 border-transparent text-sm font-medium hover:bg-surface-container-lowest transition-all">L</button>
+<button class="px-6 py-2 rounded-lg bg-surface-container-highest/50 border-2 border-transparent text-sm font-medium hover:bg-surface-container-lowest transition-all">XL</button>
+</div>
+</div>
+<!-- Quantity -->
+<div>
+<label class="block text-sm font-semibold mb-3 text-on-surface">Số lượng</label>
+<div class="flex items-center w-max bg-surface-container-high rounded-full p-1">
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container-lowest rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="remove">remove</span>
+</button>
+<span class="w-12 text-center font-bold">1</span>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container-lowest rounded-full transition-colors text-primary">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-surface-container-high text-on-surface py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Thêm vào giỏ
+                    </button>
+<button class="flex-[1.5] bg-gradient-to-br from-primary to-primary-container text-white py-4 rounded-full font-bold shadow-lg shadow-primary/20 hover:opacity-90 transition-all active:scale-[0.98]">
+                        Mua Ngay
+                    </button>
+</div>
+<!-- Trust Badges -->
+<div class="mt-8 grid grid-cols-2 gap-4 border-t border-outline-variant/15 pt-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl" data-icon="local_shipping">local_shipping</span>
+</div>
+<div>
+<p class="text-xs font-bold">Giao nhanh</p>
+<p class="text-[10px] text-on-surface-variant">2-3 ngày làm việc</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/30 flex items-center justify-center text-tertiary-dim">
+<span class="material-symbols-outlined text-xl" data-icon="verified">verified</span>
+</div>
+<div>
+<p class="text-xs font-bold">Chính hãng 100%</p>
+<p class="text-[10px] text-on-surface-variant">Hoàn tiền 200% nếu giả</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Tabs for Content Sections -->
+<div class="sticky top-[60px] bg-background/80 backdrop-blur-md z-40 mb-12 py-4 border-b border-outline-variant/15">
+<div class="flex gap-10 overflow-x-auto no-scrollbar">
+<button class="text-primary font-bold border-b-2 border-primary pb-4 whitespace-nowrap">Mô tả sản phẩm</button>
+<button class="text-on-surface-variant font-medium hover:text-on-surface pb-4 whitespace-nowrap">Thông số kỹ thuật</button>
+<button class="text-on-surface-variant font-medium hover:text-on-surface pb-4 whitespace-nowrap">Đánh giá (128)</button>
+<button class="text-on-surface-variant font-medium hover:text-on-surface pb-4 whitespace-nowrap">Chính sách đổi trả</button>
+</div>
+</div>
+<!-- Product Content Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Description -->
+<div class="lg:col-span-8 space-y-12">
+<section>
+<h3 class="text-2xl font-bold mb-6">Nâng tầm phong cách cá nhân</h3>
+<div class="prose prose-on-surface max-w-none text-on-surface-variant leading-relaxed space-y-4">
+<p>Dòng sản phẩm <strong>Velvet Midnight</strong> là hiện thân của sự sang trọng tối giản. Được dệt từ sợi tơ tằm pha cao cấp, chiếc blazer này sở hữu độ bóng tự nhiên tinh tế, bắt sáng một cách hoàn hảo dưới ánh đèn dạ tiệc.</p>
+<p>Từng đường kim mũi chỉ được thực hiện bởi những nghệ nhân may mặc lành nghề nhất, đảm bảo form dáng đứng nhưng vẫn giữ được sự mềm mại, thoải mái khi cử động. Lớp lót lụa satin bên trong mang lại cảm giác mát lạnh và êm ái tuyệt đối trên da.</p>
+</div>
+<div class="mt-8 rounded-2xl overflow-hidden">
+<img class="w-full h-[400px] object-cover" data-alt="Artistic wide shot of high-end fashion studio with rolls of fabric and a completed blazer on a mannequin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDOYPDm7vkyCTWGPV-3QiHMLd8mHoS25OU5kiWoijfVzNPDUcFUchNjcNgKYKs0dZijgS2pyE5W1a3QqsJaXtWYtY423HNvSep_FBv6DQj2ffmki7P8CI2fMmi3_hEbam-wcNbszO_XieXhoMm-gbj3qfoV75XHIuu5HL1ydqK4F6cGLYvSGPsE0NrmvEQOCKFdBm3DQibRCaL0WwnXJSzxfdp10OHKkOehhnw-MjlpL-qxvuZmcCNCgvGZ-FnswOBRskK6_w0igP5"/>
+</div>
+</section>
+<section class="bg-surface-container-low rounded-3xl p-8">
+<h3 class="text-xl font-bold mb-6">Thông số kỹ thuật</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12">
+<div class="flex justify-between border-b border-outline-variant/10 py-2">
+<span class="text-on-surface-variant">Chất liệu</span>
+<span class="font-medium">80% Velvet Silk, 20% Polyester</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 py-2">
+<span class="text-on-surface-variant">Kiểu dáng</span>
+<span class="font-medium">Slim Fit / Tailored</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 py-2">
+<span class="text-on-surface-variant">Độ dày</span>
+<span class="font-medium">Vừa phải (4 mùa)</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 py-2">
+<span class="text-on-surface-variant">Xuất xứ</span>
+<span class="font-medium">Việt Nam (Xuất khẩu)</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 py-2">
+<span class="text-on-surface-variant">Mã sản phẩm</span>
+<span class="font-medium">EDT-BLZ-99</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 py-2">
+<span class="text-on-surface-variant">Hướng dẫn giặt</span>
+<span class="font-medium">Giặt khô chuyên dụng</span>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section>
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold">Đánh giá thực tế</h3>
+<button class="text-primary font-bold flex items-center gap-1 hover:underline">
+                            Viết đánh giá
+                            <span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</button>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-12 p-8 bg-surface-container-lowest rounded-3xl shadow-sm">
+<div class="flex flex-col items-center justify-center px-8 border-r border-outline-variant/20">
+<span class="text-5xl font-bold text-on-surface">4.8</span>
+<div class="flex text-tertiary my-2">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+</div>
+<span class="text-xs text-on-surface-variant">Dựa trên 128 lượt mua</span>
+</div>
+<div class="flex-1 space-y-2">
+<div class="flex items-center gap-4">
+<span class="text-xs w-4">5</span>
+<div class="flex-1 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[85%]"></div>
+</div>
+<span class="text-xs text-on-surface-variant">85%</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs w-4">4</span>
+<div class="flex-1 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[10%]"></div>
+</div>
+<span class="text-xs text-on-surface-variant">10%</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs w-4">3</span>
+<div class="flex-1 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[3%]"></div>
+</div>
+<span class="text-xs text-on-surface-variant">3%</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs w-4">2</span>
+<div class="flex-1 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[1%]"></div>
+</div>
+<span class="text-xs text-on-surface-variant">1%</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs w-4">1</span>
+<div class="flex-1 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[1%]"></div>
+</div>
+<span class="text-xs text-on-surface-variant">1%</span>
+</div>
+</div>
+</div>
+<div class="space-y-10">
+<!-- Individual Review Item -->
+<div class="border-b border-outline-variant/10 pb-8">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface-variant">MH</div>
+<div>
+<p class="text-sm font-bold">Minh Hoàng</p>
+<p class="text-[10px] text-on-surface-variant italic">Đã mua hàng tại Editorial</p>
+</div>
+</div>
+<span class="text-xs text-on-surface-variant">2 tuần trước</span>
+</div>
+<div class="flex text-tertiary mb-3">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Áo cực kỳ đẹp, đúng chất lượng cao cấp. Màu midnight navy ngoài đời nhìn sang hơn trong ảnh. Form dáng ôm vừa vặn, mặc đi tiệc rất tự tin. Giao hàng nhanh và đóng gói rất kỹ càng, có cả thư cảm ơn.</p>
+<div class="flex gap-2">
+<div class="w-20 h-20 rounded-lg overflow-hidden cursor-zoom-in">
+<img class="w-full h-full object-cover" data-alt="Customer photo of the blazer being worn with a white shirt and dark trousers in a mirror selfie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWIY2-4g8G-8NbYy0lmGjr4BgQ51Cs17vl_1O787tN0xvO5iZjvdWlTJwB5MYAtjlyYHtWS7p706LbGV1OA-dxkePj9Bb1kwiLbiiXTrUZfJFyrRZiqvF28GPVBsGo-LgTY7Zan9WZqzfaebXA7Q1MHB2wz-3EsrwVc87_ESVXDYKZq_nCn97Fx77WP1uuqRnZYcaWltCQv-OgqQWCSuTfwAfV9ebdobZYQGualC_NiqsN5MiWER4uf9Eakl8tS2F-yBpLDdQf1e6l"/>
+</div>
+<div class="w-20 h-20 rounded-lg overflow-hidden cursor-zoom-in">
+<img class="w-full h-full object-cover" data-alt="Close up customer photo showing the rich texture of the velvet under indoor warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5IXd_btl3WatKL4lZwAhXW07OJ-ax0plYIbxoFxVxjMOij-1LUIz-zzjt91DeJuTcEzXtNI1ZPh87dT2CgKkNSH9tCAJi2_sGmkBAaLYjhrUpivUiMJlGzvwNnPQr_y4JM925F5_EuipI9barcHc-jZIGZlVPiRQTmab2ESbpKMyFLVjq6P8IVJ2B8j1zoFmGiLoap9LLulOhzmEIEI7IjiJF2hSiG9y3FozYQfE1ihoidj4zH4yMv37U__QwWm5czsSggSz-feUn"/>
+</div>
+</div>
+</div>
+<div class="border-b border-outline-variant/10 pb-8">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface-variant">AN</div>
+<div>
+<p class="text-sm font-bold">Anh Nguyễn</p>
+<p class="text-[10px] text-on-surface-variant italic">Đã mua hàng tại Editorial</p>
+</div>
+</div>
+<span class="text-xs text-on-surface-variant">1 tháng trước</span>
+</div>
+<div class="flex text-tertiary mb-3">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Sản phẩm tốt, đóng gói chuyên nghiệp. Tuy nhiên mình thấy size M hơi rộng một chút so với các brand khác, nên chọn lùi 1 size nếu muốn mặc ôm hẳn.</p>
+</div>
+</div>
+<button class="w-full py-4 mt-8 bg-surface-container-low rounded-xl text-sm font-bold hover:bg-surface-container transition-colors">Xem thêm 126 đánh giá khác</button>
+</section>
+</div>
+<!-- Right: Secondary Info/Banners -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Promo Card -->
+<div class="bg-gradient-to-br from-[#EE4D2D] to-primary-container p-6 rounded-3xl text-white">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl opacity-50" data-icon="loyalty">loyalty</span>
+<span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold">MÃ GIẢM GIÁ</span>
+</div>
+<h4 class="text-xl font-bold mb-2">EDITORIAL20</h4>
+<p class="text-sm opacity-90 mb-6">Giảm ngay 20% cho đơn hàng từ 2.000.000đ. Áp dụng cho dòng Velvet.</p>
+<button class="w-full py-3 bg-white text-primary font-bold rounded-xl hover:bg-on-primary transition-colors">Sao chép mã</button>
+</div>
+<!-- Suggested Outfits -->
+<div class="bg-surface-container-low rounded-3xl p-6">
+<h4 class="text-sm font-bold mb-4 uppercase tracking-wider">Phối đồ hoàn hảo</h4>
+<div class="space-y-4">
+<div class="flex gap-4 group cursor-pointer">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Crisp white luxury cotton shirt with spread collar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9_tlaXEs0AXc5Hslg1wnUSYSVGBl4Qc2vEFW78CSUmj8bb0MQcfNp5snPofvHhkKoPiKRzXwofDGB3G9cI2qYkvwgUmDOX2rJkawd8IX8FY3QWoUo9As85A0eVSvEs0K7RbiqqyP7zVYUr9FJG7wAcjAeIzIA5h6kcnqcSPhodDueX9l7ZTPk-lVWxKCItJxVPeO55OcdrvCxm9UsEhKMtvQQKvMmNNdS319CqOl3f0eJPUdHClfCXvWV6g7dS-r_PYizkJypVH9r"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-xs font-bold text-on-surface line-clamp-1">Sơ mi Trắng Silk Cotton</p>
+<p class="text-xs text-primary font-semibold">850.000đ</p>
+</div>
+<button class="ml-auto flex items-center justify-center w-8 h-8 rounded-full border border-outline-variant/30 hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+<div class="flex gap-4 group cursor-pointer">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Tapered dark charcoal wool dress pants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pixJJnwgCZnTWd17-RldfSx3p66sZ9IETSUj13qHnehVlT9OYwEggULEN7cLGKtkw79UAkPbBpsfIi25ABr_nT0VQEHYaxnjMTBYxewj27Di_a6DokgHSVaIibWON348C9771-hHJjVqHl2qzpLImAPGoIrEBwYLdt2X9rXk6FX8SjmercGs3VDi6uPVtKugIkR0R9e1Du123qcZldTsiDATw0PEBV8ZrB_hoCMbvOzkCVx-o5HniCcxDqTvFSTlLJ6qfnZTROJP"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-xs font-bold text-on-surface line-clamp-1">Quần Âu Wool Charcoal</p>
+<p class="text-xs text-primary font-semibold">1.100.000đ</p>
+</div>
+<button class="ml-auto flex items-center justify-center w-8 h-8 rounded-full border border-outline-variant/30 hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Social Proof Card -->
+<div class="p-6 border border-outline-variant/15 rounded-3xl">
+<p class="text-xs text-on-surface-variant leading-relaxed italic">"Chúng tôi tin rằng thời trang là một ngôn ngữ không lời, và Editorial được sinh ra để giúp bạn kể câu chuyện của mình một cách tinh tế nhất."</p>
+<div class="flex items-center gap-3 mt-4">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Portrait of the designer with a sophisticated aura" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsGQkTMWXROsgVQxgNUFlDnHSp5oyVa94SIkbuxbaynlj43ZKLJzz2a9NVSPi4QGHexj6P9NP3-lipzV64vf1luybeAS0novYTFzhlmQKu5ZsKfq6g1eMxIFFXXc0Sm1qhpZSOrfV9So6EnNi6L--3T_qqX9J0w3uFo7sJrrGzzX2xiflI68-kEf6Xzq-S8H5cDIsJjAhU4kPTZxS2bta_SCkF4l3p8hBC-Hma1lpvPnMAGjsCFSJ29-q4Qvz_t90quVyOqHa0e29j"/>
+<span class="text-[10px] font-bold text-on-surface">Creative Director, Editorial</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Similar Products Section -->
+<section class="mt-24">
+<div class="flex items-end justify-between mb-8">
+<div>
+<span class="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-2 block">Gợi ý cho bạn</span>
+<h2 class="text-3xl font-bold">Sản phẩm tương tự</h2>
+</div>
+<button class="text-on-surface font-bold text-sm hover:text-primary transition-colors flex items-center gap-2">
+                    Xem tất cả
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Classic black leather biker jacket with silver hardware detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtaV_tq1wMTJjsJt0VIWdjSZnjWalJzqixYtlZ0hVhqSaqi0neNADyP2V3OypPXjgdoToHXrS-knSmEG4UPQWA8BNZk3kvDoAexpstAWShnwmHIn1mGkcQGrXKJXtDGX2vnZIbrqcDE-Ov6v_tteRIC8GFo717kSeZRKpSQd6xNve2DJhHMMKyB52yMKOdpoV09BTAzRi5jq7ydNP4BXlDs8NmHyie51aUwEdQK4GnMieD2ZHauPy6liPNHDwcAECvSUOZ5HTyM2ga"/>
+<button class="absolute top-3 right-3 w-8 h-8 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite">favorite</span>
+</button>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Outerwear</p>
+<h3 class="font-bold text-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">Áo Khoác Da Biker Signature</h3>
+<p class="text-sm font-bold text-primary mt-1">3.200.000đ</p>
+</div>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury camel wool coat on a minimal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPtKylqa1aCCQ2PadyTJP0LFUUp75GvHMHn0RayG8XQBVAOe_i3B7kKi9TaDnb3eBz0UIvXRY8HE0AuZx1w8rw3owOdhMSpDgXMoZhJ8juz7-GKK3iwteSDbezeb4a6ufAOx8LiL1i9t3EcVjTqf41iiEz4GbqNYooIR5mMGmbU-KAupZi210lNnQ27EpF2MaCBGAaE8HuDFPW9_oFf7W5HnaM4iecY6E0fycqzmBXttGS08rwKMrhHisi4JB2sV0hfFQj1WRhuhsK"/>
+<span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-md">NEW</span>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Coats</p>
+<h3 class="font-bold text-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">Măng Tô Cashmere Camel</h3>
+<p class="text-sm font-bold text-primary mt-1">4.500.000đ</p>
+</div>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Light grey tailored linen blazer for summer fashion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA6ODdMY8EecCD-OqI5RqxPWGmPDbGKWhXz_0RtInjqZcGsAr0W6xZDaRgRl9iVvacw72MVqUoh_7WdA3ON80NW8G7hG4xbBX3iAiTzSVvPy7dHgRCEbUUEJP1-NYkzST1RFa9KSrNfXkqU7yYvs_H8CHyc14LTrNsKmFQgOqhJ8utdZacRvNf-Q-1Rc58Bo7Kg09yFuVJORKeJpl0wMN_-Mx20dMLObVgg4Bd-yFhdwq5qE6QitEQ4RHKsW40iCFmFViJ8B82LRxJ"/>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Suits</p>
+<h3 class="font-bold text-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">Blazer Linen Light Grey</h3>
+<p class="text-sm font-bold text-primary mt-1">1.850.000đ</p>
+</div>
+<!-- Product Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Forest green corduroy jacket with artistic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe54aJbPLn096QvDn1J3Efbj_RY2sPaCWv5PpqN3ZTi4QUYp9xsz8HgBuwOs2olsQi1yKkkDarxY5igcyJs-GVYYToZgfxK_8d8gD-l6HI3v43AdHlxrtvqwSeJwo5bS42dScEm-S4fDlVnaghfK9KXt2KN6EbQqN32o5QfVtoUjHPSvA3gJsdoTiCQpxvOfB-Ww597sP7Szr659c_812hXkS63iw8wfYhFXPag3b6k7aC7nMeGAZM6l7Dv9Klq7dk9aLyTLuOtgM0"/>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Jackets</p>
+<h3 class="font-bold text-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">Áo Jacket Corduroy Forest</h3>
+<p class="text-sm font-bold text-primary mt-1">1.250.000đ</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#acadad]/15 bg-[#f6f6f6] dark:bg-[#1a1c1c] mt-24">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 px-8 py-12 max-w-[1440px] mx-auto font-['Inter'] text-xs leading-relaxed">
+<div class="col-span-2">
+<span class="text-lg font-bold text-[#2d2f2f] dark:text-[#f6f6f6] mb-4 block">The Editorial Marketplace</span>
+<p class="text-[#2d2f2f]/60 dark:text-[#f6f6f6]/60 mb-6 max-w-sm">Tận hưởng trải nghiệm mua sắm được tuyển chọn kỹ lưỡng, mang phong cách nghệ thuật vào tủ đồ của bạn.</p>
+<div class="flex gap-4">
+<a class="text-[#2d2f2f]/60 hover:text-[#EE4D2D] transition-colors" href="#"><span class="material-symbols-outlined" data-icon="language">language</span></a>
+<a class="text-[#2d2f2f]/60 hover:text-[#EE4D2D] transition-colors" href="#"><span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span></a>
+<a class="text-[#2d2f2f]/60 hover:text-[#EE4D2D] transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+</div>
+</div>
+<div>
+<span class="font-bold mb-4 block">Về chúng tôi</span>
+<ul class="space-y-2 text-[#2d2f2f]/60 dark:text-[#f6f6f6]/60">
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Câu chuyện thương hiệu</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Tuyển dụng</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Liên hệ</a></li>
+</ul>
+</div>
+<div>
+<span class="font-bold mb-4 block">Hỗ trợ khách hàng</span>
+<ul class="space-y-2 text-[#2d2f2f]/60 dark:text-[#f6f6f6]/60">
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Trung tâm trợ giúp</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Vận chuyển</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Thanh toán</a></li>
+</ul>
+</div>
+<div>
+<span class="font-bold mb-4 block">Chính sách</span>
+<ul class="space-y-2 text-[#2d2f2f]/60 dark:text-[#f6f6f6]/60">
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Chính sách bảo mật</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Điều khoản sử dụng</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Chính sách đổi trả</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<span class="font-bold mb-4 block">Bản tin</span>
+<p class="text-[#2d2f2f]/60 mb-3">Đăng ký để nhận thông báo về bộ sưu tập mới.</p>
+<div class="flex">
+<input class="bg-surface-container-highest/30 border-none rounded-l-lg text-xs w-full focus:ring-1 focus:ring-primary" placeholder="Email của bạn" type="email"/>
+<button class="bg-primary text-white px-4 rounded-r-lg hover:bg-primary-dim transition-colors">Gửi</button>
+</div>
+</div>
+</div>
+<div class="border-t border-[#acadad]/10 py-6 text-center text-[#2d2f2f]/40 text-[10px]">
+            © 2023 The Editorial Marketplace. All rights reserved.
+        </div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#ffffff]/80 backdrop-blur-md dark:bg-[#1a1c1c]/80 z-50 rounded-t-3xl shadow-[0_-10px_40px_rgba(0,0,0,0.05)] font-['Inter'] text-[10px] font-medium">
+<a class="flex flex-col items-center justify-center text-[#acadad]" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+            Trang chủ
+        </a>
+<a class="flex flex-col items-center justify-center text-[#EE4D2D] relative after:content-[''] after:w-1 after:h-1 after:bg-[#EE4D2D] after:rounded-full after:mt-1" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+            Danh mục
+        </a>
+<a class="flex flex-col items-center justify-center text-[#acadad]" href="#">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+            Thông báo
+        </a>
+<a class="flex flex-col items-center justify-center text-[#acadad]" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+            Đơn hàng
+        </a>
+<a class="flex flex-col items-center justify-center text-[#acadad]" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+            Tôi
+        </a>
+</nav>
+</body></html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d3d5d5",
+                    "on-tertiary": "#fff1dd",
+                    "on-primary-fixed": "#000000",
+                    "secondary": "#006665",
+                    "primary-fixed-dim": "#ff5c3b",
+                    "on-tertiary-fixed": "#392700",
+                    "primary-container": "#ff775b",
+                    "on-surface": "#2d2f2f",
+                    "on-secondary-fixed": "#004747",
+                    "primary-fixed": "#ff775b",
+                    "surface-container": "#e7e8e8",
+                    "on-secondary-container": "#005c5b",
+                    "tertiary-fixed-dim": "#ebab00",
+                    "on-primary-container": "#4b0700",
+                    "secondary-dim": "#005958",
+                    "error-dim": "#a70138",
+                    "tertiary-fixed": "#fcb800",
+                    "error": "#b41340",
+                    "inverse-primary": "#fd5837",
+                    "tertiary-dim": "#694a00",
+                    "background": "#f6f6f6",
+                    "on-primary": "#ffefec",
+                    "error-container": "#f74b6d",
+                    "on-secondary": "#bcfffd",
+                    "on-tertiary-container": "#533a00",
+                    "primary": "#b22203",
+                    "surface-container-high": "#e1e3e3",
+                    "surface-variant": "#dbdddd",
+                    "outline": "#767777",
+                    "outline-variant": "#acadad",
+                    "tertiary": "#785600",
+                    "secondary-container": "#62f8f6",
+                    "tertiary-container": "#fcb800",
+                    "inverse-surface": "#0c0f0f",
+                    "surface-container-low": "#f0f1f1",
+                    "on-tertiary-fixed-variant": "#5e4200",
+                    "surface-bright": "#f6f6f6",
+                    "secondary-fixed": "#62f8f6",
+                    "on-primary-fixed-variant": "#5c0b00",
+                    "surface-tint": "#b22203",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#006665",
+                    "on-error-container": "#510017",
+                    "on-surface-variant": "#5a5c5c",
+                    "inverse-on-surface": "#9c9d9d",
+                    "primary-dim": "#9d1a00",
+                    "surface-container-highest": "#dbdddd",
+                    "secondary-fixed-dim": "#4fe9e7",
+                    "on-error": "#ffefef",
+                    "surface": "#f6f6f6",
+                    "on-background": "#2d2f2f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Be Vietnam Pro"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Be Vietnam Pro', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#ffffff]/70 backdrop-blur-xl dark:bg-[#2d2f2f]/70 shadow-[0_32px_64px_-15px_rgba(45,47,47,0.04)]">
+<div class="flex items-center justify-between px-6 py-3 max-w-[1440px] mx-auto w-full">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-bold italic tracking-tighter text-[#EE4D2D]">The Editorial</span>
+<div class="hidden lg:flex items-center gap-6 font-['Be_Vietnam_Pro'] text-sm tracking-tight">
+<a class="text-[#EE4D2D] font-bold border-b-2 border-[#EE4D2D] pb-1" href="#">Flash Sale</a>
+<a class="text-[#2d2f2f] hover:text-[#EE4D2D] transition-colors" href="#">Sản Phẩm Mới</a>
+<a class="text-[#2d2f2f] hover:text-[#EE4D2D] transition-colors" href="#">Thương Hiệu</a>
+<a class="text-[#2d2f2f] hover:text-[#EE4D2D] transition-colors" href="#">Xu Hướng</a>
+</div>
+</div>
+<div class="flex-1 max-w-md mx-8 hidden md:block">
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-highest/50 border-none rounded-full py-2 pl-10 pr-4 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="Tìm kiếm sản phẩm cao cấp..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-5">
+<button class="relative hover:bg-surface-container-low p-2 rounded-lg transition-all group">
+<span class="material-symbols-outlined text-on-surface-variant">shopping_cart</span>
+<span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 rounded-full">3</span>
+</button>
+<button class="hover:bg-surface-container-low p-2 rounded-lg transition-all">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+<button class="hover:bg-surface-container-low p-2 rounded-lg transition-all">
+<span class="material-symbols-outlined text-on-surface-variant">language</span>
+</button>
+<div class="h-8 w-8 rounded-full overflow-hidden border border-outline-variant/15 cursor-pointer">
+<img alt="Profile" data-alt="close-up portrait of a stylish person with modern haircut against a neutral architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDemNVtOcTeoAcvmM-Y-PHKV27gynlS6Sgu1D0V7CdTw0duV4q_vW6e3h1cqvWtcaW1Vb0uIOcoSg7mw4rz_iWqxwdpBdm-jyX-ofzA76Oe9bL2C33JdAhEY05bZUlk-V0sajWI4UYyS3wNWCb6tSMNJepmxJvc2Hmnkx2ULIbI6uOFWLbTA6EwT_Tt4TJ5mijEPwRiwtVGp6uZo0V4YIDs0VEXm-AwHisFussRHgUkOMaZy7pJVZ8Ozgw415hyB8YSpxcdcKtpueIL"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20 pb-24 md:pb-12">
+<!-- Hero Carousel Banner -->
+<section class="max-w-[1440px] mx-auto px-6 mb-12">
+<div class="relative h-[480px] md:h-[600px] rounded-[2rem] overflow-hidden group">
+<img alt="Hero Banner" class="w-full h-full object-cover" data-alt="lifestyle photography of high-end fashion boutique interior with minimal wooden shelves and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlwqdFMqruG6T8VSyi3Axb5Q8rIocEKtH2ElBQkCqMd-B0WOQCPrQ6-MkQO1XfOkA95sLek-pFS_zd5XRYPy3y56Ugou_OQE6CJtEifp8W8KjHHMLHhRp6G3nVO379ZO58GdMoqYp-BhY-1mD9Ak0082sgL5S7ag6LMmrHs-ElH17qssRjv-Le2KsOnmlYSP_P8Qlm1tAhcHDgBqQGR6rR3iZsCEAd4-BWhJKAy9Ng2xODnXHI60T2Qe9yISZT8DrAjYjT8NLfQPKt"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-surface/60 to-transparent flex flex-col justify-center px-12 md:px-24">
+<span class="text-tertiary-fixed font-bold tracking-widest uppercase text-sm mb-4">Editorial Exclusive</span>
+<h1 class="text-white text-5xl md:text-7xl font-bold leading-[1.1] max-w-2xl mb-8 font-headline">Nâng tầm phong cách cá nhân</h1>
+<div class="flex gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-semibold shadow-xl hover:scale-105 transition-transform">Khám phá ngay</button>
+<button class="bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-all">Bộ sưu tập mới</button>
+</div>
+</div>
+<!-- Carousel Nav -->
+<div class="absolute bottom-8 right-12 flex gap-2">
+<button class="w-12 h-1 bg-white/40 rounded-full transition-all hover:bg-white"></button>
+<button class="w-12 h-1 bg-white rounded-full"></button>
+<button class="w-12 h-1 bg-white/40 rounded-full transition-all hover:bg-white"></button>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="max-w-[1440px] mx-auto px-6 mb-16">
+<div class="grid grid-cols-3 md:grid-cols-6 gap-6">
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-20 h-20 rounded-[2rem] bg-surface-container-low flex items-center justify-center mb-4 group-hover:bg-primary-container/20 group-hover:-translate-y-1 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">checkroom</span>
+</div>
+<span class="font-medium text-sm text-center">Thời Trang</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-20 h-20 rounded-[2rem] bg-surface-container-low flex items-center justify-center mb-4 group-hover:bg-primary-container/20 group-hover:-translate-y-1 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">devices</span>
+</div>
+<span class="font-medium text-sm text-center">Điện Tử</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-20 h-20 rounded-[2rem] bg-surface-container-low flex items-center justify-center mb-4 group-hover:bg-primary-container/20 group-hover:-translate-y-1 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">auto_fix_high</span>
+</div>
+<span class="font-medium text-sm text-center">Làm Đẹp</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-20 h-20 rounded-[2rem] bg-surface-container-low flex items-center justify-center mb-4 group-hover:bg-primary-container/20 group-hover:-translate-y-1 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">home</span>
+</div>
+<span class="font-medium text-sm text-center">Nhà Cửa</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-20 h-20 rounded-[2rem] bg-surface-container-low flex items-center justify-center mb-4 group-hover:bg-primary-container/20 group-hover:-translate-y-1 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">fitness_center</span>
+</div>
+<span class="font-medium text-sm text-center">Thể Thao</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-20 h-20 rounded-[2rem] bg-surface-container-low flex items-center justify-center mb-4 group-hover:bg-primary-container/20 group-hover:-translate-y-1 transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+</div>
+<span class="font-medium text-sm text-center">Sách</span>
+</div>
+</div>
+</section>
+<!-- Flash Sale Section -->
+<section class="max-w-[1440px] mx-auto px-6 mb-16">
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 md:p-12 shadow-[0_32px_64px_-15px_rgba(45,47,47,0.04)] overflow-hidden relative">
+<!-- Atmospheric Background Accent -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/5 blur-[100px] rounded-full"></div>
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary fill-1" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h2 class="text-3xl font-bold font-headline">Flash Sale Kết Thúc Trong</h2>
+</div>
+<div class="flex gap-3">
+<div class="bg-inverse-surface text-white w-12 h-12 flex items-center justify-center rounded-xl text-xl font-bold">02</div>
+<span class="text-2xl font-bold self-center">:</span>
+<div class="bg-inverse-surface text-white w-12 h-12 flex items-center justify-center rounded-xl text-xl font-bold">45</div>
+<span class="text-2xl font-bold self-center">:</span>
+<div class="bg-inverse-surface text-white w-12 h-12 flex items-center justify-center rounded-xl text-xl font-bold">12</div>
+</div>
+</div>
+<button class="text-primary font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+                        Xem tất cả ưu đãi <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="group">
+<div class="relative bg-surface-container-low rounded-xl aspect-square overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="studio shot of bright red athletic running shoe on clean grey background with soft shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnuSRYxksETVn6822ay5YwvZq8FAtcVjDzIdgw28E_hbyEXtTokgRUDKIJRkSy92Xbq-XTlqNgAixuKI-lSv2gWAAOgzsudCatAwMllFuNEDcu4ncoCQvutSxfzNSdagLn315A71Jf_B2N5eMJm_oup2-QmYRlj9TqLv6YOvX9xXe0VGDQd4cV2JbR7xiaXAsWcz1b-047FjRijzyzcBus0LXxrZE4blmxFTA8KEy26wRqvCllw6_uICw4XcL16-K92JsSyZgh7v3j"/>
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-fixed font-bold text-xs px-3 py-1.5 rounded-br-xl rounded-tl-none">-45%</div>
+</div>
+<h3 class="font-bold text-lg mb-1 truncate">Nike Air Max Red Edition</h3>
+<div class="flex items-baseline gap-2 mb-3">
+<span class="text-primary font-bold text-xl">1.250.000đ</span>
+<span class="text-outline-variant line-through text-sm">2.400.000đ</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-primary-container h-full w-[75%]"></div>
+</div>
+<p class="text-[10px] font-medium mt-2 uppercase tracking-wider text-on-surface-variant">Vừa bán: 124 sản phẩm</p>
+</div>
+<!-- Product Card 2 -->
+<div class="group">
+<div class="relative bg-surface-container-low rounded-xl aspect-square overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="minimalist white smartwatch with clean interface on a flat aesthetic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUtQm0gM5C9W4pMdiKzF254ZJpvku4-CJLOG-oC3o2BYqOCf6PwXYY2RNYwaasqDAWTTvgE4oNcJIUaTRieW157zj6QnzBOc5j6PBDUBwC43YLTPkwjakKxBOYfhv13_ehHAonP8j5DSmbpX9-ILGBUKNQaTPKl94wfJInmyFrPUuUHXOH4bWEvmRd8Bw3_5mJv38Q4acJv-BmwUGLUFlyJupcOYh4_uoiupnpVA_GQM0vxmQn5oZwpcG3J6NkIR0cbhT1lc9bpLOj"/>
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-fixed font-bold text-xs px-3 py-1.5 rounded-br-xl rounded-tl-none">-30%</div>
+</div>
+<h3 class="font-bold text-lg mb-1 truncate">Minimalist Smart Watch</h3>
+<div class="flex items-baseline gap-2 mb-3">
+<span class="text-primary font-bold text-xl">890.000đ</span>
+<span class="text-outline-variant line-through text-sm">1.270.000đ</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-primary-container h-full w-[40%]"></div>
+</div>
+<p class="text-[10px] font-medium mt-2 uppercase tracking-wider text-on-surface-variant">Sắp hết: 15 sản phẩm</p>
+</div>
+<!-- Product Card 3 -->
+<div class="group">
+<div class="relative bg-surface-container-low rounded-xl aspect-square overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="premium high-quality wireless headphones with dark leather padding and metallic accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_kfpeTuisawCT8Y45c6ozHwrYw2e5CvC25u-K7RC4ZT-jdmFHNRQ-2Z9OVkqdTeMhmnuFSo1gZNZoVEPgSycZenSC5nbc71xHcQHo9tcazNNqGnuTm2n2rJiHNkSKVVGMrs_Hl7YV-uuQZoZvrUGlozv99aETpdrbkVgIrPDRCugMHtzRq8lzH4cqdmBofJ_Hzu_SjnnlEmiJNURMSgKaO2hcbKCke4wXVmDh-6wQoZUiBhCXoMc5drVJKyZWGUjbUmGB70J2Qv8Q"/>
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-fixed font-bold text-xs px-3 py-1.5 rounded-br-xl rounded-tl-none">-20%</div>
+</div>
+<h3 class="font-bold text-lg mb-1 truncate">Premium Audio Bass</h3>
+<div class="flex items-baseline gap-2 mb-3">
+<span class="text-primary font-bold text-xl">3.150.000đ</span>
+<span class="text-outline-variant line-through text-sm">3.900.000đ</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-primary-container h-full w-[90%]"></div>
+</div>
+<p class="text-[10px] font-medium mt-2 uppercase tracking-wider text-on-surface-variant">Vừa bán: 450 sản phẩm</p>
+</div>
+<!-- Product Card 4 -->
+<div class="group">
+<div class="relative bg-surface-container-low rounded-xl aspect-square overflow-hidden mb-4">
+<img alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="classic tortoiseshell sunglasses on a warm sunlit surface with artistic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw7zvzd7b0o0LpDuCahuP6Kou5oMI_wrj2d7kEDy-SRVgN9wEriiOs1pck61vJqaFJRd7_VnyouetNI6024DTU681ckHmG40fKhb41KBuO2bdkJaQM10Ju-sexzcHG9yM6fhg_5K1zQuEYecsA3iG85zyIUEjwq99U6aLVo32narrI5O9MWjHhbvVgcT1TtnNziMfw1LusX6DsuYe7QkXYoZzp7MRtx30PK8Z7v516OrVVJ11TNelfJK9c4wNftEMC8DiVcEfLtUC7"/>
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-fixed font-bold text-xs px-3 py-1.5 rounded-br-xl rounded-tl-none">-15%</div>
+</div>
+<h3 class="font-bold text-lg mb-1 truncate">Signature Sunglasses</h3>
+<div class="flex items-baseline gap-2 mb-3">
+<span class="text-primary font-bold text-xl">550.000đ</span>
+<span class="text-outline-variant line-through text-sm">650.000đ</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-primary-container h-full w-[25%]"></div>
+</div>
+<p class="text-[10px] font-medium mt-2 uppercase tracking-wider text-on-surface-variant">Sắp cháy hàng</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Suggested Products Grid -->
+<section class="max-w-[1440px] mx-auto px-6 mb-16">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-3xl font-bold font-headline border-l-4 border-primary pl-4">Gợi Ý Hôm Nay</h2>
+<div class="flex gap-2">
+<button class="bg-surface-container px-6 py-2 rounded-full text-sm font-semibold hover:bg-surface-container-high transition-all">Mới nhất</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full text-sm font-semibold">Bán chạy</button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Product Card Template (Repeated for UI depth) -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer border border-transparent hover:border-primary-container/10">
+<div class="relative rounded-xl overflow-hidden mb-4 bg-surface-container-low aspect-[3/4]">
+<img alt="Tech" class="w-full h-full object-cover" data-alt="close-up of modern designer mechanical keyboard with RGB lighting in a workspace setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXuyyGn_hvrqYPkQzAMi6_UQV4Ydo561_fFnUeKwgFQ5Clvf9zoA8aVOxEPzcdnjO3a8-PXCebCbK9cABsk2I-O4dM_rzPNX3-RXicfvkPGBYG6Uy5pdUz0q2hFVHH_LLqpxWjLUBu-diaSxVS7p50MuWRYcMfNwUMMSO-wn2RhCVWlV9Z8cM1HeiqrlhwsGpYq1JM6x4u2RDPoHYmstQ1aHQRmo897MmseZulRnHfFZ6g94Di0U1RZWyg1Ns6Ue67VBAgInCOsPe3"/>
+<div class="absolute bottom-2 right-2 bg-white/80 backdrop-blur-md p-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-sm">favorite</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="text-[10px] text-primary font-bold uppercase tracking-wider mb-1 block">Gadgets</span>
+<h3 class="text-sm font-semibold font-body leading-snug line-clamp-2 h-10 mb-2">Bàn phím cơ không dây phiên bản giới hạn</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">2.450.000đ</span>
+<span class="text-[10px] text-outline-variant font-medium">Đã bán 1.2k</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-surface-container-low text-on-surface font-semibold rounded-xl text-xs group-hover:bg-primary group-hover:text-on-primary transition-colors">Thêm vào giỏ</button>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer border border-transparent hover:border-primary-container/10">
+<div class="relative rounded-xl overflow-hidden mb-4 bg-surface-container-low aspect-[3/4]">
+<img alt="Fashion" class="w-full h-full object-cover" data-alt="portrait of a woman wearing a modern camel-colored wool coat standing in a minimal urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqfG024WhELXGAMhNK29r2AHmH2afnwkAyJr5DhAfwSIwEEHy83ks2cbmbYKCybtmV5PeZwIXlOFOBp6zOI0t-hCXct3TZlOVa_m2C7cuZdTYKGsAGNhaY_mfuJqKUi4DtAOTotqmszpQtkHpvsv2ORqjNPjjxDhjHpV-9o2HT9t0yhdy33KqmGywA7tqJMLsdF_9YdDDUozae5i6UctphLrnHWu9RL66jD8bybMAMi4jDdJlvn1zs0xEcwMVlh_s2nOaXsCiS3ak4"/>
+<div class="absolute top-2 left-2 bg-primary-container text-white text-[10px] font-bold px-2 py-1 rounded-lg">NEW</div>
+</div>
+<div class="mb-4">
+<span class="text-[10px] text-primary font-bold uppercase tracking-wider mb-1 block">Apparel</span>
+<h3 class="text-sm font-semibold font-body leading-snug line-clamp-2 h-10 mb-2">Áo khoác dạ nữ dáng dài phong cách thu đông</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">1.890.000đ</span>
+<span class="text-[10px] text-outline-variant font-medium">Đã bán 842</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-surface-container-low text-on-surface font-semibold rounded-xl text-xs group-hover:bg-primary group-hover:text-on-primary transition-colors">Thêm vào giỏ</button>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer border border-transparent hover:border-primary-container/10">
+<div class="relative rounded-xl overflow-hidden mb-4 bg-surface-container-low aspect-[3/4]">
+<img alt="Beauty" class="w-full h-full object-cover" data-alt="clean composition of premium skincare bottles on a light stone surface with delicate shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwfxPsduq7WXZtDOBIb_xhT_xQg0pkOQdJFTElncYVolN5VwormDavUh9xKmL8VujgTPicyIQXxoDFwrZP_kmgsMEvvGM_whDBfebrzwDFCC2_swmtBCvrYNK2dS4lF3824QqkSTCQ1RT1gzg7VEFXSMviSbk465b3b7r3yhBoLcRSX2CbfEZY0JblBSF-MTT2gXr7ZLpHXSymmnp9d_xPTB-YQat0-GMXx2RpTYUvnmpT9JLGw1fZkoB8suqoH_xnVknONU2Ztadl"/>
+</div>
+<div class="mb-4">
+<span class="text-[10px] text-primary font-bold uppercase tracking-wider mb-1 block">Cosmetics</span>
+<h3 class="text-sm font-semibold font-body leading-snug line-clamp-2 h-10 mb-2">Bộ mỹ phẩm dưỡng da Organic cao cấp</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">950.000đ</span>
+<span class="text-[10px] text-outline-variant font-medium">Đã bán 2.5k</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-surface-container-low text-on-surface font-semibold rounded-xl text-xs group-hover:bg-primary group-hover:text-on-primary transition-colors">Thêm vào giỏ</button>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer border border-transparent hover:border-primary-container/10">
+<div class="relative rounded-xl overflow-hidden mb-4 bg-surface-container-low aspect-[3/4]">
+<img alt="Tech" class="w-full h-full object-cover" data-alt="close-up of a modern thin tablet with a stylus on a wooden desk with coffee cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKPENbHGO_PE47kPTeQS6395cRoeaWz8ylwIbxBTpfwqBj_AODtO8TMV4tMTMs9f-HxnOLPcOXsW5-UpGU4epNOQok4J_dcjokIa3za4R0esZ6ytG66aEo4mABMYzPlpwFXKjRZyq5miC1rUVF6LZHWeaFEuT8YpgS67LL2Dkrrp3WTWf7MhZVfueQ3_j57ymEuiPE8sL_SS3ThFQRSXqAB9JwHAeKvQe_dkSYiyID_tLpcrwXjViTF8MEnBQfdmUkXGs_zPHt3H5o"/>
+<div class="absolute top-2 left-2 bg-tertiary text-white text-[10px] font-bold px-2 py-1 rounded-lg">-10%</div>
+</div>
+<div class="mb-4">
+<span class="text-[10px] text-primary font-bold uppercase tracking-wider mb-1 block">Tablets</span>
+<h3 class="text-sm font-semibold font-body leading-snug line-clamp-2 h-10 mb-2">Máy tính bảng màn hình 12 inch Pro</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">15.490.000đ</span>
+<span class="text-[10px] text-outline-variant font-medium">Đã bán 124</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-surface-container-low text-on-surface font-semibold rounded-xl text-xs group-hover:bg-primary group-hover:text-on-primary transition-colors">Thêm vào giỏ</button>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer border border-transparent hover:border-primary-container/10">
+<div class="relative rounded-xl overflow-hidden mb-4 bg-surface-container-low aspect-[3/4]">
+<img alt="Home" class="w-full h-full object-cover" data-alt="modern minimalist interior of a living room with a cream sofa and large green indoor plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpNaK-CSncdW-CbPWhjLVT3MHCpWIoLraRGm0AYlZn3yirJm79NOdIo8xZYfUYQN13Ml_gcZ6pzv_XlO3eFW6kIfWhXk2dE-ab5PK9OLHXjUQhqaPT0uWor-NjHCndtaGaa4rzqKPxkwQKOlFJbWm3qPF70AGcrZ4AhsUo1HiMaoBdrqXIZ5mp8BjWFjD6IhqzaCKeahyFFy8TpudOD9x15UMcxHW6oDmc3Eb0sX232uD-KTKBNoLqpyyzAnZaagGjbky8xBNc442t"/>
+</div>
+<div class="mb-4">
+<span class="text-[10px] text-primary font-bold uppercase tracking-wider mb-1 block">Living</span>
+<h3 class="text-sm font-semibold font-body leading-snug line-clamp-2 h-10 mb-2">Ghế bành thư giãn phong cách Bắc Âu</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold">4.200.000đ</span>
+<span class="text-[10px] text-outline-variant font-medium">Đã bán 58</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-surface-container-low text-on-surface font-semibold rounded-xl text-xs group-hover:bg-primary group-hover:text-on-primary transition-colors">Thêm vào giỏ</button>
+</div>
+</div>
+<div class="flex justify-center mt-12">
+<button class="px-10 py-4 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-bold rounded-full transition-all border border-outline-variant/15">
+                    Xem Thêm Sản Phẩm
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f6f6] dark:bg-[#1a1c1c] w-full border-t border-[#acadad]/15 pt-16 pb-8 md:pb-16">
+<div class="max-w-[1440px] mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
+<div class="col-span-2">
+<span class="text-lg font-bold text-[#2d2f2f] dark:text-[#f6f6f6] block mb-6">The Editorial</span>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 max-w-xs">Tận hưởng trải nghiệm mua sắm hiện đại với những bộ sưu tập được chọn lọc kỹ lưỡng bởi các chuyên gia.</p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center cursor-pointer hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-sm">public</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center cursor-pointer hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-sm">mail</span>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">Hỗ Trợ</h4>
+<ul class="space-y-4 text-xs text-[#2d2f2f]/60 dark:text-[#f6f6f6]/60 font-['Inter']">
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Trung tâm trợ giúp</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Vận chuyển</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Thanh toán</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Hoàn trả</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">Khám Phá</h4>
+<ul class="space-y-4 text-xs text-[#2d2f2f]/60 dark:text-[#f6f6f6]/60 font-['Inter']">
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Về chúng tôi</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Chính sách bảo mật</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Điều khoản sử dụng</a></li>
+<li><a class="hover:text-[#EE4D2D] transition-colors" href="#">Thương hiệu</a></li>
+</ul>
+</div>
+<div class="col-span-2">
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">Đăng ký nhận tin</h4>
+<p class="text-xs text-on-surface-variant mb-4">Nhận thông báo về bộ sưu tập và ưu đãi mới nhất.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-surface-container-lowest border-none rounded-xl text-sm focus:ring-1 focus:ring-primary" placeholder="Email của bạn" type="email"/>
+<button class="bg-inverse-surface text-white px-4 py-2 rounded-xl text-xs font-bold hover:bg-on-surface transition-all">Đăng ký</button>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-xs text-on-surface-variant/60 font-['Inter']">© 2023 The Editorial Marketplace. All rights reserved.</span>
+<div class="flex gap-6">
+<img alt="Payment" class="h-6 opacity-40 grayscale" data-alt="icons representing global major payment methods like visa and mastercard in a minimalist row" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUznbgPvcSYuSGK4lKgdhDTyq7YuHUEqZ6N-dJcIX3BLa2uJSVaqh7q-fRDUvBhrYh_h3AAr7T9s0XcujbI6xB1Xy-jYme50LRtpR5_k_joYcqEkaAcv26Wxdjq1lxsLhlTaydwOBBZ-afLUzr30orqJLzMk-fkES0D2tUdvX7_-eP_Z9ARlQOd4kmfZjtKmn1QFlNVvtYDiH3rRR66Fb-IZSQXzJdE2EuvLez3iPBHiz0VGdA7YKgRsiu4x4LAx15jrB7zPwWH4Qb"/>
+</div>
+</div>
+</div>
+</footer>
+<!-- Mobile Bottom NavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-[#ffffff]/80 backdrop-blur-md shadow-[0_-10px_40px_rgba(0,0,0,0.05)] flex justify-around items-center px-4 pb-4 pt-2">
+<a class="flex flex-col items-center justify-center text-[#EE4D2D] relative after:content-[''] after:w-1 after:h-1 after:bg-[#EE4D2D] after:rounded-full after:mt-1" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-['Inter'] font-medium">Trang chủ</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#acadad]" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-['Inter'] font-medium">Danh mục</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#acadad]" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-[10px] font-['Inter'] font-medium">Thông báo</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#acadad]" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-[10px] font-['Inter'] font-medium">Đơn hàng</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#acadad]" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-['Inter'] font-medium">Tôi</span>
+</a>
+</nav>
+</body></html>

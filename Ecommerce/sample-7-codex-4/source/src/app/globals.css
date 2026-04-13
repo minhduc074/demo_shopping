@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f6f6;
+  --surface: #ffffff;
+  --surface-low: #f0f1f1;
+  --surface-mid: #e7e8e8;
+  --surface-high: #dbdddd;
+  --foreground: #2d2f2f;
+  --muted: #5a5c5c;
+  --outline: #acadad;
+  --primary: #b22203;
+  --primary-soft: #ff775b;
+  --secondary: #006665;
+  --tertiary: #fcb800;
+  --danger: #b41340;
+  --radius-card: 12px;
+  --radius-pill: 999px;
+  --shadow-ambient: 0 32px 64px -15px rgba(45, 47, 47, 0.08);
+  --shadow-soft: 0 18px 40px -20px rgba(45, 47, 47, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-headline);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(252, 184, 0, 0.12), transparent 25%),
+    radial-gradient(circle at left 10% top 10%, rgba(255, 119, 91, 0.14), transparent 30%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.editorial-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(24px);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-[1440px] px-4 md:px-6 xl:px-8;
+}
+
+.surface-card {
+  background: var(--surface);
+  box-shadow: var(--shadow-ambient);
+  border-radius: var(--radius-card);
+}
+
+.surface-soft {
+  background: var(--surface-low);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
